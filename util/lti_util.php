@@ -324,6 +324,18 @@ class BLTI {
         return false;
     }
 
+    function getCustomExerciseRequest() { // James Irvine 07 Sep 2020
+        $retval = $this->info['custom_exercise'];
+        if ( strlen($retval) > 1 ) return $retval;
+        return false;
+    }
+
+    function getSakaiEid() { // James Irvine 07 Sep 2020 retrieves student number
+        $retval = $this->info['ext_sakai_eid'];
+        if ( strlen($retval) > 1 ) return $retval;
+        return false;
+    }
+
     function redirect($url=false) {
         if ( $url === false ) {
       $host = $_SERVER['HTTP_HOST'];
@@ -366,6 +378,8 @@ class BLTI {
         $ret .= "getCourseID() = ".$this->getCourseID()."\n";
         $ret .= "getOutcomeSourceDID() = ".$this->getOutcomeSourceDID()."\n";
         $ret .= "getOutcomeService() = ".$this->getOutcomeService()."\n";
+        $ret .= "getCustomExerciseRequest() = ".$this->getCustomExerciseRequest()."\n";
+        $ret .= "getCustomExerciseRequest() = ".$this->getSakaiEid()."\n";
         return $ret;
     }
 

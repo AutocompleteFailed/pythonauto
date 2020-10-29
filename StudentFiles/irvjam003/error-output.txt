@@ -1,0 +1,51 @@
+sh: 1: /var/www/html/tsugi/mod/pythonauto/qemu-arm/bin/qemu-system-gnuarmeclipse: not found
+sh: 1: /var/www/html/tsugi/mod/pythonauto/qemu-arm/bin/qemu-system-gnuarmeclipse: not found
+Unable to initialize SDL:  No available video device
+Unable to initialize SDL:  No available video device
+Unable to initialize SDL:  No available video device
+qemu-system-gnuarmeclipse: -curses: curses support is disabled
+Unable to initialize SDL:  No available video device
+qemu-system-gnuarmeclipse: -vnc :1: VNC support is disabled
+Unable to initialize SDL:  No available video device
+Unable to initialize SDL:  No available video device
+Unable to initialize SDL:  No available video device
+Unable to initialize SDL:  No available video device
+Unable to initialize SDL:  No available video device
+Unable to initialize SDL:  No available video device
+2020-09-22T18:46:54.191328Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 15038 (/usr/sbin/apache2)
+2020-09-22T18:46:54.191623Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 15038 (/usr/sbin/apache2)
+2020-09-22T18:57:57.255829Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 29352 (timeout)
+2020-09-22T18:59:14.115637Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 29394 (timeout)
+2020-09-22T19:03:58.876898Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 29566 (timeout)
+2020-09-22T19:08:56.389766Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 29651 (timeout)
+2020-09-22T19:38:11.318002Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 29968 (timeout)
+sh: 1: timeout -k 10 5 /var/www/html/tsugi/mod/pythonauto/qemu-arm/xpack-qemu-arm-2.8.0-9/bin/qemu-system-gnuarmeclipse: not found
+sh: 1: timeout -k 10 5 /var/www/html/tsugi/mod/pythonauto/qemu-arm/xpack-qemu-arm-2.8.0-9/bin/qemu-system-gnuarmeclipse: not found
+2020-09-22T19:57:44.783847Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 30749 (timeout)
+2020-09-22T19:58:02.468382Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 30765 (timeout)
+2020-09-22T19:59:18.769070Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 30799 (timeout)
+timeout: invalid time interval '5/var/www/html/tsugi/mod/pythonauto/qemu-arm/xpack-qemu-arm-2.8.0-9/bin/qemu-system-gnuarmeclipse'
+Try 'timeout --help' for more information.
+qemu-system-gnuarmeclipse: -nographic: drive with bus=0, unit=0 (index=0) exists
+qemu-system-gnuarmeclipse: -nographic: drive with bus=0, unit=0 (index=0) exists
+qemu-system-gnuarmeclipse: -nographic: drive with bus=0, unit=0 (index=0) exists
+qemu-system-gnuarmeclipse: -nographic: drive with bus=0, unit=0 (index=0) exists
+timeout: failed to run command '/var/www/html/tsugi/mod/pythonauto/qemu-arm/xpack-qemu-arm-2.8.0-9/bin/qemu-system-gnuarmeclipse  \'--board\' \'STM32F0-Discovery\' \'--image\' \'/var/www/html/tsugi/mod/pythonauto/StudentFiles/irvjam003/irvjam003TestingEmulator.elf\' \'--verbose\' \'\' \'-nographic\' \'\' \'-d\' \'unimp,guest_errors\'': No such file or directory
+qemu-system-gnuarmeclipse: -nographic: drive with bus=0, unit=0 (index=0) exists
+Unable to initialize SDL:  No available video device
+qemu-system-gnuarmeclipse: -nographic: drive with bus=0, unit=0 (index=0) exists
+qemu-system-gnuarmeclipse: -nographic: drive with bus=0, unit=0 (index=0) exists
+qemu-system-gnuarmeclipse: -nographic: drive with bus=0, unit=0 (index=0) exists
+qemu-system-gnuarmeclipse: -nographic: drive with bus=0, unit=0 (index=0) exists
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 814 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 829 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 838 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 844 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 850 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 855 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 860 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 865 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 871 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 899 (timeout)
+2020-09-22T21:35:09.131756Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 29217 (/usr/sbin/apache2)
+2020-09-22T21:35:09.132178Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 29217 (/usr/sbin/apache2)

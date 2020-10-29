@@ -1,6 +1,8 @@
 <?php
 require_once "setup.php";
 
+//require_once "parserTest.php";
+
 // Load up the LTI Support code
 require_once 'util/lti_util.php';
 
@@ -13,8 +15,7 @@ function dump() {
     print "Raw POST Parameters:\n\n";
     ksort($_POST);
     foreach($_POST as $key => $value ) {
-    if (get_magic_quotes_gpc()) $value = stripslashes($value);
-        print htmlentities($key) . "=" . htmlentities($value) . " (".mb_detect_encoding($value).")\n";
+      print htmlentities($key) . "=" . htmlentities($value) . " (".mb_detect_encoding($value).")\n";
     }
     print "</pre>\n";
     echo($last_base_string);
@@ -55,9 +56,10 @@ if ( ! is_lti_request() ) {
 <!DOCTYPE html>
 <html>
 <head>
-<?php 
+<?php
 require_once "header.php";
 require_once "exercises.php";
+
 
 $QTEXT = 'Please write a Python program to open the file 
 "mbox-short.txt" and count the number of lines in the file and 
@@ -95,12 +97,39 @@ if ( $EX === false ) {
     return;
 }
 ?>
+
+
+<script>
+function runQemu(sdt_num) {
+    if (sdt_num.length == 1) {
+        document.getElementById("output").innerHTML = "no input";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            //document.getElementById("output").innerHTML = this.responseText + this.statusText;
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("output").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("POST", "simple_proc_open_linux.php?q=" + sdt_num + "$" + "modify_var_elf", true); // note this needs to be modified to have the ex as an argument
+        //document.getElementById("output").innerHTML = "simple_proc_open_linux.php?q=" + str;
+        xmlhttp.send();
+    }
+}
+</script>
+
+
+
+
+
+
 <style>
 body { font-family: sans-serif; }
 </style>
 <script src="dist/skulpt.js?v=1" type="text/javascript"></script>
 <script src="dist/builtin.js?v=1" type="text/javascript"></script>
-<script src="dist/jquery.min.js?v=1" type="text/javascript"></script> 
+<script src="dist/jquery.min.js?v=1" type="text/javascript"></script>
 <script type="text/javascript">
 
 function builtinRead(x)
@@ -121,6 +150,8 @@ function makefilediv(name,text) {
     msgContainer.appendChild(msg2);
     document.body.appendChild(msgContainer);
 }
+
+
 
 // May want this under the control of the exercises.
 // Instead of always retrieving them
@@ -158,12 +189,12 @@ $(document).ready( function() {
         $("#gradebad").hide();
     }
 
-    function finalcheck() {
+    function finalcheck() {     // This searches the code section for keywords. If the index of the keyword doesn't exist it throws the 'check' associated with the keyword.
         if ( window.GLOBAL_TIMER != false ) window.clearInterval(window.GLOBAL_TIMER);
         window.GLOBAL_TIMER = false;
         hideall();
         $("#spinner").hide();
-        var prog = document.getElementById("code").value;
+        var prog = document.getElementById("code").value;    // This is bringing the user code into a variable
         for ( var key in window.CHECKS ) {
             // The key can be inverted if the first character is !
             if ( key.length > 1 && key.substring(0,1) == '!' ) {
@@ -187,7 +218,7 @@ $(document).ready( function() {
 
     function outf(text)
     {
-        // console.log('Text='+text);
+        console.log('Text='+text);
         var output = document.getElementById("output");
         oldtext = output.innerHTML;
         oldtext = oldtext.replace(/<span.*span>/g,"")
@@ -298,10 +329,62 @@ word-wrap: break-word; /* IE 5.5+ */
 <div style="padding: 0px 15px 0px 15px;">
 <div id="inputs" style="height:300px;">
 <div class="well" style="background-color: #EEE8AA">
+
+<p><b>Start typing a name in the input field below:</b></p>
+<?php 
+$StudentNumber = $context->getSakaiEid(); // have tested this works 
+//$StudentNumber = str_replace(' ', '', $StudentNumber);
+?>
+<form>
+<!-- First name: <input type="text" onkeyup="showHint(this.value)"> -->
+<!-- <button id="run_qemu_btn" onclick="showHint(<?php //echo($StudentNumber); ?>)" type="button">Run Emulator</button> -->
+<?php echo("<button id=\"run_qemu_btn\" onclick=runQemu(\"$StudentNumber\") type=\"button\">Run Emulator</button>\n"); ?>
+</form>
+<!-- <p>Suggestions: <div id="txtHint"></div></p> -->
+
 <?php echo($QTEXT); ?>
 </div>
+<?php       // example (possibly insecure) file upload from https://www.tutorialspoint.com/php/php_file_uploading.htm
+   if(isset($_FILES['StudentFile'])){
+      $errors= array();
+      $file_name = $_FILES['StudentFile']['name'];
+      $file_size = $_FILES['StudentFile']['size'];
+      $file_tmp = $_FILES['StudentFile']['tmp_name'];
+      $file_type = $_FILES['StudentFile']['type'];
+      $file_ext=strtolower(end(explode('.',$_FILES['StudentFile']['name'])));
+      
+      $extensions= array("c","h","make","elf","");   // allowed extensions. Makefiles don't have an extension usually so include none.
+      
+      if(in_array($file_ext,$extensions)=== false){
+         $errors[]="extension not allowed, please choose a .c .h .elf or make file.";
+      }
+      
+      if($file_size > 2097152) {
+         $errors[]='File size must be less than 2 MB';
+      }
+      
+      if(empty($errors)==true) {
+         mkdir("StudentFiles/{$context->getSakaiEid()}/", 0755, true);
+         move_uploaded_file($file_tmp,"StudentFiles/{$context->getSakaiEid()}/{$context->getSakaiEid()}.".$file_ext);
+         echo "Success";
+      }else{
+         print_r($errors);
+      }
+   }
+?>
+<form action = "" method = "POST" enctype = "multipart/form-data">
+         <input type = "file" name = "StudentFile" />   <!-- generates the 'browse' and 'submit' buttons -->
+         <input type = "submit"/>
+			
+         <!-- <ul>
+            <li>Sent file: <?php //echo $_FILES['StudentFile']['name'];  ?>
+            <li>File size: <?php //echo $_FILES['StudentFile']['size'];  ?>
+            <li>File type: <?php //echo $_FILES['StudentFile']['type'] ?>
+         </ul> -->
+			
+      </form>
 <form style="height:100%;">
-<button onclick="runit()" type="button">Check Code</button>
+<button onclick="runit()" type="button">Check Code</button>     <!-- change onclick to point to function to run -->
 <?php
 if ( $context->valid && $context->getOutcomeService() !== false ) {
    if ( $context->isInstructor() ){
@@ -331,7 +414,20 @@ Enter/Edit Your Python Code Here:<br/>
 <div id="outputs" style="height:300px; min-height:200px;">
 <div id="left" style="padding:8px;width:47%;float:right;height:100%;overflow:scroll;border:1px solid black">
 <b>Desired Output</b>
-<pre id="desired" style="height:100%"><?php echo($DESIRED); echo("\n"); ?>
+<!-- <button id="run_qemu_btn" onclick="runQemu()" type="button">Run Emulator</button> -->
+
+
+
+
+
+<pre id="desired" style="height:100%"><?php 
+//require_once "simple_proc_open_linux.php";
+//$thing = popen('procopen.php', 'w');
+//for ($i=0; $i<200; $i++){
+//    echo($thing); echo("\n");
+//}
+//pclose($thing);
+//echo($DESIRED); echo("\n"); ?>      <!-- this is where the desired output is printed -->
 </pre>
 </div>
 <div id="right" style="padding: 8px;width:47%;height:100%;float:left;overflow:scroll;border:1px solid black">
@@ -354,7 +450,7 @@ print $context->dump();
 print "\nSESSION Parameters:\n\n";
 ksort($_SESSION);
 foreach($_SESSION as $key => $value ) {
-    if (get_magic_quotes_gpc()) $value = stripslashes($value);
+    //if (get_magic_quotes_gpc()) $value = stripslashes($value);
     if ( is_string($value) ) print "$key=$value (".mb_detect_encoding($value).")\n";
 }
 print "-->";

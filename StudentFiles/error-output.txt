@@ -1,0 +1,31 @@
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//TestingEmulator.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//TestingEmulator.elf'
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//TestingEmulator.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//TestingEmulator.elf'
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf'
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf'
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf'
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf'
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf'
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf'
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf'
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf'
+Bad ram pointer 0x102
+timeout: the monitored command dumped core
+Aborted
+Bad ram pointer 0x102
+timeout: the monitored command dumped core
+Aborted
+Bad ram pointer 0x102
+timeout: the monitored command dumped core
+Aborted
+/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles//.elf'

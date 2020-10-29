@@ -1,0 +1,53 @@
+2020-09-22T20:17:47.518211Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 31477 (timeout)
+2020-09-22T20:20:18.619869Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 31578 (timeout)
+2020-09-22T21:02:17.471571Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 32224 (timeout)
+2020-09-22T21:02:24.462983Z qemu-system-gnuarmeclipse: terminating on signal 15 from pid 32241 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1042 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 11244 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 3078 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 3084 (timeout)
+/var/www/html/tsugi/mod/pythonauto/StudentFiles/irvjam003/irvjam003.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles/irvjam003/irvjam003.elf'
+/var/www/html/tsugi/mod/pythonauto/StudentFiles/irvjam003/irvjam003.elf: No such file or directory
+qemu-system-gnuarmeclipse: Could not load image '/var/www/html/tsugi/mod/pythonauto/StudentFiles/irvjam003/irvjam003.elf'
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 3645 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1025 (/usr/sbin/apache2)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 30282 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 30355 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 30404 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 31099 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 31121 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 31140 (timeout)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 1 (/sbin/init)
+qemu-system-gnuarmeclipse: terminating on signal 15 from pid 4712 (timeout)
+timeout: failed to run command 'avocado': No such file or directory
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: ./var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test: not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+bash: avocado: command not found
+bash: avocado: command not found
+bash: avocado: command not found
