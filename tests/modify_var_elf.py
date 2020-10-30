@@ -29,7 +29,7 @@ class PrintVariableTest(Test):
         """
         #Test(base_logdir="/var/www/html/tsugi/mod/pythonauto/StudentFiles/Results")
         #source = self.params.get('source', default="/var/www/html/tsugi/mod/pythonauto/stm32f0-discovery-basic-template/src/main.c") #this is beyond janky
-        """ source = self.params.get('source', default="/var/www/html/tsugi/mod/pythonauto/testproj/src/main.c") #this is beyond janky
+        source = self.params.get('source', default="/var/www/html/tsugi/mod/pythonauto/testproj/src/main.c") #this is beyond janky
         
         c_file = self.get_data(source)
         if c_file is None:
@@ -42,10 +42,10 @@ class PrintVariableTest(Test):
         
         self.__binary = c_file
         
-        self.__binary = source.rsplit('.', 1)[0]
+        """self.__binary = source.rsplit('.', 1)[0]
         build.make(self.workdir,
                    env={'CFLAGS': '-g3 -O0'},
-                   extra_args=self.__binary)
+                   extra_args=self.__binary)"""
         self.__binary = source.rsplit('.', 1)[0] + '.elf'
         build.make("/var/www/html/tsugi/mod/pythonauto/testproj/Debug",
                    extra_args='clean')
@@ -61,7 +61,7 @@ class PrintVariableTest(Test):
         console_handler = logging.StreamHandler()
         console_handler.setLevel(logging.DEBUG)
         console_handler.setFormatter(logging.Formatter("%(asctime)s:" + logging.BASIC_FORMAT))
-        logger.addHandler(console_handler) """
+        logger.addHandler(console_handler)
 
     def test(self):
         """
@@ -80,10 +80,11 @@ class PrintVariableTest(Test):
         app.connect('1234')
         #app.load()     # to avoid error about peripheral not being initialized I'm starting the server with a target image which seems to make it functional. Error still displays though
         app.cmd("b main")
-        app.cmd("info break")       # GPIOA 0x4800 0000 - 0x4800 03FF
+        
         app.cmd("display/th 0x48000414") # GPIOB ODR
         app.cmd("display/th 0x48000010") # GPIOA IDR
         app.cmd("display/d TIM14_IRQHandler::t")
+        app.cmd("info break")       # GPIOA 0x4800 0000 - 0x4800 03FF
 
         app.set_watch('*0x48000414')
         app.continue_()

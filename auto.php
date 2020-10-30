@@ -61,18 +61,20 @@ require_once "header.php";
 require_once "exercises.php";
 
 
-$QTEXT = 'Please write a Python program to open the file 
+/* $QTEXT = 'Please write a Python program to open the file 
 "mbox-short.txt" and count the number of lines in the file and 
-match the desired output below:';
+match the desired output below:'; */
+$QTEXT = '';
 $DESIRED = '1910 Lines';
-$CODE = 'fh = open("mbox-short.txt", "r")
+/* $CODE = 'fh = open("mbox-short.txt", "r")
 
 count = 0
 for line in fh:
    count = count + 1
 
 print count,"Lines"
-';
+'; */
+$CODE = '';
 $CHECKS = false;
 $ex = "count";
 $EX = true;
@@ -155,7 +157,7 @@ function makefilediv(name,text) {
 
 // May want this under the control of the exercises.
 // Instead of always retrieving them
-$(document).ready( function() {
+/* $(document).ready( function() {
     $.get('romeo.txt', function(data) {
         makefilediv('romeo.txt', data);
     });
@@ -165,7 +167,7 @@ $(document).ready( function() {
     $.get('mbox-short.txt', function(data) {
         makefilediv('mbox-short.txt', data);
     });
-});
+}); */
 
 <?php
     if ( $CHECKS === false ) {
@@ -330,7 +332,7 @@ word-wrap: break-word; /* IE 5.5+ */
 <div id="inputs" style="height:300px;">
 <div class="well" style="background-color: #EEE8AA">
 
-<p><b>Start typing a name in the input field below:</b></p>
+
 <?php 
 $StudentNumber = $context->getSakaiEid(); // have tested this works 
 //$StudentNumber = str_replace(' ', '', $StudentNumber);
@@ -355,6 +357,10 @@ $StudentNumber = $context->getSakaiEid(); // have tested this works
       
       $extensions= array("c","h","make","elf","");   // allowed extensions. Makefiles don't have an extension usually so include none.
       
+      if($StudentNumber==''){
+          echo "LTI session expired, please relaunch from Vula.";
+          return 1;
+      }
       if(in_array($file_ext,$extensions)=== false){
          $errors[]="extension not allowed, please choose a .c .h .elf or make file.";
       }
@@ -405,7 +411,7 @@ if ( ! $context->valid && isset($_GET["done"]) ) {
 <span id="gradegood" style="color:green;display:none"> Grade Updated. </span>
 <span id="gradebad" style="color:red;display:none"> Error storing grade. </span>
 <br/>
-Enter/Edit Your Python Code Here:<br/>
+Enter/Edit Your Code Here:<br/>
 <textarea id="code" cols="80" style="font-family:Courier,fixed;font-size:16px;color:blue;width:99%;">
 <?php echo($CODE); ?>
 </textarea>
@@ -438,7 +444,8 @@ Enter/Edit Your Python Code Here:<br/>
 <div id="footer">
 <br clear="all"/>
 <center>
-This autograder is based on <a href="http://skulpt.org/" target="_new">Skulpt</a>.
+<!-- This autograder is based on <a href="http://skulpt.org/" target="_new">Skulpt</a>. -->
+This autograder is based on PythonAuto and qemu-arm-xpack.
 </center>
 </div>
 <?php

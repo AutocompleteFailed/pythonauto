@@ -5,6 +5,10 @@ $PassedVars = $_REQUEST["q"];
 $VarList = explode("$", $PassedVars);
 $StudentNumber = $VarList[0];
 $TestName = $VarList[1];
+if ($StudentNumber == ''){
+	echo "LTI session expired, please relaunch from Vula.";
+	return 1;
+}
 $generate_yaml_cmd = escapeshellcmd("/var/www/html/tsugi/mod/pythonauto/util/yaml_cast.py -i {$StudentNumber} -o {$TestName}");
 $generate_yaml_cmd_output = shell_exec($generate_yaml_cmd);
 echo $generate_yaml_cmd_output;
