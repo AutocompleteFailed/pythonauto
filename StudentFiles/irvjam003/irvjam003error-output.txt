@@ -51,3 +51,40 @@ sh: 1: avocado: not found
 bash: avocado: command not found
 bash: avocado: command not found
 bash: avocado: command not found
+sh: 1: avocado: not found
+sh: 1: avocado: not found
+sh: 1: /home/automark/.local/bin/avocado: Permission denied
+timeout: failed to run command '/home/automark/.local/bin/avocado': Permission denied
+timeout: failed to run command '/home/automark/.local/bin/avocado': Permission denied
+timeout: failed to run command '/home/automark/.local/bin/avocado': Permission denied
+timeout: failed to run command '/home/automark/.local/bin/avocado': Permission denied
+sh: 1: /home/automark/.local/bin/avocado: Permission denied
+Traceback (most recent call last):
+  File "/home/automark/.local/bin/avocado", line 7, in <module>
+    from avocado.core.main import main
+ModuleNotFoundError: No module named 'avocado'
+Traceback (most recent call last):
+  File "/home/automark/.local/bin/avocado", line 7, in <module>
+    from avocado.core.main import main
+ModuleNotFoundError: No module named 'avocado'
+Traceback (most recent call last):
+  File "/home/automark/.local/bin/avocado", line 7, in <module>
+    from avocado.core.main import main
+ModuleNotFoundError: No module named 'avocado'
+Traceback (most recent call last):
+  File "/home/automark/.local/bin/avocado", line 7, in <module>
+    from avocado.core.main import main
+ModuleNotFoundError: No module named 'avocado'
+Traceback (most recent call last):
+  File "/home/automark/.local/bin/avocado", line 7, in <module>
+    from avocado.core.main import main
+ModuleNotFoundError: No module named 'avocado'
+Traceback (most recent call last):
+  File "/home/automark/.local/bin/avocado", line 7, in <module>
+    from avocado.core.main import main
+ModuleNotFoundError: No module named 'avocado'
+sh: 1: avocado: not found
+Traceback (most recent call last):
+  File "/home/automark/.local/bin/avocado", line 7, in <module>
+    from avocado.core.main import main
+ModuleNotFoundError: No module named 'avocado'

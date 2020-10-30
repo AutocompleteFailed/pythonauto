@@ -5,14 +5,15 @@ $PassedVars = $_REQUEST["q"];
 $VarList = explode("$", $PassedVars);
 $StudentNumber = $VarList[0];
 $TestName = $VarList[1];
-
 $generate_yaml_cmd = escapeshellcmd("/var/www/html/tsugi/mod/pythonauto/util/yaml_cast.py -i {$StudentNumber} -o {$TestName}");
 $generate_yaml_cmd_output = shell_exec($generate_yaml_cmd);
 echo $generate_yaml_cmd_output;
 
 //$cmd = "/var/www/html/tsugi/mod/pythonauto/qemu-arm/xpack-qemu-arm-2.8.0-9/bin/qemu-system-gnuarmeclipse";
 //$cmd = "avocado --config /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py.data/modify_var_elf.yaml --show=test run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test";
-$cmd = 'bash -c "avocado run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test"';
+//$cmd = 'bash -c "avocado run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test"';
+//$cmd = "/home/automark/.local/bin/avocado --config /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py.data/modify_var_elf.yaml --show=test run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test";
+$cmd = "/home/automark/.local/bin/avocado run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test";
 
 //$parts = array(
 	//'-jar' => 'G:\\test\\yuic\\build\\yuicompressor-2.4.6.jar',
