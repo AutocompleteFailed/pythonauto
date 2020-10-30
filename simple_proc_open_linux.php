@@ -17,7 +17,7 @@ echo $generate_yaml_cmd_output;
 //$cmd = "avocado --config /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py.data/modify_var_elf.yaml --show=test run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test";
 //$cmd = 'bash -c "avocado run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test"';
 //$cmd = "/home/automark/.local/bin/avocado --config /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py.data/modify_var_elf.yaml --show=test run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test";
-$cmd = "/home/automark/.local/bin/avocado run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test";
+$cmd = "/usr/local/bin/avocado --show=test run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test";
 
 //$parts = array(
 	//'-jar' => 'G:\\test\\yuic\\build\\yuicompressor-2.4.6.jar',
@@ -70,5 +70,5 @@ if (is_resource($process)) {
 
 	echo "\ncommand returned $return_value\n";
 }
-
+#$context->addSession('grade.php'); # have not implemented grading based on result of test, simply adds the same grade for all cases.
 ?>

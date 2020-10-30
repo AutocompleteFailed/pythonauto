@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import sys, getopt, yaml
-
+# this does not produce a yaml in the correct format for avocado config files. Will have to try again.
 def main(argv):
    student_number = ''
    test_name = ''

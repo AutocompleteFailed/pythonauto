@@ -118,6 +118,7 @@ function runQemu(sdt_num) {
         //document.getElementById("output").innerHTML = "simple_proc_open_linux.php?q=" + str;
         xmlhttp.send();
     }
+    $("#grade").show();
 }
 </script>
 
@@ -340,7 +341,7 @@ $StudentNumber = $context->getSakaiEid(); // have tested this works
 <form>
 <!-- First name: <input type="text" onkeyup="showHint(this.value)"> -->
 <!-- <button id="run_qemu_btn" onclick="showHint(<?php //echo($StudentNumber); ?>)" type="button">Run Emulator</button> -->
-<?php echo("<button id=\"run_qemu_btn\" onclick=runQemu(\"$StudentNumber\") type=\"button\">Run Emulator</button>\n"); ?>
+<?php echo("<button id=\"run_qemu_btn\" onclick=runQemu(\"$StudentNumber\") type=\"button\">Run Emulator</button>\n"); ?> <!-- this button needs the $ex parameter added to the function argument -->
 </form>
 <!-- <p>Suggestions: <div id="txtHint"></div></p> -->
 
@@ -452,13 +453,15 @@ This autograder is based on PythonAuto and qemu-arm-xpack.
 
 print "<!--\n";
 print "Context Information:\n\n";
-print $context->dump();
+#print $context->dump();
 
 print "\nSESSION Parameters:\n\n";
 ksort($_SESSION);
 foreach($_SESSION as $key => $value ) {
     //if (get_magic_quotes_gpc()) $value = stripslashes($value);
-    if ( is_string($value) ) print "$key=$value (".mb_detect_encoding($value).")\n";
+    if ( is_string($value) ) {
+        #print "$key=$value (".mb_detect_encoding($value).")\n";
+    }
 }
 print "-->";
 

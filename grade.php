@@ -44,7 +44,7 @@ $sourcedid = htmlspecialchars($sourcedid);
 $operation = 'replaceResultRequest';
 $postBody = str_replace(
 	array('SOURCEDID', 'GRADE', 'OPERATION','MESSAGE'), 
-	array($sourcedid, '1.0', 'replaceResultRequest', uniqid()), 
+	array($sourcedid, '0.5', 'replaceResultRequest', uniqid()), 
 	getPOXGradeRequest());
 
 $response = sendOAuthBodyPOST($method, $endpoint, $oauth_consumer_key, $oauth_consumer_secret, $content_type, $postBody);

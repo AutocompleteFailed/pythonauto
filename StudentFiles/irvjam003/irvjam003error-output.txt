@@ -88,3 +88,15 @@ Traceback (most recent call last):
   File "/home/automark/.local/bin/avocado", line 7, in <module>
     from avocado.core.main import main
 ModuleNotFoundError: No module named 'avocado'
+Traceback (most recent call last):
+  File "/home/automark/.local/bin/avocado", line 7, in <module>
+    from avocado.core.main import main
+ModuleNotFoundError: No module named 'avocado'
+Traceback (most recent call last):
+  File "/home/automark/.local/bin/avocado", line 7, in <module>
+    from avocado.core.main import main
+ModuleNotFoundError: No module named 'avocado'
+Traceback (most recent call last):
+  File "/home/automark/.local/bin/avocado", line 7, in <module>
+    from avocado.core.main import main
+ModuleNotFoundError: No module named 'avocado'
