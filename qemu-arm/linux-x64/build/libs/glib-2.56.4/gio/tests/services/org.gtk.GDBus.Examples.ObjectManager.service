@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.gtk.GDBus.Examples.ObjectManager
+Exec=/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-example-objectmanager-server

@@ -1,0 +1,1005 @@
+
+Running libiconv make...
+
+[make -j 5]
+builddir="`pwd`"; cd libcharset && make all && make install-lib libdir="$builddir/lib" includedir="$builddir/lib"
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset'
+if [ ! -d include ] ; then mkdir include ; fi
+cp /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/include/libcharset.h.in include/libcharset.h
+cd lib && make all
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset/lib'
+/bin/bash ../libtool --mode=compile gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/.. -I../include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBCHARSET -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libcharset_set_relocation_prefix -Drelocate=libcharset_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/localcharset.c
+/bin/bash ../libtool --mode=compile gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/.. -I../include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBCHARSET -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libcharset_set_relocation_prefix -Drelocate=libcharset_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/relocatable.c
+/bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/config.charset 'x86_64-pc-linux-gnu' > t-charset.alias
+sed -e '/^#/d' -e 's/@''PACKAGE''@/@PACKAGE@/g' /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/ref-add.sin > t-ref-add.sed
+sed -e '/^#/d' -e 's/@''PACKAGE''@/@PACKAGE@/g' /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/ref-del.sin > t-ref-del.sed
+mv t-ref-del.sed ref-del.sed
+mv t-ref-add.sed ref-add.sed
+mv t-charset.alias charset.alias
+libtool: compile:  gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/.. -I../include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBCHARSET -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libcharset_set_relocation_prefix -Drelocate=libcharset_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/relocatable.c  -fPIC -DPIC -o .libs/relocatable.o
+libtool: compile:  gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/.. -I../include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBCHARSET -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libcharset_set_relocation_prefix -Drelocate=libcharset_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/localcharset.c  -fPIC -DPIC -o .libs/localcharset.o
+libtool: compile:  gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/.. -I../include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBCHARSET -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libcharset_set_relocation_prefix -Drelocate=libcharset_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/relocatable.c -o relocatable.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/.. -I../include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBCHARSET -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libcharset_set_relocation_prefix -Drelocate=libcharset_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/lib/localcharset.c -o localcharset.o >/dev/null 2>&1
+/bin/bash ../libtool --mode=link gcc-7 -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -o libcharset.la -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -version-info 1:0:0 -no-undefined localcharset.lo relocatable.lo
+libtool: link: gcc-7 -shared  -fPIC -DPIC  .libs/localcharset.o .libs/relocatable.o   -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -m64 -g -O0   -Wl,-soname -Wl,libcharset.so.1 -o .libs/libcharset.so.1.0.0
+libtool: link: (cd ".libs" && rm -f "libcharset.so.1" && ln -s "libcharset.so.1.0.0" "libcharset.so.1")
+libtool: link: (cd ".libs" && rm -f "libcharset.so" && ln -s "libcharset.so.1.0.0" "libcharset.so")
+libtool: link: gcc-ar-7 cru .libs/libcharset.a  localcharset.o relocatable.o
+/usr/bin/ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: gcc-ranlib-7 .libs/libcharset.a
+libtool: link: ( cd ".libs" && rm -f "libcharset.la" && ln -s "../libcharset.la" "libcharset.la" )
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset/lib'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset'
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset'
+cd lib && make all
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset/lib'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset/lib'
+cd lib && make install-lib libdir='/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib' includedir='/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset/lib'
+/bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib
+/bin/bash ../libtool --mode=install /usr/bin/install -c libcharset.la /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/libcharset.la
+libtool: install: /usr/bin/install -c .libs/libcharset.so.1.0.0 /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/libcharset.so.1.0.0
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib && { ln -s -f libcharset.so.1.0.0 libcharset.so.1 || { rm -f libcharset.so.1 && ln -s libcharset.so.1.0.0 libcharset.so.1; }; })
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib && { ln -s -f libcharset.so.1.0.0 libcharset.so || { rm -f libcharset.so && ln -s libcharset.so.1.0.0 libcharset.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcharset.lai /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/libcharset.la
+libtool: install: /usr/bin/install -c .libs/libcharset.a /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/libcharset.a
+libtool: install: chmod 644 /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/libcharset.a
+libtool: install: gcc-ranlib-7 /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/libcharset.a
+libtool: warning: remember to run 'libtool --finish /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+test -f /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/charset.alias && orig=/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/charset.alias \
+                                || orig=charset.alias; \
+sed -f ref-add.sed $orig > /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/t-charset.alias; \
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/t-charset.alias /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/charset.alias; \
+rm -f /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/t-charset.alias
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset/lib'
+/bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib
+/usr/bin/install -c -m 644 include/libcharset.h /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/libcharset.h
+/usr/bin/install -c -m 644 include/localcharset.h.inst /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib/localcharset.h
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset'
+cd lib && make all
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib'
+/bin/bash ../libtool --mode=compile gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/../include -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/iconv.c
+/bin/bash ../libtool --mode=compile gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/../include -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/../libcharset/lib/localcharset.c
+/bin/bash ../libtool --mode=compile gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/../include -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/relocatable.c
+libtool: compile:  gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/../include -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/iconv.c  -fPIC -DPIC -o .libs/iconv.o
+libtool: compile:  gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/../include -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/relocatable.c  -fPIC -DPIC -o .libs/relocatable.o
+libtool: compile:  gcc-7 -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/../include -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/lib/../libcharset/lib/localcharset.c  -fPIC -DPIC -o .libs/localcharset.o
+/bin/bash ../libtool --mode=link gcc-7 -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -o libiconv.la -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -version-info 8:0:6 -no-undefined iconv.lo localcharset.lo relocatable.lo  
+libtool: link: gcc-7 -shared  -fPIC -DPIC  .libs/iconv.o .libs/localcharset.o .libs/relocatable.o   -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -m64 -g -O0   -Wl,-soname -Wl,libiconv.so.2 -o .libs/libiconv.so.2.6.0
+libtool: link: (cd ".libs" && rm -f "libiconv.so.2" && ln -s "libiconv.so.2.6.0" "libiconv.so.2")
+libtool: link: (cd ".libs" && rm -f "libiconv.so" && ln -s "libiconv.so.2.6.0" "libiconv.so")
+libtool: link: ( cd ".libs" && rm -f "libiconv.la" && ln -s "../libiconv.la" "libiconv.la" )
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib'
+cd preload && make all
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/preload'
+rm -f -r objects
+mkdir objects && \
+for f in /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../lib/iconv.c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../libcharset/lib/localcharset.c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../lib/relocatable.c; do \
+  /bin/bash ./libtool --mode=compile gcc-7 -I../lib -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../lib -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../include -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DPACKAGE_NAME=\"libiconv\" -DPACKAGE_TARNAME=\"libiconv\" -DPACKAGE_VERSION=\"0\" -DPACKAGE_STRING=\"libiconv\ 0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DINSTALLPREFIX=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_DARWIN_C_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D__STDC_WANT_IEC_60559_ATTRIBS_EXT__=1 -D__STDC_WANT_IEC_60559_BFP_EXT__=1 -D__STDC_WANT_IEC_60559_DFP_EXT__=1 -D__STDC_WANT_IEC_60559_FUNCS_EXT__=1 -D__STDC_WANT_IEC_60559_TYPES_EXT__=1 -D__STDC_WANT_LIB_EXT2__=1 -D__STDC_WANT_MATH_SPEC_FUNCS__=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_VISIBILITY=1 -DLIBICONV_PLUG -c $f -o objects/`basename $f | sed -e 's,\.c$,.o,'` || exit 1; \
+done && \
+/bin/bash ./libtool --mode=link gcc-7 -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -o libiconv.la -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -no-undefined objects/*.lo && \
+rm -f -r objects
+libtool: compile:  gcc-7 -I../lib -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../lib -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../include -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DPACKAGE_NAME=\"libiconv\" -DPACKAGE_TARNAME=\"libiconv\" -DPACKAGE_VERSION=\"0\" "-DPACKAGE_STRING=\"libiconv 0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DINSTALLPREFIX=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_DARWIN_C_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D__STDC_WANT_IEC_60559_ATTRIBS_EXT__=1 -D__STDC_WANT_IEC_60559_BFP_EXT__=1 -D__STDC_WANT_IEC_60559_DFP_EXT__=1 -D__STDC_WANT_IEC_60559_FUNCS_EXT__=1 -D__STDC_WANT_IEC_60559_TYPES_EXT__=1 -D__STDC_WANT_LIB_EXT2__=1 -D__STDC_WANT_MATH_SPEC_FUNCS__=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_VISIBILITY=1 -DLIBICONV_PLUG -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../lib/iconv.c  -fPIC -DPIC -o objects/.libs/iconv.o
+libtool: compile:  gcc-7 -I../lib -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../lib -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../include -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DPACKAGE_NAME=\"libiconv\" -DPACKAGE_TARNAME=\"libiconv\" -DPACKAGE_VERSION=\"0\" "-DPACKAGE_STRING=\"libiconv 0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DINSTALLPREFIX=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_DARWIN_C_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D__STDC_WANT_IEC_60559_ATTRIBS_EXT__=1 -D__STDC_WANT_IEC_60559_BFP_EXT__=1 -D__STDC_WANT_IEC_60559_DFP_EXT__=1 -D__STDC_WANT_IEC_60559_FUNCS_EXT__=1 -D__STDC_WANT_IEC_60559_TYPES_EXT__=1 -D__STDC_WANT_LIB_EXT2__=1 -D__STDC_WANT_MATH_SPEC_FUNCS__=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_VISIBILITY=1 -DLIBICONV_PLUG -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../libcharset/lib/localcharset.c  -fPIC -DPIC -o objects/.libs/localcharset.o
+libtool: compile:  gcc-7 -I../lib -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../lib -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../include -I.. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -fvisibility=hidden -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DPACKAGE_NAME=\"libiconv\" -DPACKAGE_TARNAME=\"libiconv\" -DPACKAGE_VERSION=\"0\" "-DPACKAGE_STRING=\"libiconv 0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DINSTALLPREFIX=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_DARWIN_C_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D__STDC_WANT_IEC_60559_ATTRIBS_EXT__=1 -D__STDC_WANT_IEC_60559_BFP_EXT__=1 -D__STDC_WANT_IEC_60559_DFP_EXT__=1 -D__STDC_WANT_IEC_60559_FUNCS_EXT__=1 -D__STDC_WANT_IEC_60559_TYPES_EXT__=1 -D__STDC_WANT_LIB_EXT2__=1 -D__STDC_WANT_MATH_SPEC_FUNCS__=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_VISIBILITY=1 -DLIBICONV_PLUG -c /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/../lib/relocatable.c  -fPIC -DPIC -o objects/.libs/relocatable.o
+libtool: link: gcc-7 -shared  -fPIC -DPIC  objects/.libs/iconv.o objects/.libs/localcharset.o objects/.libs/relocatable.o   -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -m64 -g -O0   -Wl,-soname -Wl,libiconv.so.0 -o .libs/libiconv.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libiconv.so.0" && ln -s "libiconv.so.0.0.0" "libiconv.so.0")
+libtool: link: (cd ".libs" && rm -f "libiconv.so" && ln -s "libiconv.so.0.0.0" "libiconv.so")
+libtool: link: ( cd ".libs" && rm -f "libiconv.la" && ln -s "../libiconv.la" "libiconv.la" )
+cp .libs/libiconv.so preloadable_libiconv.so
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/preload'
+cd srclib && make all
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/srclib'
+rm -f alloca.h-t alloca.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/alloca.in.h; \
+} > alloca.h-t && \
+mv -f alloca.h-t alloca.h
+rm -f c++defs.h-t c++defs.h && \
+sed -n -e '/_GL_CXXDEFS/,$p' \
+  < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/build-aux/snippet/c++defs.h \
+  > c++defs.h-t && \
+mv c++defs.h-t c++defs.h
+rm -f arg-nonnull.h-t arg-nonnull.h && \
+sed -n -e '/GL_ARG_NONNULL/,$p' \
+  < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/build-aux/snippet/arg-nonnull.h \
+  > arg-nonnull.h-t && \
+mv arg-nonnull.h-t arg-nonnull.h
+rm -f warn-on-use.h-t warn-on-use.h && \
+sed -n -e '/^.ifndef/,$p' \
+  < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/build-aux/snippet/warn-on-use.h \
+  > warn-on-use.h-t && \
+mv warn-on-use.h-t warn-on-use.h
+rm -f limits.h-t limits.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LIMITS_H''@|<limits.h>|g' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/limits.in.h; \
+} > limits.h-t && \
+mv limits.h-t limits.h
+/bin/mkdir -p sys
+rm -f sys/types.h-t sys/types.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/sys_types.in.h; \
+} > sys/types.h-t && \
+mv sys/types.h-t sys/types.h
+rm -f unitypes.h-t unitypes.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/unitypes.in.h; \
+} > unitypes.h-t && \
+mv -f unitypes.h-t unitypes.h
+rm -f uniwidth.h-t uniwidth.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/uniwidth.in.h; \
+} > uniwidth.h-t && \
+mv -f uniwidth.h-t uniwidth.h
+rm -f fcntl.h-t fcntl.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_FCNTL_H''@|<fcntl.h>|g' \
+      -e 's/@''GNULIB_FCNTL''@/0/g' \
+      -e 's/@''GNULIB_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_OPEN''@/0/g' \
+      -e 's/@''GNULIB_OPENAT''@/0/g' \
+      -e 's|@''HAVE_FCNTL''@|1|g' \
+      -e 's|@''HAVE_OPENAT''@|1|g' \
+      -e 's|@''REPLACE_FCNTL''@|0|g' \
+      -e 's|@''REPLACE_OPEN''@|0|g' \
+      -e 's|@''REPLACE_OPENAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/fcntl.in.h; \
+} > fcntl.h-t && \
+mv fcntl.h-t fcntl.h
+rm -f signal.h-t signal.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SIGNAL_H''@|<signal.h>|g' \
+      -e 's|@''GNULIB_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''GNULIB_RAISE''@|1|g' \
+      -e 's/@''GNULIB_SIGNAL_H_SIGPIPE''@/1/g' \
+      -e 's/@''GNULIB_SIGPROCMASK''@/1/g' \
+      -e 's/@''GNULIB_SIGACTION''@/0/g' \
+      -e 's|@''HAVE_POSIX_SIGNALBLOCKING''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SIGMASK''@|1|g' \
+      -e 's|@''HAVE_RAISE''@|1|g' \
+      -e 's|@''HAVE_SIGSET_T''@|1|g' \
+      -e 's|@''HAVE_SIGINFO_T''@|1|g' \
+      -e 's|@''HAVE_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_STRUCT_SIGACTION_SA_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_TYPE_VOLATILE_SIG_ATOMIC_T''@|1|g' \
+      -e 's|@''HAVE_SIGHANDLER_T''@|1|g' \
+      -e 's|@''REPLACE_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''REPLACE_RAISE''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/signal.in.h; \
+} > signal.h-t && \
+mv signal.h-t signal.h
+rm -f stdio.h-t stdio.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDIO_H''@|<stdio.h>|g' \
+      -e 's/@''GNULIB_DPRINTF''@/0/g' \
+      -e 's/@''GNULIB_FCLOSE''@/0/g' \
+      -e 's/@''GNULIB_FDOPEN''@/0/g' \
+      -e 's/@''GNULIB_FFLUSH''@/0/g' \
+      -e 's/@''GNULIB_FGETC''@/1/g' \
+      -e 's/@''GNULIB_FGETS''@/1/g' \
+      -e 's/@''GNULIB_FOPEN''@/0/g' \
+      -e 's/@''GNULIB_FPRINTF''@/1/g' \
+      -e 's/@''GNULIB_FPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_FPURGE''@/0/g' \
+      -e 's/@''GNULIB_FPUTC''@/1/g' \
+      -e 's/@''GNULIB_FPUTS''@/1/g' \
+      -e 's/@''GNULIB_FREAD''@/1/g' \
+      -e 's/@''GNULIB_FREOPEN''@/0/g' \
+      -e 's/@''GNULIB_FSCANF''@/1/g' \
+      -e 's/@''GNULIB_FSEEK''@/0/g' \
+      -e 's/@''GNULIB_FSEEKO''@/0/g' \
+      -e 's/@''GNULIB_FTELL''@/0/g' \
+      -e 's/@''GNULIB_FTELLO''@/0/g' \
+      -e 's/@''GNULIB_FWRITE''@/1/g' \
+      -e 's/@''GNULIB_GETC''@/1/g' \
+      -e 's/@''GNULIB_GETCHAR''@/1/g' \
+      -e 's/@''GNULIB_GETDELIM''@/0/g' \
+      -e 's/@''GNULIB_GETLINE''@/0/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF''@/0/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PCLOSE''@/0/g' \
+      -e 's/@''GNULIB_PERROR''@/0/g' \
+      -e 's/@''GNULIB_POPEN''@/0/g' \
+      -e 's/@''GNULIB_PRINTF''@/1/g' \
+      -e 's/@''GNULIB_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PUTC''@/1/g' \
+      -e 's/@''GNULIB_PUTCHAR''@/1/g' \
+      -e 's/@''GNULIB_PUTS''@/1/g' \
+      -e 's/@''GNULIB_REMOVE''@/0/g' \
+      -e 's/@''GNULIB_RENAME''@/0/g' \
+      -e 's/@''GNULIB_RENAMEAT''@/0/g' \
+      -e 's/@''GNULIB_SCANF''@/1/g' \
+      -e 's/@''GNULIB_SNPRINTF''@/0/g' \
+      -e 's/@''GNULIB_SPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_SIGPIPE''@/1/g' \
+      -e 's/@''GNULIB_TMPFILE''@/0/g' \
+      -e 's/@''GNULIB_VASPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VDPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VFPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VFPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VFSCANF''@/0/g' \
+      -e 's/@''GNULIB_VSCANF''@/0/g' \
+      -e 's/@''GNULIB_VPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VSNPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VSPRINTF_POSIX''@/0/g' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/stdio.in.h | \
+  sed -e 's|@''HAVE_DECL_FPURGE''@|1|g' \
+      -e 's|@''HAVE_DECL_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_DECL_FTELLO''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDELIM''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLINE''@|1|g' \
+      -e 's|@''HAVE_DECL_OBSTACK_PRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_SNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_VSNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DPRINTF''@|1|g' \
+      -e 's|@''HAVE_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_FTELLO''@|1|g' \
+      -e 's|@''HAVE_PCLOSE''@|1|g' \
+      -e 's|@''HAVE_POPEN''@|1|g' \
+      -e 's|@''HAVE_RENAMEAT''@|1|g' \
+      -e 's|@''HAVE_VASPRINTF''@|1|g' \
+      -e 's|@''HAVE_VDPRINTF''@|1|g' \
+      -e 's|@''REPLACE_DPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FCLOSE''@|0|g' \
+      -e 's|@''REPLACE_FDOPEN''@|0|g' \
+      -e 's|@''REPLACE_FFLUSH''@|0|g' \
+      -e 's|@''REPLACE_FOPEN''@|0|g' \
+      -e 's|@''REPLACE_FPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FPURGE''@|0|g' \
+      -e 's|@''REPLACE_FREOPEN''@|0|g' \
+      -e 's|@''REPLACE_FSEEK''@|0|g' \
+      -e 's|@''REPLACE_FSEEKO''@|0|g' \
+      -e 's|@''REPLACE_FTELL''@|0|g' \
+      -e 's|@''REPLACE_FTELLO''@|0|g' \
+      -e 's|@''REPLACE_GETDELIM''@|0|g' \
+      -e 's|@''REPLACE_GETLINE''@|0|g' \
+      -e 's|@''REPLACE_OBSTACK_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_PERROR''@|0|g' \
+      -e 's|@''REPLACE_POPEN''@|0|g' \
+      -e 's|@''REPLACE_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_REMOVE''@|0|g' \
+      -e 's|@''REPLACE_RENAME''@|0|g' \
+      -e 's|@''REPLACE_RENAMEAT''@|0|g' \
+      -e 's|@''REPLACE_SNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_SPRINTF''@|0|g' \
+      -e 's|@''REPLACE_STDIO_READ_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_STDIO_WRITE_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_TMPFILE''@|0|g' \
+      -e 's|@''REPLACE_VASPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VDPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VFPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSPRINTF''@|0|g' \
+      -e 's|@''ASM_SYMBOL_PREFIX''@|""|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > stdio.h-t && \
+mv stdio.h-t stdio.h
+rm -f stdlib.h-t stdlib.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+      -e 's/@''GNULIB__EXIT''@/0/g' \
+      -e 's/@''GNULIB_ATOLL''@/0/g' \
+      -e 's/@''GNULIB_CALLOC_POSIX''@/0/g' \
+      -e 's/@''GNULIB_CANONICALIZE_FILE_NAME''@/1/g' \
+      -e 's/@''GNULIB_GETLOADAVG''@/0/g' \
+      -e 's/@''GNULIB_GETSUBOPT''@/0/g' \
+      -e 's/@''GNULIB_GRANTPT''@/0/g' \
+      -e 's/@''GNULIB_MALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_MBTOWC''@/0/g' \
+      -e 's/@''GNULIB_MKDTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_POSIX_OPENPT''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME_R''@/0/g' \
+      -e 's/@''GNULIB_PUTENV''@/0/g' \
+      -e 's/@''GNULIB_QSORT_R''@/0/g' \
+      -e 's/@''GNULIB_RANDOM''@/0/g' \
+      -e 's/@''GNULIB_RANDOM_R''@/0/g' \
+      -e 's/@''GNULIB_REALLOC_POSIX''@/0/g' \
+      -e 's/@''GNULIB_REALPATH''@/1/g' \
+      -e 's/@''GNULIB_RPMATCH''@/0/g' \
+      -e 's/@''GNULIB_SECURE_GETENV''@/0/g' \
+      -e 's/@''GNULIB_SETENV''@/0/g' \
+      -e 's/@''GNULIB_STRTOD''@/0/g' \
+      -e 's/@''GNULIB_STRTOLL''@/0/g' \
+      -e 's/@''GNULIB_STRTOULL''@/0/g' \
+      -e 's/@''GNULIB_SYSTEM_POSIX''@/0/g' \
+      -e 's/@''GNULIB_UNLOCKPT''@/0/g' \
+      -e 's/@''GNULIB_UNSETENV''@/0/g' \
+      -e 's/@''GNULIB_WCTOMB''@/0/g' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/stdlib.in.h | \
+  sed -e 's|@''HAVE__EXIT''@|1|g' \
+      -e 's|@''HAVE_ATOLL''@|1|g' \
+      -e 's|@''HAVE_CANONICALIZE_FILE_NAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+      -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+      -e 's|@''HAVE_GRANTPT''@|1|g' \
+      -e 's|@''HAVE_MKDTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMPS''@|1|g' \
+      -e 's|@''HAVE_MKSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKSTEMPS''@|1|g' \
+      -e 's|@''HAVE_POSIX_OPENPT''@|1|g' \
+      -e 's|@''HAVE_PTSNAME''@|1|g' \
+      -e 's|@''HAVE_PTSNAME_R''@|1|g' \
+      -e 's|@''HAVE_QSORT_R''@|1|g' \
+      -e 's|@''HAVE_RANDOM''@|1|g' \
+      -e 's|@''HAVE_RANDOM_H''@|1|g' \
+      -e 's|@''HAVE_RANDOM_R''@|1|g' \
+      -e 's|@''HAVE_REALPATH''@|1|g' \
+      -e 's|@''HAVE_RPMATCH''@|1|g' \
+      -e 's|@''HAVE_SECURE_GETENV''@|1|g' \
+      -e 's|@''HAVE_DECL_SETENV''@|1|g' \
+      -e 's|@''HAVE_STRTOD''@|1|g' \
+      -e 's|@''HAVE_STRTOLL''@|1|g' \
+      -e 's|@''HAVE_STRTOULL''@|1|g' \
+      -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \
+      -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+      -e 's|@''HAVE_UNLOCKPT''@|1|g' \
+      -e 's|@''HAVE_DECL_UNSETENV''@|1|g' \
+      -e 's|@''REPLACE_CALLOC''@|0|g' \
+      -e 's|@''REPLACE_CANONICALIZE_FILE_NAME''@|0|g' \
+      -e 's|@''REPLACE_MALLOC''@|0|g' \
+      -e 's|@''REPLACE_MBTOWC''@|0|g' \
+      -e 's|@''REPLACE_MKSTEMP''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME_R''@|0|g' \
+      -e 's|@''REPLACE_PUTENV''@|0|g' \
+      -e 's|@''REPLACE_QSORT_R''@|0|g' \
+      -e 's|@''REPLACE_RANDOM_R''@|0|g' \
+      -e 's|@''REPLACE_REALLOC''@|0|g' \
+      -e 's|@''REPLACE_REALPATH''@|0|g' \
+      -e 's|@''REPLACE_SETENV''@|0|g' \
+      -e 's|@''REPLACE_STRTOD''@|0|g' \
+      -e 's|@''REPLACE_UNSETENV''@|0|g' \
+      -e 's|@''REPLACE_WCTOMB''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _Noreturn/r /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/build-aux/snippet/_Noreturn.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > stdlib.h-t && \
+mv stdlib.h-t stdlib.h
+rm -f string.h-t string.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+      -e 's/@''GNULIB_FFSL''@/0/g' \
+      -e 's/@''GNULIB_FFSLL''@/0/g' \
+      -e 's/@''GNULIB_MBSLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSNLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSRCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSSTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSPCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSCASESTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSPBRK''@/0/g' \
+      -e 's/@''GNULIB_MBSSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSSEP''@/0/g' \
+      -e 's/@''GNULIB_MBSTOK_R''@/0/g' \
+      -e 's/@''GNULIB_MEMCHR''@/0/g' \
+      -e 's/@''GNULIB_MEMMEM''@/0/g' \
+      -e 's/@''GNULIB_MEMPCPY''@/0/g' \
+      -e 's/@''GNULIB_MEMRCHR''@/0/g' \
+      -e 's/@''GNULIB_RAWMEMCHR''@/0/g' \
+      -e 's/@''GNULIB_STPCPY''@/0/g' \
+      -e 's/@''GNULIB_STPNCPY''@/0/g' \
+      -e 's/@''GNULIB_STRCHRNUL''@/0/g' \
+      -e 's/@''GNULIB_STRDUP''@/0/g' \
+      -e 's/@''GNULIB_STRNCAT''@/0/g' \
+      -e 's/@''GNULIB_STRNDUP''@/0/g' \
+      -e 's/@''GNULIB_STRNLEN''@/0/g' \
+      -e 's/@''GNULIB_STRPBRK''@/0/g' \
+      -e 's/@''GNULIB_STRSEP''@/0/g' \
+      -e 's/@''GNULIB_STRSTR''@/0/g' \
+      -e 's/@''GNULIB_STRCASESTR''@/0/g' \
+      -e 's/@''GNULIB_STRTOK_R''@/0/g' \
+      -e 's/@''GNULIB_STRERROR''@/1/g' \
+      -e 's/@''GNULIB_STRERROR_R''@/0/g' \
+      -e 's/@''GNULIB_STRSIGNAL''@/0/g' \
+      -e 's/@''GNULIB_STRVERSCMP''@/0/g' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/string.in.h | \
+  sed -e 's|@''HAVE_FFSL''@|1|g' \
+      -e 's|@''HAVE_FFSLL''@|1|g' \
+      -e 's|@''HAVE_MBSLEN''@|0|g' \
+      -e 's|@''HAVE_MEMCHR''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+      -e 's|@''HAVE_MEMPCPY''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+      -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+      -e 's|@''HAVE_STPCPY''@|1|g' \
+      -e 's|@''HAVE_STPNCPY''@|1|g' \
+      -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+      -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+      -e 's|@''HAVE_STRPBRK''@|1|g' \
+      -e 's|@''HAVE_STRSEP''@|1|g' \
+      -e 's|@''HAVE_STRCASESTR''@|1|g' \
+      -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+      -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+      -e 's|@''REPLACE_STPNCPY''@|0|g' \
+      -e 's|@''REPLACE_MEMCHR''@|0|g' \
+      -e 's|@''REPLACE_MEMMEM''@|0|g' \
+      -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+      -e 's|@''REPLACE_STRCHRNUL''@|0|g' \
+      -e 's|@''REPLACE_STRDUP''@|0|g' \
+      -e 's|@''REPLACE_STRSTR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR_R''@|0|g' \
+      -e 's|@''REPLACE_STRNCAT''@|0|g' \
+      -e 's|@''REPLACE_STRNDUP''@|0|g' \
+      -e 's|@''REPLACE_STRNLEN''@|0|g' \
+      -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+      -e 's|@''REPLACE_STRTOK_R''@|0|g' \
+      -e 's|@''UNDEFINE_STRTOK_R''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/string.in.h; \
+} > string.h-t && \
+mv string.h-t string.h
+/bin/mkdir -p sys
+rm -f sys/stat.h-t sys/stat.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_STAT_H''@|<sys/stat.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_ST_SIZE''@|0|g' \
+      -e 's/@''GNULIB_FCHMODAT''@/0/g' \
+      -e 's/@''GNULIB_FSTAT''@/0/g' \
+      -e 's/@''GNULIB_FSTATAT''@/0/g' \
+      -e 's/@''GNULIB_FUTIMENS''@/0/g' \
+      -e 's/@''GNULIB_LCHMOD''@/0/g' \
+      -e 's/@''GNULIB_LSTAT''@/1/g' \
+      -e 's/@''GNULIB_MKDIRAT''@/0/g' \
+      -e 's/@''GNULIB_MKFIFO''@/0/g' \
+      -e 's/@''GNULIB_MKFIFOAT''@/0/g' \
+      -e 's/@''GNULIB_MKNOD''@/0/g' \
+      -e 's/@''GNULIB_MKNODAT''@/0/g' \
+      -e 's/@''GNULIB_STAT''@/1/g' \
+      -e 's/@''GNULIB_UTIMENSAT''@/0/g' \
+      -e 's|@''HAVE_FCHMODAT''@|1|g' \
+      -e 's|@''HAVE_FSTATAT''@|1|g' \
+      -e 's|@''HAVE_FUTIMENS''@|1|g' \
+      -e 's|@''HAVE_LCHMOD''@|1|g' \
+      -e 's|@''HAVE_LSTAT''@|1|g' \
+      -e 's|@''HAVE_MKDIRAT''@|1|g' \
+      -e 's|@''HAVE_MKFIFO''@|1|g' \
+      -e 's|@''HAVE_MKFIFOAT''@|1|g' \
+      -e 's|@''HAVE_MKNOD''@|1|g' \
+      -e 's|@''HAVE_MKNODAT''@|1|g' \
+      -e 's|@''HAVE_UTIMENSAT''@|1|g' \
+      -e 's|@''REPLACE_FSTAT''@|0|g' \
+      -e 's|@''REPLACE_FSTATAT''@|0|g' \
+      -e 's|@''REPLACE_FUTIMENS''@|0|g' \
+      -e 's|@''REPLACE_LSTAT''@|0|g' \
+      -e 's|@''REPLACE_MKDIR''@|0|g' \
+      -e 's|@''REPLACE_MKFIFO''@|0|g' \
+      -e 's|@''REPLACE_MKNOD''@|0|g' \
+      -e 's|@''REPLACE_STAT''@|0|g' \
+      -e 's|@''REPLACE_UTIMENSAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/sys_stat.in.h; \
+} > sys/stat.h-t && \
+mv sys/stat.h-t sys/stat.h
+/bin/mkdir -p sys
+rm -f sys/time.h-t sys/time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_SYS_TIME_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TIME_H''@|<sys/time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/1/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's/@''HAVE_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''HAVE_STRUCT_TIMEVAL''@/1/g' \
+      -e 's/@''REPLACE_GETTIMEOFDAY''@/0/g' \
+      -e 's/@''REPLACE_STRUCT_TIMEVAL''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/sys_time.in.h; \
+} > sys/time.h-t && \
+mv sys/time.h-t sys/time.h
+rm -f time.h-t time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_TIME_H''@|<time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''GNULIB_MKTIME''@/0/g' \
+      -e 's/@''GNULIB_NANOSLEEP''@/0/g' \
+      -e 's/@''GNULIB_STRPTIME''@/0/g' \
+      -e 's/@''GNULIB_TIMEGM''@/0/g' \
+      -e 's/@''GNULIB_TIME_R''@/0/g' \
+      -e 's/@''GNULIB_TIME_RZ''@/0/g' \
+      -e 's|@''HAVE_DECL_LOCALTIME_R''@|1|g' \
+      -e 's|@''HAVE_NANOSLEEP''@|1|g' \
+      -e 's|@''HAVE_STRPTIME''@|1|g' \
+      -e 's|@''HAVE_TIMEGM''@|1|g' \
+      -e 's|@''HAVE_TIMEZONE_T''@|0|g' \
+      -e 's|@''REPLACE_GMTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME_R''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_MKTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_NANOSLEEP''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_TIMEGM''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''PTHREAD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''SYS_TIME_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''TIME_H_DEFINES_STRUCT_TIMESPEC''@|1|g' \
+      -e 's|@''UNISTD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/time.in.h; \
+} > time.h-t && \
+mv time.h-t time.h
+rm -f unistd.h-t unistd.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_UNISTD_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's/@''GNULIB_CHDIR''@/0/g' \
+      -e 's/@''GNULIB_CHOWN''@/0/g' \
+      -e 's/@''GNULIB_CLOSE''@/0/g' \
+      -e 's/@''GNULIB_DUP''@/0/g' \
+      -e 's/@''GNULIB_DUP2''@/0/g' \
+      -e 's/@''GNULIB_DUP3''@/0/g' \
+      -e 's/@''GNULIB_ENVIRON''@/1/g' \
+      -e 's/@''GNULIB_EUIDACCESS''@/0/g' \
+      -e 's/@''GNULIB_FACCESSAT''@/0/g' \
+      -e 's/@''GNULIB_FCHDIR''@/0/g' \
+      -e 's/@''GNULIB_FCHOWNAT''@/0/g' \
+      -e 's/@''GNULIB_FDATASYNC''@/0/g' \
+      -e 's/@''GNULIB_FSYNC''@/0/g' \
+      -e 's/@''GNULIB_FTRUNCATE''@/0/g' \
+      -e 's/@''GNULIB_GETCWD''@/0/g' \
+      -e 's/@''GNULIB_GETDOMAINNAME''@/0/g' \
+      -e 's/@''GNULIB_GETDTABLESIZE''@/0/g' \
+      -e 's/@''GNULIB_GETGROUPS''@/0/g' \
+      -e 's/@''GNULIB_GETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN_R''@/0/g' \
+      -e 's/@''GNULIB_GETPAGESIZE''@/0/g' \
+      -e 's/@''GNULIB_GETUSERSHELL''@/0/g' \
+      -e 's/@''GNULIB_GROUP_MEMBER''@/0/g' \
+      -e 's/@''GNULIB_ISATTY''@/0/g' \
+      -e 's/@''GNULIB_LCHOWN''@/0/g' \
+      -e 's/@''GNULIB_LINK''@/0/g' \
+      -e 's/@''GNULIB_LINKAT''@/0/g' \
+      -e 's/@''GNULIB_LSEEK''@/0/g' \
+      -e 's/@''GNULIB_PIPE''@/0/g' \
+      -e 's/@''GNULIB_PIPE2''@/0/g' \
+      -e 's/@''GNULIB_PREAD''@/0/g' \
+      -e 's/@''GNULIB_PWRITE''@/0/g' \
+      -e 's/@''GNULIB_READ''@/1/g' \
+      -e 's/@''GNULIB_READLINK''@/1/g' \
+      -e 's/@''GNULIB_READLINKAT''@/0/g' \
+      -e 's/@''GNULIB_RMDIR''@/0/g' \
+      -e 's/@''GNULIB_SETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_SLEEP''@/0/g' \
+      -e 's/@''GNULIB_SYMLINK''@/0/g' \
+      -e 's/@''GNULIB_SYMLINKAT''@/0/g' \
+      -e 's/@''GNULIB_TTYNAME_R''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_GETOPT''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/1/g' \
+      -e 's/@''GNULIB_UNLINK''@/0/g' \
+      -e 's/@''GNULIB_UNLINKAT''@/0/g' \
+      -e 's/@''GNULIB_USLEEP''@/0/g' \
+      -e 's/@''GNULIB_WRITE''@/0/g' \
+      < /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/unistd.in.h | \
+  sed -e 's|@''HAVE_CHOWN''@|1|g' \
+      -e 's|@''HAVE_DUP2''@|1|g' \
+      -e 's|@''HAVE_DUP3''@|1|g' \
+      -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+      -e 's|@''HAVE_FACCESSAT''@|1|g' \
+      -e 's|@''HAVE_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_FCHOWNAT''@|1|g' \
+      -e 's|@''HAVE_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_FSYNC''@|1|g' \
+      -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+      -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+      -e 's|@''HAVE_GETGROUPS''@|1|g' \
+      -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_GROUP_MEMBER''@|1|g' \
+      -e 's|@''HAVE_LCHOWN''@|1|g' \
+      -e 's|@''HAVE_LINK''@|1|g' \
+      -e 's|@''HAVE_LINKAT''@|1|g' \
+      -e 's|@''HAVE_PIPE''@|1|g' \
+      -e 's|@''HAVE_PIPE2''@|1|g' \
+      -e 's|@''HAVE_PREAD''@|1|g' \
+      -e 's|@''HAVE_PWRITE''@|1|g' \
+      -e 's|@''HAVE_READLINK''@|1|g' \
+      -e 's|@''HAVE_READLINKAT''@|1|g' \
+      -e 's|@''HAVE_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_SLEEP''@|1|g' \
+      -e 's|@''HAVE_SYMLINK''@|1|g' \
+      -e 's|@''HAVE_SYMLINKAT''@|1|g' \
+      -e 's|@''HAVE_UNLINKAT''@|1|g' \
+      -e 's|@''HAVE_USLEEP''@|1|g' \
+      -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+      -e 's|@''HAVE_DECL_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_DECL_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+      -e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \
+      -e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \
+      -e 's|@''HAVE_OS_H''@|0|g' \
+      -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+  | \
+  sed -e 's|@''REPLACE_CHOWN''@|0|g' \
+      -e 's|@''REPLACE_CLOSE''@|0|g' \
+      -e 's|@''REPLACE_DUP''@|0|g' \
+      -e 's|@''REPLACE_DUP2''@|0|g' \
+      -e 's|@''REPLACE_FCHOWNAT''@|0|g' \
+      -e 's|@''REPLACE_FTRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_GETCWD''@|0|g' \
+      -e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \
+      -e 's|@''REPLACE_GETDTABLESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETLOGIN_R''@|0|g' \
+      -e 's|@''REPLACE_GETGROUPS''@|0|g' \
+      -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+      -e 's|@''REPLACE_ISATTY''@|0|g' \
+      -e 's|@''REPLACE_LCHOWN''@|0|g' \
+      -e 's|@''REPLACE_LINK''@|0|g' \
+      -e 's|@''REPLACE_LINKAT''@|0|g' \
+      -e 's|@''REPLACE_LSEEK''@|0|g' \
+      -e 's|@''REPLACE_PREAD''@|0|g' \
+      -e 's|@''REPLACE_PWRITE''@|0|g' \
+      -e 's|@''REPLACE_READ''@|0|g' \
+      -e 's|@''REPLACE_READLINK''@|0|g' \
+      -e 's|@''REPLACE_READLINKAT''@|0|g' \
+      -e 's|@''REPLACE_RMDIR''@|0|g' \
+      -e 's|@''REPLACE_SLEEP''@|0|g' \
+      -e 's|@''REPLACE_SYMLINK''@|0|g' \
+      -e 's|@''REPLACE_SYMLINKAT''@|0|g' \
+      -e 's|@''REPLACE_TTYNAME_R''@|0|g' \
+      -e 's|@''REPLACE_UNLINK''@|0|g' \
+      -e 's|@''REPLACE_UNLINKAT''@|0|g' \
+      -e 's|@''REPLACE_USLEEP''@|0|g' \
+      -e 's|@''REPLACE_WRITE''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > unistd.h-t && \
+mv unistd.h-t unistd.h
+make  all-am
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/srclib'
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o allocator.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/allocator.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o areadlink.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/areadlink.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o binary-io.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/binary-io.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o careadlinkat.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/careadlinkat.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o dirname-lgpl.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/dirname-lgpl.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o basename-lgpl.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/basename-lgpl.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o stripslash.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/stripslash.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o getprogname.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/getprogname.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o malloca.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/malloca.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o progname.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/progname.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o safe-read.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/safe-read.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o unistd.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/unistd.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o xmalloc.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/xmalloc.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o xstrdup.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/xstrdup.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o xreadlink.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/xreadlink.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -c -o uniwidth/width.o /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/srclib/uniwidth/width.c
+rm -f libicrt.a
+gcc-ar-7 cr libicrt.a allocator.o areadlink.o binary-io.o careadlinkat.o dirname-lgpl.o basename-lgpl.o stripslash.o getprogname.o malloca.o progname.o safe-read.o unistd.o uniwidth/width.o xmalloc.o xstrdup.o xreadlink.o 
+gcc-ranlib-7 libicrt.a
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/srclib'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/srclib'
+cd src && make all
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/src'
+gcc-7 -c -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/src -I.. -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/src/../include -I../srclib -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/src/../srclib -I../lib -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/src/iconv_no_i18n.c
+gcc-7 -c -I. -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/src -I.. -I../include -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/src/../include -I../srclib -I/home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/src/../srclib -I../lib -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/src/iconv.c
+/bin/bash ../libtool --mode=link gcc-7 -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline iconv_no_i18n.o ../srclib/libicrt.a ../lib/libiconv.la  -o iconv_no_i18n
+libtool: link: gcc-7 -g -O0 -v -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline iconv_no_i18n.o -o .libs/iconv_no_i18n  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ../srclib/libicrt.a ../lib/.libs/libiconv.so -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-g' '-O0' '-v' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fgnu89-inline' '-o' '.libs/iconv_no_i18n' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccusDDw1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/iconv_no_i18n /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. iconv_no_i18n.o ../srclib/libicrt.a ../lib/.libs/libiconv.so -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-g' '-O0' '-v' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fgnu89-inline' '-o' '.libs/iconv_no_i18n' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+test `ls -ld . | sed -e 's/^d\(.........\).*/\1/'` = rwxrwxrwx || chmod 777 .
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/src'
+cd po && make all
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/po'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/po'
+cd man && make all
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/man'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/man'
+if test -d tests; then cd tests && make all; fi
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/tests'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/tests'
+
+[make install]
+cd libcharset && make install prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' exec_prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' libdir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset'
+cd lib && make install prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' exec_prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' libdir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset/lib'
+if test yes = no; then \
+  case 'linux-gnu' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+/bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ; \
+/bin/bash ../libtool --mode=install /usr/bin/install -c libcharset.la /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libcharset.la
+libtool: install: /usr/bin/install -c .libs/libcharset.so.1.0.0 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libcharset.so.1.0.0
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libcharset.so.1.0.0 libcharset.so.1 || { rm -f libcharset.so.1 && ln -s libcharset.so.1.0.0 libcharset.so.1; }; })
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libcharset.so.1.0.0 libcharset.so || { rm -f libcharset.so && ln -s libcharset.so.1.0.0 libcharset.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcharset.lai /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libcharset.la
+libtool: install: /usr/bin/install -c .libs/libcharset.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libcharset.a
+libtool: install: chmod 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libcharset.a
+libtool: install: gcc-ranlib-7 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libcharset.a
+libtool: finish: PATH="/opt/xbb/bin:/home/automark/.nvm/versions/node/v12.18.4/bin:/home/automark/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/automark/.local/bin:/sbin" ldconfig -n /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+if test -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias; then \
+  sed -f ref-add.sed /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias > /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/t-charset.alias; \
+  /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/t-charset.alias /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias; \
+  rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/t-charset.alias; \
+else \
+  if $need_charset_alias; then \
+    sed -f ref-add.sed charset.alias > /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/t-charset.alias; \
+    /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/t-charset.alias /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias; \
+    rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/t-charset.alias; \
+  fi ; \
+fi
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset/lib'
+/bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/libcharset/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include
+/usr/bin/install -c -m 644 include/libcharset.h /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/libcharset.h
+/usr/bin/install -c -m 644 include/localcharset.h.inst /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/localcharset.h
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/libcharset'
+cd lib && make install prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' exec_prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' libdir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib'
+if [ ! -d /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ] ; then /bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ; fi
+/bin/bash ../libtool --mode=install /usr/bin/install -c libiconv.la /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.la
+libtool: install: /usr/bin/install -c .libs/libiconv.so.2.6.0 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so.2.6.0
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libiconv.so.2.6.0 libiconv.so.2 || { rm -f libiconv.so.2 && ln -s libiconv.so.2.6.0 libiconv.so.2; }; })
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libiconv.so.2.6.0 libiconv.so || { rm -f libiconv.so && ln -s libiconv.so.2.6.0 libiconv.so; }; })
+libtool: install: /usr/bin/install -c .libs/libiconv.lai /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.la
+libtool: finish: PATH="/opt/xbb/bin:/home/automark/.nvm/versions/node/v12.18.4/bin:/home/automark/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/automark/.local/bin:/sbin" ldconfig -n /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+case "linux-gnu" in \
+  aix*) (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && \
+         objects=`ar t libiconv.a`" "`ar t /lib/libiconv.a` && \
+         ar x libiconv.a && ar x /lib/libiconv.a && \
+         ar q libiconv.new.a $objects && \
+         rm -f $objects && \
+         mv -f libiconv.new.a libiconv.a) ;; \
+esac
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/lib'
+cd preload && make install prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' exec_prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' libdir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/preload'
+if [ ! -d /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ] ; then /bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/preload/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ; fi
+if test -n "preloadable_libiconv.so"; then /usr/bin/install -c -m 644 preloadable_libiconv.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/preloadable_libiconv.so.new && mv /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/preloadable_libiconv.so.new /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/preloadable_libiconv.so ; fi
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/preload'
+cd srclib && make install prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' exec_prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' libdir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/srclib'
+make  install-am
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/srclib'
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/srclib'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/srclib'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/srclib'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/srclib'
+cd src && make install prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' exec_prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' libdir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/src'
+test `ls -ld . | sed -e 's/^d\(.........\).*/\1/'` = rwxrwxrwx || chmod 777 .
+if [ ! -d /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin ] ; then /bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin ; fi
+case "linux-gnu" in \
+  hpux*) gcc-7 -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline `if test -n ''; then  /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin; fi` iconv.o ../srclib/libicrt.a -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -liconv   `if test -n ''; then echo " -Wl,+b -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib"; fi` -o iconv;; \
+  *) /bin/bash ../libtool --mode=link gcc-7 -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline `if test -n ''; then  /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin; fi` iconv.o ../srclib/libicrt.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.la   -o iconv;; \
+esac
+libtool: link: gcc-7 -g -O0 -v -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fgnu89-inline iconv.o -o iconv  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ../srclib/libicrt.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-g' '-O0' '-v' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fgnu89-inline' '-o' 'iconv' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXlOnKc.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o iconv /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. iconv.o ../srclib/libicrt.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-g' '-O0' '-v' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fgnu89-inline' '-o' 'iconv' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+/bin/bash ../libtool --mode=install /usr/bin/install -c iconv /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/iconv
+libtool: install: /usr/bin/install -c iconv /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/iconv
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/src'
+if [ ! -d /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include ] ; then /bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include ; fi
+/usr/bin/install -c -m 644 include/iconv.h.inst /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/iconv.h
+cd po && make install prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' exec_prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' datarootdir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share' datadir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share'
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/po'
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/af.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/af/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/bg.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/bg/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/ca.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ca/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/cs.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/cs/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/da.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/da/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/de.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/de/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/el.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/el/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/eo.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/eo/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/es.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/es/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/et.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/et/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/fi.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/fi/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/fr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/fr/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/ga.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ga/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/gl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/gl/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/hr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/hr/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/hu.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/hu/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/id.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/id/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/it.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/it/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/ja.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ja/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/nl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/nl/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/pl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/pl/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/pt_BR.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/pt_BR/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/rm.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/rm/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/ro.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ro/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/ru.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ru/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/sk.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sk/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/sl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sl/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/sq.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sq/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/sr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sr/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/sv.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sv/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/tr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/tr/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/uk.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/uk/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/vi.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/vi/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/wa.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/wa/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/zh_CN.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/zh_CN/LC_MESSAGES/libiconv.mo
+installing /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/zh_TW.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/zh_TW/LC_MESSAGES/libiconv.mo
+if test "libiconv" = "gettext-tools"; then \
+  /bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/po/$file \
+		    /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/po'
+cd man && make install prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' exec_prefix='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs' datarootdir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share' datadir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share' mandir='/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man'
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/man'
+if [ ! -d /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man1 ] ; then /bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man1 ; fi
+builddir="`pwd`"; cd /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man && for f in *.1 ; do (cd "$builddir"; echo /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/$f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man1/$f ; /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/$f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man1/$f) ; done
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconv.1 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man1/iconv.1
+if [ ! -d /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3 ] ; then /bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3 ; fi
+builddir="`pwd`"; cd /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man && for f in *.3 ; do (cd "$builddir"; echo /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/$f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3/$f ; /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/$f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3/$f) ; done
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconv.3 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3/iconv.3
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconv_close.3 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3/iconv_close.3
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconv_open.3 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3/iconv_open.3
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconv_open_into.3 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3/iconv_open_into.3
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconvctl.3 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3/iconvctl.3
+if [ ! -d /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/ ] ; then /bin/sh /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/ ; fi
+mkdir -p -- /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/
+builddir="`pwd`"; cd /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man && for f in *.html ; do (cd "$builddir"; echo /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/$f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc//$f ; /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/$f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc//$f) ; done
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconv.1.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc//iconv.1.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconv.3.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc//iconv.3.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconv_close.3.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc//iconv_close.3.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconv_open.3.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc//iconv_open.3.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconv_open_into.3.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc//iconv_open_into.3.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libiconv-1.15/man/iconvctl.3.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc//iconvctl.3.html
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libiconv-1.15/man'

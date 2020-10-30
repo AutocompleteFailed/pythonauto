@@ -1,0 +1,417 @@
+
+Running libpng make...
+
+[make -j 5]
+rm -f pnglibconf.c pnglibconf.tf[45]
+gawk -f /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/scripts/options.awk out=pnglibconf.tf4 version=search\
+    /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngconf.h /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/scripts/pnglibconf.dfa\
+    /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngusr.dfa  1>&2
+gawk -f /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/scripts/options.awk out=pnglibconf.tf5 pnglibconf.tf4 1>&2
+rm pnglibconf.tf4
+mv pnglibconf.tf5 pnglibconf.c
+rm -f pnglibconf.out pnglibconf.tf[12]
+test -d scripts || mkdir scripts || test -d scripts
+gcc-7 -E -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 \
+    -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -DPNGLIB_LIBNAME='PNG16_0' -DPNGLIB_VERSION='1.6.36' -DSYMBOL_PREFIX='' -DPNG_NO_USE_READ_MACROS -DPNG_BUILDING_SYMBOL_TABLE  pnglibconf.c > pnglibconf.tf1
+gawk -f "/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/scripts/dfn.awk" out="pnglibconf.tf2" pnglibconf.tf1 1>&2
+rm -f pnglibconf.tf1
+mv pnglibconf.tf2 pnglibconf.out
+rm -f pnglibconf.h
+cp pnglibconf.out pnglibconf.h
+make  all-am
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libpng-1.6.36'
+:>pngprefix.h
+rm -f scripts/vers.out scripts/vers.tf[12]
+depbase=`echo contrib/tools/png-fix-itxt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT contrib/tools/png-fix-itxt.o -MD -MP -MF $depbase.Tpo -c -o contrib/tools/png-fix-itxt.o /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/contrib/tools/png-fix-itxt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+cp libpng-config libpng16-config
+cp libpng.pc libpng16.pc
+test -d scripts || mkdir scripts || test -d scripts
+gcc-7 -E -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 \
+    -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -DPNGLIB_LIBNAME='PNG16_0' -DPNGLIB_VERSION='1.6.36' -DSYMBOL_PREFIX='' -DPNG_NO_USE_READ_MACROS -DPNG_BUILDING_SYMBOL_TABLE  /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/scripts/vers.c > scripts/vers.tf1
+depbase=`echo pngtest.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngtest.o -MD -MP -MF $depbase.Tpo -c -o pngtest.o /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngtest.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo contrib/tools/pngcp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT contrib/tools/pngcp.o -MD -MP -MF $depbase.Tpo -c -o contrib/tools/pngcp.o /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/contrib/tools/pngcp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo contrib/libtests/timepng.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT contrib/libtests/timepng.o -MD -MP -MF $depbase.Tpo -c -o contrib/libtests/timepng.o /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/contrib/libtests/timepng.c &&\
+mv -f $depbase.Tpo $depbase.Po
+gawk -f "/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/scripts/dfn.awk" out="scripts/vers.tf2" scripts/vers.tf1 1>&2
+depbase=`echo contrib/tools/pngfix.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT contrib/tools/pngfix.o -MD -MP -MF $depbase.Tpo -c -o contrib/tools/pngfix.o /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/contrib/tools/pngfix.c &&\
+mv -f $depbase.Tpo $depbase.Po
+rm -f scripts/vers.tf1
+mv scripts/vers.tf2 scripts/vers.out
+depbase=`echo png.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT png.lo -MD -MP -MF $depbase.Tpo -c -o png.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/png.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo pngerror.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngerror.lo -MD -MP -MF $depbase.Tpo -c -o pngerror.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngerror.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo pngget.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngget.lo -MD -MP -MF $depbase.Tpo -c -o pngget.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngget.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT png.lo -MD -MP -MF .deps/png.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/png.c  -fPIC -DPIC -o .libs/png.o
+depbase=`echo pngmem.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngmem.lo -MD -MP -MF $depbase.Tpo -c -o pngmem.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngmem.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngerror.lo -MD -MP -MF .deps/pngerror.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngerror.c  -fPIC -DPIC -o .libs/pngerror.o
+depbase=`echo pngpread.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngpread.lo -MD -MP -MF $depbase.Tpo -c -o pngpread.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngpread.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngget.lo -MD -MP -MF .deps/pngget.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngget.c  -fPIC -DPIC -o .libs/pngget.o
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngerror.lo -MD -MP -MF .deps/pngerror.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngerror.c -o pngerror.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngmem.lo -MD -MP -MF .deps/pngmem.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngmem.c  -fPIC -DPIC -o .libs/pngmem.o
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngmem.lo -MD -MP -MF .deps/pngmem.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngmem.c -o pngmem.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngget.lo -MD -MP -MF .deps/pngget.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngget.c -o pngget.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngpread.lo -MD -MP -MF .deps/pngpread.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngpread.c  -fPIC -DPIC -o .libs/pngpread.o
+depbase=`echo pngread.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngread.lo -MD -MP -MF $depbase.Tpo -c -o pngread.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngread.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT png.lo -MD -MP -MF .deps/png.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/png.c -o png.o >/dev/null 2>&1
+depbase=`echo pngrio.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngrio.lo -MD -MP -MF $depbase.Tpo -c -o pngrio.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngrio.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngread.lo -MD -MP -MF .deps/pngread.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngread.c  -fPIC -DPIC -o .libs/pngread.o
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngpread.lo -MD -MP -MF .deps/pngpread.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngpread.c -o pngpread.o >/dev/null 2>&1
+depbase=`echo pngrtran.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngrtran.lo -MD -MP -MF $depbase.Tpo -c -o pngrtran.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngrtran.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngrio.lo -MD -MP -MF .deps/pngrio.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngrio.c  -fPIC -DPIC -o .libs/pngrio.o
+depbase=`echo pngrutil.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngrutil.lo -MD -MP -MF $depbase.Tpo -c -o pngrutil.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngrutil.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo pngset.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngset.lo -MD -MP -MF $depbase.Tpo -c -o pngset.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngset.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngrtran.lo -MD -MP -MF .deps/pngrtran.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngrtran.c  -fPIC -DPIC -o .libs/pngrtran.o
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngrio.lo -MD -MP -MF .deps/pngrio.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngrio.c -o pngrio.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngread.lo -MD -MP -MF .deps/pngread.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngread.c -o pngread.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngrutil.lo -MD -MP -MF .deps/pngrutil.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngrutil.c  -fPIC -DPIC -o .libs/pngrutil.o
+depbase=`echo pngtrans.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngtrans.lo -MD -MP -MF $depbase.Tpo -c -o pngtrans.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngtrans.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngset.lo -MD -MP -MF .deps/pngset.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngset.c  -fPIC -DPIC -o .libs/pngset.o
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngtrans.lo -MD -MP -MF .deps/pngtrans.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngtrans.c  -fPIC -DPIC -o .libs/pngtrans.o
+depbase=`echo pngwio.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwio.lo -MD -MP -MF $depbase.Tpo -c -o pngwio.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwio.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngtrans.lo -MD -MP -MF .deps/pngtrans.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngtrans.c -o pngtrans.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngset.lo -MD -MP -MF .deps/pngset.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngset.c -o pngset.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngrtran.lo -MD -MP -MF .deps/pngrtran.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngrtran.c -o pngrtran.o >/dev/null 2>&1
+depbase=`echo pngwrite.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwrite.lo -MD -MP -MF $depbase.Tpo -c -o pngwrite.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwrite.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngrutil.lo -MD -MP -MF .deps/pngrutil.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngrutil.c -o pngrutil.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwio.lo -MD -MP -MF .deps/pngwio.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwio.c  -fPIC -DPIC -o .libs/pngwio.o
+depbase=`echo pngwtran.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwtran.lo -MD -MP -MF $depbase.Tpo -c -o pngwtran.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwtran.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwio.lo -MD -MP -MF .deps/pngwio.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwio.c -o pngwio.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwrite.lo -MD -MP -MF .deps/pngwrite.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwrite.c  -fPIC -DPIC -o .libs/pngwrite.o
+depbase=`echo pngwutil.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwutil.lo -MD -MP -MF $depbase.Tpo -c -o pngwutil.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwutil.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo mips/mips_init.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT mips/mips_init.lo -MD -MP -MF $depbase.Tpo -c -o mips/mips_init.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/mips/mips_init.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwtran.lo -MD -MP -MF .deps/pngwtran.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwtran.c  -fPIC -DPIC -o .libs/pngwtran.o
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwutil.lo -MD -MP -MF .deps/pngwutil.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwutil.c  -fPIC -DPIC -o .libs/pngwutil.o
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwrite.lo -MD -MP -MF .deps/pngwrite.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwrite.c -o pngwrite.o >/dev/null 2>&1
+depbase=`echo mips/filter_msa_intrinsics.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT mips/filter_msa_intrinsics.lo -MD -MP -MF $depbase.Tpo -c -o mips/filter_msa_intrinsics.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/mips/filter_msa_intrinsics.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwtran.lo -MD -MP -MF .deps/pngwtran.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwtran.c -o pngwtran.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT mips/mips_init.lo -MD -MP -MF mips/.deps/mips_init.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/mips/mips_init.c  -fPIC -DPIC -o mips/.libs/mips_init.o
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT mips/mips_init.lo -MD -MP -MF mips/.deps/mips_init.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/mips/mips_init.c -o mips/mips_init.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT pngwutil.lo -MD -MP -MF .deps/pngwutil.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngwutil.c -o pngwutil.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT mips/filter_msa_intrinsics.lo -MD -MP -MF mips/.deps/filter_msa_intrinsics.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/mips/filter_msa_intrinsics.c  -fPIC -DPIC -o mips/.libs/filter_msa_intrinsics.o
+depbase=`echo intel/intel_init.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT intel/intel_init.lo -MD -MP -MF $depbase.Tpo -c -o intel/intel_init.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/intel/intel_init.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo intel/filter_sse2_intrinsics.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT intel/filter_sse2_intrinsics.lo -MD -MP -MF $depbase.Tpo -c -o intel/filter_sse2_intrinsics.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/intel/filter_sse2_intrinsics.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo powerpc/powerpc_init.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT powerpc/powerpc_init.lo -MD -MP -MF $depbase.Tpo -c -o powerpc/powerpc_init.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/powerpc/powerpc_init.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT mips/filter_msa_intrinsics.lo -MD -MP -MF mips/.deps/filter_msa_intrinsics.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/mips/filter_msa_intrinsics.c -o mips/filter_msa_intrinsics.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT powerpc/powerpc_init.lo -MD -MP -MF powerpc/.deps/powerpc_init.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/powerpc/powerpc_init.c  -fPIC -DPIC -o powerpc/.libs/powerpc_init.o
+depbase=`echo powerpc/filter_vsx_intrinsics.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT powerpc/filter_vsx_intrinsics.lo -MD -MP -MF $depbase.Tpo -c -o powerpc/filter_vsx_intrinsics.lo /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/powerpc/filter_vsx_intrinsics.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT intel/intel_init.lo -MD -MP -MF intel/.deps/intel_init.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/intel/intel_init.c  -fPIC -DPIC -o intel/.libs/intel_init.o
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT intel/filter_sse2_intrinsics.lo -MD -MP -MF intel/.deps/filter_sse2_intrinsics.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/intel/filter_sse2_intrinsics.c  -fPIC -DPIC -o intel/.libs/filter_sse2_intrinsics.o
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT powerpc/powerpc_init.lo -MD -MP -MF powerpc/.deps/powerpc_init.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/powerpc/powerpc_init.c -o powerpc/powerpc_init.o >/dev/null 2>&1
+rm -f libpng.vers
+cp scripts/vers.out libpng.vers
+/bin/bash ./libtool  --tag=CC   --mode=link gcc-7  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o png-fix-itxt contrib/tools/png-fix-itxt.o  -lm -lz -lm 
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT intel/filter_sse2_intrinsics.lo -MD -MP -MF intel/.deps/filter_sse2_intrinsics.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/intel/filter_sse2_intrinsics.c -o intel/filter_sse2_intrinsics.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT intel/intel_init.lo -MD -MP -MF intel/.deps/intel_init.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/intel/intel_init.c -o intel/intel_init.o >/dev/null 2>&1
+depbase=`echo contrib/libtests/pngunknown.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT contrib/libtests/pngunknown.o -MD -MP -MF $depbase.Tpo -c -o contrib/libtests/pngunknown.o /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/contrib/libtests/pngunknown.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo contrib/libtests/pngstest.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT contrib/libtests/pngstest.o -MD -MP -MF $depbase.Tpo -c -o contrib/libtests/pngstest.o /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/contrib/libtests/pngstest.c &&\
+mv -f $depbase.Tpo $depbase.Po
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT powerpc/filter_vsx_intrinsics.lo -MD -MP -MF powerpc/.deps/filter_vsx_intrinsics.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/powerpc/filter_vsx_intrinsics.c  -fPIC -DPIC -o powerpc/.libs/filter_vsx_intrinsics.o
+depbase=`echo contrib/libtests/pngvalid.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT contrib/libtests/pngvalid.o -MD -MP -MF $depbase.Tpo -c -o contrib/libtests/pngvalid.o /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/contrib/libtests/pngvalid.c &&\
+mv -f $depbase.Tpo $depbase.Po
+libtool: compile:  gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT powerpc/filter_vsx_intrinsics.lo -MD -MP -MF powerpc/.deps/filter_vsx_intrinsics.Tpo -c /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/powerpc/filter_vsx_intrinsics.c -o powerpc/filter_vsx_intrinsics.o >/dev/null 2>&1
+depbase=`echo contrib/libtests/pngimage.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc-7 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36   -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -MT contrib/libtests/pngimage.o -MD -MP -MF $depbase.Tpo -c -o contrib/libtests/pngimage.o /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/contrib/libtests/pngimage.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ./libtool  --tag=CC   --mode=link gcc-7  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -no-undefined -export-dynamic -version-number 16:36:0  -Wl,--version-script=libpng.vers  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o libpng16.la -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib png.lo pngerror.lo pngget.lo pngmem.lo pngpread.lo pngread.lo pngrio.lo pngrtran.lo pngrutil.lo pngset.lo pngtrans.lo pngwio.lo pngwrite.lo pngwtran.lo pngwutil.lo  mips/mips_init.lo mips/filter_msa_intrinsics.lo intel/intel_init.lo intel/filter_sse2_intrinsics.lo powerpc/powerpc_init.lo powerpc/filter_vsx_intrinsics.lo   -lm -lz -lm 
+libtool: link: gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o png-fix-itxt contrib/tools/png-fix-itxt.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lz -lm
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' 'png-fix-itxt' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsjpsPc.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o png-fix-itxt /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. contrib/tools/png-fix-itxt.o -lz -lm -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' 'png-fix-itxt' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+libtool: link: gcc-7 -shared  -fPIC -DPIC  .libs/png.o .libs/pngerror.o .libs/pngget.o .libs/pngmem.o .libs/pngpread.o .libs/pngread.o .libs/pngrio.o .libs/pngrtran.o .libs/pngrutil.o .libs/pngset.o .libs/pngtrans.o .libs/pngwio.o .libs/pngwrite.o .libs/pngwtran.o .libs/pngwutil.o mips/.libs/mips_init.o mips/.libs/filter_msa_intrinsics.o intel/.libs/intel_init.o intel/.libs/filter_sse2_intrinsics.o powerpc/.libs/powerpc_init.o powerpc/.libs/filter_vsx_intrinsics.o   -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lz -lm  -m64 -g -O0 -Wl,--version-script=libpng.vers -g -O0   -Wl,-soname -Wl,libpng16.so.16 -o .libs/libpng16.so.16.36.0
+libtool: link: (cd ".libs" && rm -f "libpng16.so.16" && ln -s "libpng16.so.16.36.0" "libpng16.so.16")
+libtool: link: (cd ".libs" && rm -f "libpng16.so" && ln -s "libpng16.so.16.36.0" "libpng16.so")
+libtool: link: gcc-ar-7 cru .libs/libpng16.a  png.o pngerror.o pngget.o pngmem.o pngpread.o pngread.o pngrio.o pngrtran.o pngrutil.o pngset.o pngtrans.o pngwio.o pngwrite.o pngwtran.o pngwutil.o mips/mips_init.o mips/filter_msa_intrinsics.o intel/intel_init.o intel/filter_sse2_intrinsics.o powerpc/powerpc_init.o powerpc/filter_vsx_intrinsics.o
+/usr/bin/ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: gcc-ranlib-7 .libs/libpng16.a
+libtool: link: ( cd ".libs" && rm -f "libpng16.la" && ln -s "../libpng16.la" "libpng16.la" )
+/bin/bash ./libtool  --tag=CC   --mode=link gcc-7  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o pngunknown contrib/libtests/pngunknown.o libpng16.la -lm -lz -lm 
+/bin/bash ./libtool  --tag=CC   --mode=link gcc-7  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o pngtest pngtest.o libpng16.la -lm -lz -lm 
+/bin/bash ./libtool  --tag=CC   --mode=link gcc-7  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o pngfix contrib/tools/pngfix.o libpng16.la -lm -lz -lm 
+/bin/bash ./libtool  --tag=CC   --mode=link gcc-7  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o pngstest contrib/libtests/pngstest.o libpng16.la -lm -lz -lm 
+libtool: link: gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o .libs/pngtest pngtest.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngtest' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNmUbXl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/pngtest /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. pngtest.o ./.libs/libpng16.so -lz -lm -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+libtool: link: gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o .libs/pngfix contrib/tools/pngfix.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngfix' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpQTtEp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/pngfix /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. contrib/tools/pngfix.o ./.libs/libpng16.so -lz -lm -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+libtool: link: gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o .libs/pngstest contrib/libtests/pngstest.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngstest' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQjxNVq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/pngstest /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. contrib/libtests/pngstest.o ./.libs/libpng16.so -lz -lm -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngtest' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngfix' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+/bin/bash ./libtool  --tag=CC   --mode=link gcc-7  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o pngimage contrib/libtests/pngimage.o libpng16.la -lm -lz -lm 
+libtool: link: gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o .libs/pngunknown contrib/libtests/pngunknown.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngunknown' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5fPRaw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/pngunknown /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. contrib/libtests/pngunknown.o ./.libs/libpng16.so -lz -lm -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+/bin/bash ./libtool  --tag=CC   --mode=link gcc-7  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o pngcp contrib/tools/pngcp.o libpng16.la -lm -lz -lm 
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngstest' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngunknown' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+/bin/bash ./libtool  --tag=CC   --mode=link gcc-7  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o timepng contrib/libtests/timepng.o libpng16.la -lm -lz -lm 
+/bin/bash ./libtool  --tag=CC   --mode=link gcc-7  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o pngvalid contrib/libtests/pngvalid.o libpng16.la -lm -lz -lm 
+libtool: link: gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o .libs/pngcp contrib/tools/pngcp.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngcp' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7M318R.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/pngcp /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. contrib/tools/pngcp.o ./.libs/libpng16.so -lz -lm -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+libtool: link: gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o .libs/pngimage contrib/libtests/pngimage.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngimage' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdQPEFR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/pngimage /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. contrib/libtests/pngimage.o ./.libs/libpng16.so -lz -lm -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngcp' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+libtool: link: gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o .libs/timepng contrib/libtests/timepng.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/timepng' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccv9Hn5Z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/timepng /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. contrib/libtests/timepng.o ./.libs/libpng16.so -lz -lm -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngimage' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/timepng' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+libtool: link: gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o .libs/pngvalid contrib/libtests/pngvalid.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ./.libs/libpng16.so -lz -lm -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngvalid' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfu5Pw5.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/pngvalid /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. contrib/libtests/pngvalid.o ./.libs/libpng16.so -lz -lm -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' '.libs/pngvalid' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libpng-1.6.36'
+
+[make install]
+make  install-am
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libpng-1.6.36'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libpng-1.6.36'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libpng16.la '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+libtool: install: /usr/bin/install -c .libs/libpng16.so.16.36.0 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libpng16.so.16.36.0
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libpng16.so.16.36.0 libpng16.so.16 || { rm -f libpng16.so.16 && ln -s libpng16.so.16.36.0 libpng16.so.16; }; })
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libpng16.so.16.36.0 libpng16.so || { rm -f libpng16.so && ln -s libpng16.so.16.36.0 libpng16.so; }; })
+libtool: install: /usr/bin/install -c .libs/libpng16.lai /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libpng16.la
+libtool: install: /usr/bin/install -c .libs/libpng16.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libpng16.a
+libtool: install: chmod 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libpng16.a
+libtool: install: gcc-ranlib-7 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libpng16.a
+libtool: finish: PATH="/opt/xbb/bin:/home/automark/.nvm/versions/node/v12.18.4/bin:/home/automark/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/automark/.local/bin:/sbin" ldconfig -n /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c pngfix png-fix-itxt '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+libtool: install: /usr/bin/install -c .libs/pngfix /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/pngfix
+libtool: install: /usr/bin/install -c png-fix-itxt /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/png-fix-itxt
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+ /usr/bin/install -c libpng16-config '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+make  install-exec-hook
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libpng-1.6.36'
++ cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
++ for ext in a dll.a so so.16.36 la sl dylib
++ rm -f libpng.a
++ test -f libpng16.a
++ ln -s libpng16.a libpng.a
++ for ext in a dll.a so so.16.36 la sl dylib
++ rm -f libpng.dll.a
++ test -f libpng16.dll.a
++ for ext in a dll.a so so.16.36 la sl dylib
++ rm -f libpng.so
++ test -f libpng16.so
++ ln -s libpng16.so libpng.so
++ for ext in a dll.a so so.16.36 la sl dylib
++ rm -f libpng.so.16.36
++ test -f libpng16.so.16.36
++ for ext in a dll.a so so.16.36 la sl dylib
++ rm -f libpng.la
++ test -f libpng16.la
++ ln -s libpng16.la libpng.la
++ for ext in a dll.a so so.16.36 la sl dylib
++ rm -f libpng.sl
++ test -f libpng16.sl
++ for ext in a dll.a so so.16.36 la sl dylib
++ rm -f libpng.dylib
++ test -f libpng16.dylib
++ cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin
++ rm -f libpng-config
++ ln -s libpng16-config libpng-config
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libpng-1.6.36'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/libpng.3 /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/libpngpf.3 '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man5'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/png.5 '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man5'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/libpng16'
+ /usr/bin/install -c -m 644 pnglibconf.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/libpng16'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libpng16.pc '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/libpng16'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/png.h /home/automark/Work/qemu-arm-dev/sources/libpng-1.6.36/pngconf.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/libpng16'
+make  install-data-hook
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libpng-1.6.36'
++ cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include
++ for f in pnglibconf.h png.h pngconf.h
++ rm -f pnglibconf.h
++ ln -s libpng16/pnglibconf.h pnglibconf.h
++ for f in pnglibconf.h png.h pngconf.h
++ rm -f png.h
++ ln -s libpng16/png.h png.h
++ for f in pnglibconf.h png.h pngconf.h
++ rm -f pngconf.h
++ ln -s libpng16/pngconf.h pngconf.h
++ cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig
++ rm -f libpng.pc
++ ln -s libpng16.pc libpng.pc
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libpng-1.6.36'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libpng-1.6.36'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/libpng-1.6.36'

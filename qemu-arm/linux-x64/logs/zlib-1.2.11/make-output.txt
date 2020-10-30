@@ -1,0 +1,79 @@
+
+Running zlib make...
+
+[make -j 5]
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -c -o example.o test/example.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o adler32.o adler32.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o crc32.o crc32.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o deflate.o deflate.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o infback.o infback.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inffast.o inffast.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inflate.o inflate.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inftrees.o inftrees.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o trees.o trees.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o zutil.o zutil.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o compress.o compress.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o uncompr.o uncompr.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzclose.o gzclose.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzlib.o gzlib.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzread.o gzread.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzwrite.o gzwrite.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -c -o minigzip.o test/minigzip.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/adler32.o adler32.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/crc32.o crc32.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/infback.o infback.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/deflate.o deflate.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/inffast.o inffast.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/inflate.o inflate.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/inftrees.o inftrees.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/trees.o trees.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/zutil.o zutil.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/compress.o compress.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/uncompr.o uncompr.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/gzclose.o gzclose.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/gzread.o gzread.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/gzlib.o gzlib.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/gzwrite.o gzwrite.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -D_FILE_OFFSET_BITS=64 -c -o example64.o test/example.c
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -D_FILE_OFFSET_BITS=64 -c -o minigzip64.o test/minigzip.c
+gcc-ar-7 rc libz.a adler32.o crc32.o deflate.o infback.o inffast.o inflate.o inftrees.o trees.o zutil.o compress.o uncompr.o gzclose.o gzlib.o gzread.o gzwrite.o 
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o example example.o -L. libz.a
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o minigzip minigzip.o -L. libz.a
+gcc-7 -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o libz.so.1.2.11 adler32.lo crc32.lo deflate.lo infback.lo inffast.lo inflate.lo inftrees.lo trees.lo zutil.lo compress.lo uncompr.lo gzclose.lo gzlib.lo gzread.lo gzwrite.lo  -lc -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o minigzip64 minigzip64.o -L. libz.a
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-shared' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fPIC' '-D' '_LARGEFILE64_SOURCE=1' '-D' 'HAVE_HIDDEN' '-o' 'libz.so.1.2.11' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-g' '-O0' '-v' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccTLvMNU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -shared -z relro -o libz.so.1.2.11 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. -soname libz.so.1 --version-script zlib.map adler32.lo crc32.lo deflate.lo infback.lo inffast.lo inflate.lo inftrees.lo trees.lo zutil.lo compress.lo uncompr.lo gzclose.lo gzlib.lo gzread.lo gzwrite.lo -lc -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o example64 example64.o -L. libz.a
+COLLECT_GCC_OPTIONS='-shared' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fPIC' '-D' '_LARGEFILE64_SOURCE=1' '-D' 'HAVE_HIDDEN' '-o' 'libz.so.1.2.11' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-g' '-O0' '-v' '-mtune=generic' '-march=x86-64'
+rm -f libz.so libz.so.1
+ln -s libz.so.1.2.11 libz.so
+ln -s libz.so.1.2.11 libz.so.1
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o examplesh example.o -L. libz.so.1.2.11
+gcc-7 -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o minigzipsh minigzip.o -L. libz.so.1.2.11
+
+[make install]
+rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libz.a
+cp libz.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+chmod 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libz.a
+cp libz.so.1.2.11 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+chmod 755 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libz.so.1.2.11
+rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3/zlib.3
+cp zlib.3 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3
+chmod 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3/zlib.3
+rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig/zlib.pc
+cp zlib.pc /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig
+chmod 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig/zlib.pc
+rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/zlib.h /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/zconf.h
+cp zlib.h zconf.h /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include
+chmod 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/zlib.h /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/zconf.h
