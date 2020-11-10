@@ -43,7 +43,7 @@ print "Howdy"',
 "avocado" => Array (
 "qtext" => "<b>Avocado</b> upload a .c file and click the check code button to run the auto-marker",
 "desired" => "",
-"code" => '',
+"code" => 'Upload a .c file via the browse button and click check code to run the auto-marker',
 "checks" => Array(
 "command returned 0" => "Return code of Avocado script was not 0 (all tests pass).",
 )),

@@ -100,10 +100,13 @@ if ( $EX === false ) {
 }
 ?>
 
+<script src="dist/skulpt.js?v=1" type="text/javascript"></script>
+<script src="dist/builtin.js?v=1" type="text/javascript"></script>
+<script src="dist/jquery.min.js?v=1" type="text/javascript"></script>
 
-<script>
+
+<script type="text/javascript">
 function runQemu(sdt_num) {
-    $("#grade").show();
     if (sdt_num.length == 1) {
         document.getElementById("output").innerHTML = "no input";
         return;
@@ -118,10 +121,9 @@ function runQemu(sdt_num) {
         xmlhttp.open("POST", "simple_proc_open_linux.php?q=" + sdt_num + "$" + "modify_var_elf", true); // note this needs to be modified to have the ex as an argument
         //document.getElementById("output").innerHTML = "simple_proc_open_linux.php?q=" + str;
         xmlhttp.send();
-        if ( window.GLOBAL_TIMER != false ) window.clearInterval(window.GLOBAL_TIMER);
-        window.GLOBAL_TIMER = setTimeout("finalcheckQemu();",2500); // this doesn't seem to do anything
+        //if ( window.GLOBAL_TIMER != false ) window.clearInterval(window.GLOBAL_TIMER);
+        //window.GLOBAL_TIMER = setTimeout("finalcheckQemu();",2500); // this doesn't seem to do anything
     }
-    $("#grade").show();
     
 }
 </script>
@@ -134,9 +136,6 @@ function runQemu(sdt_num) {
 <style>
 body { font-family: sans-serif; }
 </style>
-<script src="dist/skulpt.js?v=1" type="text/javascript"></script>
-<script src="dist/builtin.js?v=1" type="text/javascript"></script>
-<script src="dist/jquery.min.js?v=1" type="text/javascript"></script>
 <script type="text/javascript">
 
 function builtinRead(x)
@@ -372,8 +371,7 @@ $StudentNumber = $context->getSakaiEid(); // have tested this works
 ?>
 <form>
 <!-- First name: <input type="text" onkeyup="showHint(this.value)"> -->
-<!-- <button id="run_qemu_btn" onclick="showHint(<?php //echo($StudentNumber); ?>)" type="button">Run Emulator</button> -->
-<?php //echo("<button id=\"run_qemu_btn\" onclick=runQemu(\"$StudentNumber\") type=\"button\">Run Emulator</button>\n"); ?> <!-- this button needs the $ex parameter added to the function argument. is old clunky version of passing php var into html -->
+
 </form>
 <!-- <p>Suggestions: <div id="txtHint"></div></p> -->
 
@@ -437,7 +435,7 @@ if ( $context->valid && $context->getOutcomeService() !== false ) {
 <?php } else { ?>
 <button id="grade" onclick="gradeit()" type="button" style="display:none">Submit Grade</button>
 <?php } } ?>
-<button id="grade" onclick="gradeit()" type="button">Submit Grade</button>
+<button id="grade2" onclick="gradeit()" type="button">Submit Grade</button>
 <?php
 if ( ! $context->valid && isset($_GET["done"]) ) {
   $url = $_GET['done'];
@@ -450,7 +448,7 @@ if ( ! $context->valid && isset($_GET["done"]) ) {
 <span id="gradegood" style="color:green;display:none"> Grade Updated. </span>
 <span id="gradebad" style="color:red;display:none"> Error storing grade. </span>
 <br/>
-Enter/Edit Your Code Here:<br/>
+Upload a .c file via the browse button and click check code to run the auto-marker. <br/>
 <textarea id="code" cols="80" style="font-family:Courier,fixed;font-size:16px;color:blue;width:99%;">
 <?php echo($CODE); ?>
 </textarea>
