@@ -103,6 +103,7 @@ if ( $EX === false ) {
 
 <script>
 function runQemu(sdt_num) {
+    $("#grade").show();
     if (sdt_num.length == 1) {
         document.getElementById("output").innerHTML = "no input";
         return;
@@ -117,8 +118,11 @@ function runQemu(sdt_num) {
         xmlhttp.open("POST", "simple_proc_open_linux.php?q=" + sdt_num + "$" + "modify_var_elf", true); // note this needs to be modified to have the ex as an argument
         //document.getElementById("output").innerHTML = "simple_proc_open_linux.php?q=" + str;
         xmlhttp.send();
+        if ( window.GLOBAL_TIMER != false ) window.clearInterval(window.GLOBAL_TIMER);
+        window.GLOBAL_TIMER = setTimeout("finalcheckQemu();",2500); // this doesn't seem to do anything
     }
     $("#grade").show();
+    
 }
 </script>
 
@@ -219,6 +223,33 @@ function makefilediv(name,text) {
         }
     }
 
+    function finalcheckQemu() {     // Modified version. This searches the code section for keywords. If the index of the keyword doesn't exist it throws the 'check' associated with the keyword.
+        if ( window.GLOBAL_TIMER != false ) window.clearInterval(window.GLOBAL_TIMER);
+        window.GLOBAL_TIMER = false;
+        hideall();
+        $("#spinner").hide();
+        var prog = document.getElementById("output").value;    // This is bringing the Avocado report into a variable
+        for ( var key in window.CHECKS ) {
+            // The key can be inverted if the first character is !
+            if ( key.length > 1 && key.substring(0,1) == '!' ) {
+                xkey = key.substring(1);
+                if ( prog.indexOf(xkey) < 0 ) continue;
+            } else {
+                if ( prog.indexOf(key) >= 0 ) continue;
+            }
+            alert(window.CHECKS[key]);
+            window.GLOBAL_ERROR = true;
+            break;
+        }
+
+        if ( window.GLOBAL_ERROR ) {
+            $("#redo").show();
+        } else {
+            $("#check").show();
+            $("#grade").show();
+        }
+    }
+
     function outf(text)
     {
         console.log('Text='+text);
@@ -275,7 +306,8 @@ function makefilediv(name,text) {
         window.GLOBAL_TIMER = setTimeout("finalcheck();",2500);
         Sk.configure({output:outf, read: builtinRead});
         try {
-            var module = Sk.importMainWithBody("<stdin>", false, prog);
+            var module = Sk.importMainWithBody("<stdin>", false, prog); // this is where the program is sent to Skulpt and the output is written to the web page
+            //runQemu('<?= $StudentNumber ?>'); // dropped this in to try but it needs work
         } catch (e) {
             if ( window.GLOBAL_TIMER != false ) window.clearInterval(window.GLOBAL_TIMER);
             window.GLOBAL_TIMER = false;
@@ -311,7 +343,7 @@ $(document).ready( function() {
     $qh = $ct - $it;
 	$avail = $doc - $ct - $fh;
 	if ( $avail < 400 ) $avail = 400;
-	if ( $avail > 900 ) $avail = 900;
+	if ( $avail > 900 ) $avail = 1000;
 	$ch = $avail * 0.5;
 	$("#inputs").height($qh+$ch);
 	$("#outputs").height($avail*0.5);
@@ -341,7 +373,7 @@ $StudentNumber = $context->getSakaiEid(); // have tested this works
 <form>
 <!-- First name: <input type="text" onkeyup="showHint(this.value)"> -->
 <!-- <button id="run_qemu_btn" onclick="showHint(<?php //echo($StudentNumber); ?>)" type="button">Run Emulator</button> -->
-<?php echo("<button id=\"run_qemu_btn\" onclick=runQemu(\"$StudentNumber\") type=\"button\">Run Emulator</button>\n"); ?> <!-- this button needs the $ex parameter added to the function argument -->
+<?php //echo("<button id=\"run_qemu_btn\" onclick=runQemu(\"$StudentNumber\") type=\"button\">Run Emulator</button>\n"); ?> <!-- this button needs the $ex parameter added to the function argument. is old clunky version of passing php var into html -->
 </form>
 <!-- <p>Suggestions: <div id="txtHint"></div></p> -->
 
@@ -371,9 +403,13 @@ $StudentNumber = $context->getSakaiEid(); // have tested this works
       }
       
       if(empty($errors)==true) {
-         mkdir("StudentFiles/{$context->getSakaiEid()}/", 0755, true);
-         move_uploaded_file($file_tmp,"StudentFiles/{$context->getSakaiEid()}/{$context->getSakaiEid()}.".$file_ext);
-         echo "Success";
+          try {
+            mkdir("StudentFiles/{$context->getSakaiEid()}/", 0755, true);
+            move_uploaded_file($file_tmp,"StudentFiles/{$context->getSakaiEid()}/{$context->getSakaiEid()}.".$file_ext);
+            echo "Success";
+          } catch(Exception $e) {
+              alert(e);
+          }
       }else{
          print_r($errors);
       }
@@ -391,7 +427,8 @@ $StudentNumber = $context->getSakaiEid(); // have tested this works
 			
       </form>
 <form style="height:100%;">
-<button onclick="runit()" type="button">Check Code</button>     <!-- change onclick to point to function to run -->
+
+<button onclick="runQemu('<?= $StudentNumber ?>')" type="button">Check Code</button>     <!-- change onclick to point to function to run -->
 <?php
 if ( $context->valid && $context->getOutcomeService() !== false ) {
    if ( $context->isInstructor() ){
@@ -400,6 +437,7 @@ if ( $context->valid && $context->getOutcomeService() !== false ) {
 <?php } else { ?>
 <button id="grade" onclick="gradeit()" type="button" style="display:none">Submit Grade</button>
 <?php } } ?>
+<button id="grade" onclick="gradeit()" type="button">Submit Grade</button>
 <?php
 if ( ! $context->valid && isset($_GET["done"]) ) {
   $url = $_GET['done'];

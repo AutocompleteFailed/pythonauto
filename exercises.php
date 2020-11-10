@@ -40,6 +40,14 @@ print "Howdy"',
 "print" => "You must use the print statement to print the line of output."
 )),
 
+"avocado" => Array (
+"qtext" => "<b>Avocado</b> upload a .c file and click the check code button to run the auto-marker",
+"desired" => "",
+"code" => '',
+"checks" => Array(
+"command returned 0" => "Return code of Avocado script was not 0 (all tests pass).",
+)),
+
 "2.3" => Array(
 "qtext" => "<b>2.3</b> Write a program to prompt the user for hours and rate per hour using raw_input
 to compute gross pay.  Use 35 hours and a rate of 2.75 per hour to test the 
