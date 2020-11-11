@@ -1,0 +1,358 @@
+2020-10-30 20:03:23,832 sysinfo          L0440 INFO | Commands configured by file: /usr/local/lib/python3.6/dist-packages/avocado/etc/avocado/sysinfo/commands
+2020-10-30 20:03:23,833 sysinfo          L0440 INFO | Files configured by file: /usr/local/lib/python3.6/dist-packages/avocado/etc/avocado/sysinfo/files
+2020-10-30 20:03:23,833 sysinfo          L0444 DEBUG| File /usr/local/lib/python3.6/dist-packages/avocado/etc/avocado/sysinfo/fail_commands does not exist.
+2020-10-30 20:03:23,833 sysinfo          L0444 DEBUG| File /usr/local/lib/python3.6/dist-packages/avocado/etc/avocado/sysinfo/fail_files does not exist.
+2020-10-30 20:03:23,834 sysinfo          L0463 INFO | Profilers configured by file: /usr/local/lib/python3.6/dist-packages/avocado/etc/avocado/sysinfo/profilers
+2020-10-30 20:03:23,834 sysinfo          L0472 INFO | Profiler disabled
+2020-10-30 20:03:23,950 sysinfo          L0113 DEBUG| Not logging /sys/kernel/debug/sched_features (file does not exist)
+2020-10-30 20:03:24,277 sysinfo          L0113 DEBUG| Not logging /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor (file does not exist)
+2020-10-30 20:03:24,278 sysinfo          L0113 DEBUG| Not logging /proc/pci (file does not exist)
+2020-10-30 20:03:24,319 sysinfo          L0111 DEBUG| Not logging /proc/slabinfo (lack of permissions)
+2020-10-30 20:03:24,422 job              L0272 INFO | Command line: /usr/local/bin/avocado --show=test run /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test
+2020-10-30 20:03:24,422 job              L0273 INFO | 
+2020-10-30 20:03:24,423 job              L0266 INFO | Avocado version: 82.0
+2020-10-30 20:03:24,423 job              L0267 INFO | 
+2020-10-30 20:03:24,423 job              L0246 INFO | Avocado config:
+2020-10-30 20:03:24,423 job              L0247 INFO | 
+2020-10-30 20:03:24,426 job              L0249 INFO | {'assets.fetch.ignore_errors': False,
+2020-10-30 20:03:24,427 job              L0249 INFO |  'assets.fetch.references': [],
+2020-10-30 20:03:24,427 job              L0249 INFO |  'config': None,
+2020-10-30 20:03:24,427 job              L0249 INFO |  'config.datadir': False,
+2020-10-30 20:03:24,427 job              L0249 INFO |  'core.input_encoding': 'utf-8',
+2020-10-30 20:03:24,427 job              L0249 INFO |  'core.paginator': 'off',
+2020-10-30 20:03:24,427 job              L0249 INFO |  'core.show': ['test'],
+2020-10-30 20:03:24,427 job              L0249 INFO |  'core.verbose': False,
+2020-10-30 20:03:24,427 job              L0249 INFO |  'datadir.paths.base_dir': '/var/lib/avocado',
+2020-10-30 20:03:24,428 job              L0249 INFO |  'datadir.paths.cache_dirs': ['/home/automark/avocado/data/cache'],
+2020-10-30 20:03:24,428 job              L0249 INFO |  'datadir.paths.data_dir': '/var/lib/avocado/data',
+2020-10-30 20:03:24,428 job              L0249 INFO |  'datadir.paths.logs_dir': '/home/automark/avocado/job-results',
+2020-10-30 20:03:24,428 job              L0249 INFO |  'datadir.paths.test_dir': '/usr/share/doc/avocado/tests',
+2020-10-30 20:03:24,428 job              L0249 INFO |  'diff.create_reports': False,
+2020-10-30 20:03:24,428 job              L0249 INFO |  'diff.filter': ['cmdline', 'time', 'variants', 'results', 'config', 'sysinfo'],
+2020-10-30 20:03:24,428 job              L0249 INFO |  'diff.html': None,
+2020-10-30 20:03:24,428 job              L0249 INFO |  'diff.jobids': [],
+2020-10-30 20:03:24,429 job              L0249 INFO |  'diff.open_browser': False,
+2020-10-30 20:03:24,429 job              L0249 INFO |  'diff.strip_id': False,
+2020-10-30 20:03:24,429 job              L0249 INFO |  'distro.distro_def_arch': '',
+2020-10-30 20:03:24,429 job              L0249 INFO |  'distro.distro_def_create': False,
+2020-10-30 20:03:24,429 job              L0249 INFO |  'distro.distro_def_name': '',
+2020-10-30 20:03:24,429 job              L0249 INFO |  'distro.distro_def_path': '',
+2020-10-30 20:03:24,429 job              L0249 INFO |  'distro.distro_def_release': '',
+2020-10-30 20:03:24,430 job              L0249 INFO |  'distro.distro_def_type': '',
+2020-10-30 20:03:24,430 job              L0249 INFO |  'distro.distro_def_version': '',
+2020-10-30 20:03:24,430 job              L0249 INFO |  'filter.by_tags.include_empty': False,
+2020-10-30 20:03:24,430 job              L0249 INFO |  'filter.by_tags.include_empty_key': False,
+2020-10-30 20:03:24,430 job              L0249 INFO |  'filter.by_tags.tags': [],
+2020-10-30 20:03:24,430 job              L0249 INFO |  'job.output.loglevel': 'DEBUG',
+2020-10-30 20:03:24,430 job              L0249 INFO |  'job.replay.source_job_id': 'latest',
+2020-10-30 20:03:24,430 job              L0249 INFO |  'job.run.result.json.enabled': 'on',
+2020-10-30 20:03:24,431 job              L0249 INFO |  'job.run.result.json.output': None,
+2020-10-30 20:03:24,431 job              L0249 INFO |  'job.run.result.tap.enabled': 'on',
+2020-10-30 20:03:24,431 job              L0249 INFO |  'job.run.result.tap.include_logs': False,
+2020-10-30 20:03:24,431 job              L0249 INFO |  'job.run.result.tap.output': None,
+2020-10-30 20:03:24,431 job              L0249 INFO |  'job.run.result.xunit.enabled': 'on',
+2020-10-30 20:03:24,431 job              L0249 INFO |  'job.run.result.xunit.job_name': None,
+2020-10-30 20:03:24,431 job              L0249 INFO |  'job.run.result.xunit.max_test_log_chars': 100000,
+2020-10-30 20:03:24,431 job              L0249 INFO |  'job.run.result.xunit.output': None,
+2020-10-30 20:03:24,431 job              L0249 INFO |  'job.run.timeout': 0,
+2020-10-30 20:03:24,432 job              L0249 INFO |  'jobs.get.output_files.destination': None,
+2020-10-30 20:03:24,432 job              L0249 INFO |  'jobs.get.output_files.job_id': None,
+2020-10-30 20:03:24,432 job              L0249 INFO |  'jobs.show.job_id': 'latest',
+2020-10-30 20:03:24,432 job              L0249 INFO |  'json.variants.load': None,
+2020-10-30 20:03:24,432 job              L0249 INFO |  'list.external_runner': None,
+2020-10-30 20:03:24,432 job              L0249 INFO |  'list.external_runner_chdir': None,
+2020-10-30 20:03:24,432 job              L0249 INFO |  'list.external_runner_testdir': None,
+2020-10-30 20:03:24,432 job              L0249 INFO |  'list.loaders': ['file', '@DEFAULT'],
+2020-10-30 20:03:24,433 job              L0249 INFO |  'list.recipes.write_to_directory': None,
+2020-10-30 20:03:24,433 job              L0249 INFO |  'list.references': [],
+2020-10-30 20:03:24,433 job              L0249 INFO |  'list.resolver': False,
+2020-10-30 20:03:24,433 job              L0249 INFO |  'nrunner.max_parallel_tasks': 5,
+2020-10-30 20:03:24,433 job              L0249 INFO |  'nrunner.shuffle': False,
+2020-10-30 20:03:24,433 job              L0249 INFO |  'nrunner.spawner': 'process',
+2020-10-30 20:03:24,433 job              L0249 INFO |  'nrunner.status_server_uri': '127.0.0.1:8888',
+2020-10-30 20:03:24,433 job              L0249 INFO |  'plugins.cli.cmd.order': [],
+2020-10-30 20:03:24,434 job              L0249 INFO |  'plugins.cli.order': [],
+2020-10-30 20:03:24,434 job              L0249 INFO |  'plugins.disable': [],
+2020-10-30 20:03:24,434 job              L0249 INFO |  'plugins.init.order': [],
+2020-10-30 20:03:24,434 job              L0249 INFO |  'plugins.job.prepost.order': [],
+2020-10-30 20:03:24,434 job              L0249 INFO |  'plugins.jobscripts.post': '/etc/avocado/scripts/job/post.d/',
+2020-10-30 20:03:24,434 job              L0249 INFO |  'plugins.jobscripts.pre': '/etc/avocado/scripts/job/pre.d/',
+2020-10-30 20:03:24,434 job              L0249 INFO |  'plugins.jobscripts.warn_non_existing_dir': False,
+2020-10-30 20:03:24,434 job              L0249 INFO |  'plugins.jobscripts.warn_non_zero_status': True,
+2020-10-30 20:03:24,434 job              L0249 INFO |  'plugins.resolver.order': [],
+2020-10-30 20:03:24,435 job              L0249 INFO |  'plugins.result.order': [],
+2020-10-30 20:03:24,435 job              L0249 INFO |  'plugins.result_events.order': [],
+2020-10-30 20:03:24,435 job              L0249 INFO |  'plugins.runnable.runner.order': [],
+2020-10-30 20:03:24,435 job              L0249 INFO |  'plugins.runner.order': [],
+2020-10-30 20:03:24,435 job              L0249 INFO |  'plugins.skip_broken_plugin_notification': [],
+2020-10-30 20:03:24,435 job              L0249 INFO |  'plugins.spawner.order': [],
+2020-10-30 20:03:24,435 job              L0249 INFO |  'plugins.varianter.order': [],
+2020-10-30 20:03:24,435 job              L0249 INFO |  'run.dry_run.enabled': False,
+2020-10-30 20:03:24,436 job              L0249 INFO |  'run.dry_run.no_cleanup': False,
+2020-10-30 20:03:24,436 job              L0249 INFO |  'run.execution_order': 'variants-per-test',
+2020-10-30 20:03:24,436 job              L0249 INFO |  'run.external_runner': None,
+2020-10-30 20:03:24,436 job              L0249 INFO |  'run.external_runner_chdir': None,
+2020-10-30 20:03:24,436 job              L0249 INFO |  'run.external_runner_testdir': None,
+2020-10-30 20:03:24,436 job              L0249 INFO |  'run.failfast': False,
+2020-10-30 20:03:24,436 job              L0249 INFO |  'run.ignore_missing_references': False,
+2020-10-30 20:03:24,436 job              L0249 INFO |  'run.job_category': None,
+2020-10-30 20:03:24,437 job              L0249 INFO |  'run.journal.enabled': False,
+2020-10-30 20:03:24,437 job              L0249 INFO |  'run.keep_tmp': False,
+2020-10-30 20:03:24,437 job              L0249 INFO |  'run.loaders': ['file', '@DEFAULT'],
+2020-10-30 20:03:24,437 job              L0249 INFO |  'run.log_test_data_directories': False,
+2020-10-30 20:03:24,437 job              L0249 INFO |  'run.output_check': True,
+2020-10-30 20:03:24,437 job              L0249 INFO |  'run.output_check_record': None,
+2020-10-30 20:03:24,437 job              L0249 INFO |  'run.references': ['/var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test'],
+2020-10-30 20:03:24,437 job              L0249 INFO |  'run.replay.ignore': [],
+2020-10-30 20:03:24,438 job              L0249 INFO |  'run.replay.job_id': None,
+2020-10-30 20:03:24,438 job              L0249 INFO |  'run.replay.resume': False,
+2020-10-30 20:03:24,438 job              L0249 INFO |  'run.replay.test_status': [],
+2020-10-30 20:03:24,438 job              L0249 INFO |  'run.results.archive': False,
+2020-10-30 20:03:24,438 job              L0249 INFO |  'run.results_dir': None,
+2020-10-30 20:03:24,438 job              L0249 INFO |  'run.store_logging_stream': [],
+2020-10-30 20:03:24,438 job              L0249 INFO |  'run.test_parameters': [],
+2020-10-30 20:03:24,438 job              L0249 INFO |  'run.test_runner': 'runner',
+2020-10-30 20:03:24,439 job              L0249 INFO |  'run.unique_job_id': None,
+2020-10-30 20:03:24,439 job              L0249 INFO |  'run.wrapper.wrappers': [],
+2020-10-30 20:03:24,439 job              L0249 INFO |  'runner.output.color': 'auto',
+2020-10-30 20:03:24,439 job              L0249 INFO |  'runner.output.colored': True,
+2020-10-30 20:03:24,439 job              L0249 INFO |  'runner.output.utf8': True,
+2020-10-30 20:03:24,439 job              L0249 INFO |  'runner.timeout.after_interrupted': 60,
+2020-10-30 20:03:24,439 job              L0249 INFO |  'runner.timeout.process_alive': 60,
+2020-10-30 20:03:24,439 job              L0249 INFO |  'runner.timeout.process_died': 10,
+2020-10-30 20:03:24,439 job              L0249 INFO |  'simpletests.status.skip_location': 'all',
+2020-10-30 20:03:24,440 job              L0249 INFO |  'simpletests.status.skip_regex': '^SKIP$',
+2020-10-30 20:03:24,440 job              L0249 INFO |  'simpletests.status.warn_location': 'all',
+2020-10-30 20:03:24,440 job              L0249 INFO |  'simpletests.status.warn_regex': '^WARN$',
+2020-10-30 20:03:24,440 job              L0249 INFO |  'spawner.podman.bin': '/usr/bin/podman',
+2020-10-30 20:03:24,440 job              L0249 INFO |  'spawner.podman.image': 'fedora:31',
+2020-10-30 20:03:24,440 job              L0249 INFO |  'subcommand': 'run',
+2020-10-30 20:03:24,440 job              L0249 INFO |  'sysinfo.collect.commands_timeout': -1,
+2020-10-30 20:03:24,440 job              L0249 INFO |  'sysinfo.collect.enabled': True,
+2020-10-30 20:03:24,441 job              L0249 INFO |  'sysinfo.collect.installed_packages': False,
+2020-10-30 20:03:24,441 job              L0249 INFO |  'sysinfo.collect.locale': 'C',
+2020-10-30 20:03:24,441 job              L0249 INFO |  'sysinfo.collect.optimize': False,
+2020-10-30 20:03:24,441 job              L0249 INFO |  'sysinfo.collect.per_test': False,
+2020-10-30 20:03:24,441 job              L0249 INFO |  'sysinfo.collect.profiler': False,
+2020-10-30 20:03:24,441 job              L0249 INFO |  'sysinfo.collect.sysinfodir': None,
+2020-10-30 20:03:24,441 job              L0249 INFO |  'sysinfo.collectibles.commands': '/usr/local/lib/python3.6/dist-packages/avocado/etc/avocado/sysinfo/commands',
+2020-10-30 20:03:24,441 job              L0249 INFO |  'sysinfo.collectibles.fail_commands': '/usr/local/lib/python3.6/dist-packages/avocado/etc/avocado/sysinfo/fail_commands',
+2020-10-30 20:03:24,442 job              L0249 INFO |  'sysinfo.collectibles.fail_files': '/usr/local/lib/python3.6/dist-packages/avocado/etc/avocado/sysinfo/fail_files',
+2020-10-30 20:03:24,442 job              L0249 INFO |  'sysinfo.collectibles.files': '/usr/local/lib/python3.6/dist-packages/avocado/etc/avocado/sysinfo/files',
+2020-10-30 20:03:24,442 job              L0249 INFO |  'sysinfo.collectibles.profilers': '/usr/local/lib/python3.6/dist-packages/avocado/etc/avocado/sysinfo/profilers',
+2020-10-30 20:03:24,442 job              L0249 INFO |  'variants.contents': False,
+2020-10-30 20:03:24,442 job              L0249 INFO |  'variants.debug': False,
+2020-10-30 20:03:24,442 job              L0249 INFO |  'variants.inherit': False,
+2020-10-30 20:03:24,442 job              L0249 INFO |  'variants.json_variants_dump': None,
+2020-10-30 20:03:24,442 job              L0249 INFO |  'variants.summary': 0,
+2020-10-30 20:03:24,443 job              L0249 INFO |  'variants.tree': False,
+2020-10-30 20:03:24,443 job              L0249 INFO |  'variants.variants': 1,
+2020-10-30 20:03:24,443 job              L0249 INFO |  'vmimage.get.arch': None,
+2020-10-30 20:03:24,443 job              L0249 INFO |  'vmimage.get.distro': None,
+2020-10-30 20:03:24,443 job              L0249 INFO |  'vmimage.get.version': None}
+2020-10-30 20:03:24,443 job              L0250 INFO | 
+2020-10-30 20:03:24,443 job              L0253 INFO | Avocado Data Directories:
+2020-10-30 20:03:24,443 job              L0254 INFO | 
+2020-10-30 20:03:24,445 job              L0255 INFO | base     /home/automark/avocado
+2020-10-30 20:03:24,494 job              L0256 INFO | tests    /home/automark/avocado/tests
+2020-10-30 20:03:24,496 job              L0257 INFO | data     /home/automark/avocado/data
+2020-10-30 20:03:24,496 job              L0258 INFO | logs     /home/automark/avocado/job-results/job-2020-10-30T20.03-9871fda
+2020-10-30 20:03:24,497 job              L0259 INFO | 
+2020-10-30 20:03:24,500 job              L0295 INFO | Temporary dir: /var/tmp/avocado_gs98w8oj/avocado_job_ljdt30ss
+2020-10-30 20:03:24,500 job              L0296 INFO | 
+2020-10-30 20:03:24,500 job              L0289 INFO | Job ID: 9871fda77651a08047c65c1f9227f44fbf686fc5
+2020-10-30 20:03:24,500 job              L0292 INFO | 
+2020-10-30 20:03:24,740 test             L0304 INFO | INIT 1-/var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test
+2020-10-30 20:03:24,744 parameters       L0143 DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+2020-10-30 20:03:24,745 test             L0336 DEBUG| Test metadata:
+2020-10-30 20:03:24,745 test             L0338 DEBUG|   filename: /var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py
+2020-10-30 20:03:24,746 test             L0344 DEBUG|   teststmpdir: /var/tmp/avocado_xetpb5rc
+2020-10-30 20:03:24,746 test             L0345 DEBUG|   workdir: /var/tmp/avocado_gs98w8oj/avocado_job_ljdt30ss/1-_var_www_html_tsugi_mod_pythonauto_tests_modify_var_elf.py_PrintVariableTest.test
+2020-10-30 20:03:24,749 test             L0530 INFO | START 1-/var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test
+2020-10-30 20:03:24,749 test             L0206 DEBUG| DATA (filename=output.expected) => NOT FOUND (data sources: variant, test, file)
+2020-10-30 20:03:24,751 parameters       L0143 DEBUG| PARAMS (key=source, path=*, default=/var/www/html/tsugi/mod/pythonauto/testproj/src/main.c) => '/var/www/html/tsugi/mod/pythonauto/testproj/src/main.c'
+2020-10-30 20:03:24,752 test             L0202 DEBUG| DATA (filename=/var/www/html/tsugi/mod/pythonauto/testproj/src/main.c) => /var/www/html/tsugi/mod/pythonauto/testproj/src/main.c (found at test source dir)
+2020-10-30 20:03:24,753 output           L0696 DEBUG| [stdout] SameFileError probably
+2020-10-30 20:03:24,753 output           L0696 DEBUG| [stdout] 
+
+2020-10-30 20:03:24,756 process          L0604 INFO | Running 'make clean'
+2020-10-30 20:03:24,783 process          L0416 DEBUG| [stdout] rm -rf  ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/lcd_stm32f0.o ./src/main.o  testproj.hex  testproj.siz  ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.d ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.d  ./system/src/newlib/_exit.d ./system/src/newlib/_sbrk.d ./system/src/newlib/_startup.d ./system/src/newlib/_syscalls.d ./system/src/newlib/assert.d  ./system/src/diag/Trace.d ./system/src/diag/trace_impl.d  ./system/src/cortexm/_initialize_hardware.d ./system/src/cortexm/_reset_hardware.d ./system/src/cortexm/exception_handlers.d  ./system/src/cmsis/system_stm32f0xx.d ./system/src/cmsis/vectors_stm32f0xx.d  ./src/_write.d ./src/lcd_stm32f0.d ./src/main.d  ./system/src/newlib/_cxx.d  testproj.elf
+2020-10-30 20:03:24,793 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:24,794 process          L0686 INFO | Command 'make clean' finished with 0 after 0.030609846115112305s
+2020-10-30 20:03:24,838 process          L0604 INFO | Running 'make testproj.elf'
+2020-10-30 20:03:24,877 process          L0416 DEBUG| [stdout] Building file: ../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c
+2020-10-30 20:03:24,878 process          L0416 DEBUG| [stdout] Building file: ../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c
+2020-10-30 20:03:24,879 process          L0416 DEBUG| [stdout] Building file: ../system/src/newlib/_exit.c
+2020-10-30 20:03:24,880 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:24,881 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f0-stdperiph/stm32f0xx_gpio.d" -MT"system/src/stm32f0-stdperiph/stm32f0xx_gpio.o" -c -o "system/src/stm32f0-stdperiph/stm32f0xx_gpio.o" "../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c"
+2020-10-30 20:03:24,882 process          L0416 DEBUG| [stdout] Building file: ../system/src/newlib/_startup.c
+2020-10-30 20:03:24,882 process          L0416 DEBUG| [stdout] Building file: ../system/src/newlib/_cxx.cpp
+2020-10-30 20:03:24,882 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:24,883 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_exit.d" -MT"system/src/newlib/_exit.o" -c -o "system/src/newlib/_exit.o" "../system/src/newlib/_exit.c"
+2020-10-30 20:03:24,884 process          L0416 DEBUG| [stdout] Building file: ../system/src/newlib/_sbrk.c
+2020-10-30 20:03:24,884 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C++ Compiler
+2020-10-30 20:03:24,885 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:24,885 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f0-stdperiph/stm32f0xx_rcc.d" -MT"system/src/stm32f0-stdperiph/stm32f0xx_rcc.o" -c -o "system/src/stm32f0-stdperiph/stm32f0xx_rcc.o" "../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c"
+2020-10-30 20:03:24,886 process          L0416 DEBUG| [stdout] arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu++11 -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -MMD -MP -MF"system/src/newlib/_cxx.d" -MT"system/src/newlib/_cxx.o" -c -o "system/src/newlib/_cxx.o" "../system/src/newlib/_cxx.cpp"
+2020-10-30 20:03:24,887 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:24,888 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_startup.d" -MT"system/src/newlib/_startup.o" -c -o "system/src/newlib/_startup.o" "../system/src/newlib/_startup.c"
+2020-10-30 20:03:24,889 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:24,889 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_sbrk.d" -MT"system/src/newlib/_sbrk.o" -c -o "system/src/newlib/_sbrk.o" "../system/src/newlib/_sbrk.c"
+2020-10-30 20:03:25,038 process          L0416 DEBUG| [stdout] Finished building: ../system/src/newlib/_exit.c
+2020-10-30 20:03:25,125 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,125 process          L0416 DEBUG| [stdout] Building file: ../system/src/newlib/_syscalls.c
+2020-10-30 20:03:25,136 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:25,145 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_syscalls.d" -MT"system/src/newlib/_syscalls.o" -c -o "system/src/newlib/_syscalls.o" "../system/src/newlib/_syscalls.c"
+2020-10-30 20:03:25,152 process          L0416 DEBUG| [stdout] Finished building: ../system/src/newlib/_startup.c
+2020-10-30 20:03:25,161 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,169 process          L0416 DEBUG| [stdout] Finished building: ../system/src/newlib/_sbrk.c
+2020-10-30 20:03:25,193 process          L0416 DEBUG| [stdout] Building file: ../system/src/newlib/assert.c
+2020-10-30 20:03:25,212 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:25,213 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/assert.d" -MT"system/src/newlib/assert.o" -c -o "system/src/newlib/assert.o" "../system/src/newlib/assert.c"
+2020-10-30 20:03:25,217 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,219 process          L0416 DEBUG| [stdout] Building file: ../system/src/diag/Trace.c
+2020-10-30 20:03:25,237 process          L0416 DEBUG| [stdout] Finished building: ../system/src/newlib/_cxx.cpp
+2020-10-30 20:03:25,263 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:25,264 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/diag/Trace.d" -MT"system/src/diag/Trace.o" -c -o "system/src/diag/Trace.o" "../system/src/diag/Trace.c"
+2020-10-30 20:03:25,264 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,284 process          L0416 DEBUG| [stdout] Building file: ../system/src/diag/trace_impl.c
+2020-10-30 20:03:25,300 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:25,300 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/diag/trace_impl.d" -MT"system/src/diag/trace_impl.o" -c -o "system/src/diag/trace_impl.o" "../system/src/diag/trace_impl.c"
+2020-10-30 20:03:25,485 process          L0416 DEBUG| [stdout] Finished building: ../system/src/newlib/_syscalls.c
+2020-10-30 20:03:25,506 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,518 process          L0416 DEBUG| [stdout] Building file: ../system/src/cortexm/_initialize_hardware.c
+2020-10-30 20:03:25,532 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:25,532 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/_initialize_hardware.d" -MT"system/src/cortexm/_initialize_hardware.o" -c -o "system/src/cortexm/_initialize_hardware.o" "../system/src/cortexm/_initialize_hardware.c"
+2020-10-30 20:03:25,602 process          L0416 DEBUG| [stdout] Finished building: ../system/src/newlib/assert.c
+2020-10-30 20:03:25,617 process          L0416 DEBUG| [stdout] Finished building: ../system/src/stm32f0-stdperiph/stm32f0xx_gpio.c
+2020-10-30 20:03:25,631 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,639 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,663 process          L0416 DEBUG| [stdout] Building file: ../system/src/cortexm/_reset_hardware.c
+2020-10-30 20:03:25,667 process          L0416 DEBUG| [stdout] Finished building: ../system/src/diag/Trace.c
+2020-10-30 20:03:25,669 process          L0416 DEBUG| [stdout] Building file: ../system/src/cortexm/exception_handlers.c
+2020-10-30 20:03:25,685 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:25,686 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/exception_handlers.d" -MT"system/src/cortexm/exception_handlers.o" -c -o "system/src/cortexm/exception_handlers.o" "../system/src/cortexm/exception_handlers.c"
+2020-10-30 20:03:25,687 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,696 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:25,696 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/_reset_hardware.d" -MT"system/src/cortexm/_reset_hardware.o" -c -o "system/src/cortexm/_reset_hardware.o" "../system/src/cortexm/_reset_hardware.c"
+2020-10-30 20:03:25,719 process          L0416 DEBUG| [stdout] Building file: ../system/src/cmsis/system_stm32f0xx.c
+2020-10-30 20:03:25,723 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:25,723 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cmsis/system_stm32f0xx.d" -MT"system/src/cmsis/system_stm32f0xx.o" -c -o "system/src/cmsis/system_stm32f0xx.o" "../system/src/cmsis/system_stm32f0xx.c"
+2020-10-30 20:03:25,724 process          L0416 DEBUG| [stdout] Finished building: ../system/src/diag/trace_impl.c
+2020-10-30 20:03:25,726 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,747 process          L0416 DEBUG| [stdout] Building file: ../system/src/cmsis/vectors_stm32f0xx.c
+2020-10-30 20:03:25,791 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:25,792 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cmsis/vectors_stm32f0xx.d" -MT"system/src/cmsis/vectors_stm32f0xx.o" -c -o "system/src/cmsis/vectors_stm32f0xx.o" "../system/src/cmsis/vectors_stm32f0xx.c"
+2020-10-30 20:03:25,820 process          L0416 DEBUG| [stdout] Finished building: ../system/src/stm32f0-stdperiph/stm32f0xx_rcc.c
+2020-10-30 20:03:25,824 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,860 process          L0416 DEBUG| [stdout] Building file: ../src/_write.c
+2020-10-30 20:03:25,921 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:25,922 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/_write.d" -MT"src/_write.o" -c -o "src/_write.o" "../src/_write.c"
+2020-10-30 20:03:25,934 process          L0416 DEBUG| [stdout] Finished building: ../system/src/cmsis/vectors_stm32f0xx.c
+2020-10-30 20:03:25,976 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:25,993 process          L0416 DEBUG| [stdout] Building file: ../src/lcd_stm32f0.c
+2020-10-30 20:03:26,007 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:26,164 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/lcd_stm32f0.d" -MT"src/lcd_stm32f0.o" -c -o "src/lcd_stm32f0.o" "../src/lcd_stm32f0.c"
+2020-10-30 20:03:26,164 process          L0416 DEBUG| [stdout] Finished building: ../src/_write.c
+2020-10-30 20:03:26,198 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:26,198 process          L0416 DEBUG| [stdout] Building file: ../src/main.c
+2020-10-30 20:03:26,199 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C Compiler
+2020-10-30 20:03:26,199 process          L0416 DEBUG| [stdout] arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f0-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+2020-10-30 20:03:26,199 process          L0416 DEBUG| [stdout] Finished building: ../system/src/cmsis/system_stm32f0xx.c
+2020-10-30 20:03:26,199 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:26,200 process          L0416 DEBUG| [stdout] Finished building: ../system/src/cortexm/_initialize_hardware.c
+2020-10-30 20:03:26,200 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:26,200 process          L0416 DEBUG| [stdout] Finished building: ../system/src/cortexm/exception_handlers.c
+2020-10-30 20:03:26,204 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:26,383 process          L0416 DEBUG| [stdout] Finished building: ../src/lcd_stm32f0.c
+2020-10-30 20:03:26,384 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:26,403 process          L0416 DEBUG| [stdout] Finished building: ../system/src/cortexm/_reset_hardware.c
+2020-10-30 20:03:26,405 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:26,501 process          L0416 DEBUG| [stdout] Finished building: ../src/main.c
+2020-10-30 20:03:26,503 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:26,505 process          L0416 DEBUG| [stdout] Building target: testproj.elf
+2020-10-30 20:03:26,506 process          L0416 DEBUG| [stdout] Invoking: GNU ARM Cross C++ Linker
+2020-10-30 20:03:26,506 process          L0416 DEBUG| [stdout] arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"testproj.map" --specs=nano.specs -o "testproj.elf"  ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/lcd_stm32f0.o ./src/main.o   
+2020-10-30 20:03:26,630 process          L0416 DEBUG| [stdout] Finished building target: testproj.elf
+2020-10-30 20:03:26,632 process          L0416 DEBUG| [stdout]  
+2020-10-30 20:03:26,632 process          L0686 INFO | Command 'make testproj.elf' finished with 0 after 1.78192138671875s
+2020-10-30 20:03:26,638 process          L0604 INFO | Running '/home/automark/Work/qemu-arm-dev/linux-x64/install/qemu-arm/bin/qemu-system-gnuarmeclipse -s -S --board UCT-Development --image /var/www/html/tsugi/mod/pythonauto/testproj/Debug/testproj.elf --verbose --nographic --verbose -d unimp,guest_errors'
+2020-10-30 20:03:26,874 process          L0416 DEBUG| [stdout] 
+2020-10-30 20:03:26,876 process          L0416 DEBUG| [stdout] xPack 64-bit QEMU v2.8.0-9 (qemu-system-gnuarmeclipse).
+2020-10-30 20:03:26,877 process          L0416 DEBUG| [stdout] Board: 'UCT-Development' (UCT dev board for STM32F051C6).
+2020-10-30 20:03:26,879 process          L0416 DEBUG| [stdout] Device file: '/home/automark/Work/qemu-arm-dev/linux-x64/install/qemu-arm/share/qemu/devices/STM32F0x1-qemu.json'.
+2020-10-30 20:03:26,957 process          L0416 DEBUG| [stdout] Device: 'STM32F051C6' (Cortex-M0 r0p0, 2 NVIC prio bits, 31 IRQs), Flash: 32 kB, RAM: 8 kB.
+2020-10-30 20:03:26,958 process          L0416 DEBUG| [stdout] Image: '/var/www/html/tsugi/mod/pythonauto/testproj/Debug/testproj.elf'.
+2020-10-30 20:03:26,958 process          L0416 DEBUG| [stdout] Command line: (none).
+2020-10-30 20:03:26,963 process          L0416 DEBUG| [stdout] Load   7176 bytes at 0x08000000-0x08001C07.
+2020-10-30 20:03:26,963 process          L0416 DEBUG| [stdout] Load    136 bytes at 0x08001C08-0x08001C8F.
+2020-10-30 20:03:26,963 process          L0416 DEBUG| [stdout] Load    440 bytes at 0x20000088-0x2000023F.
+2020-10-30 20:03:26,964 process          L0416 DEBUG| [stdout] Cortex-M0 r0p0 core initialised.
+2020-10-30 20:03:26,966 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/RCC', address: 0x40021000, size: 0x0400
+2020-10-30 20:03:26,980 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/PWR', address: 0x40007000, size: 0x0400
+2020-10-30 20:03:26,983 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/SYSCFG', address: 0x40010000, size: 0x001D
+2020-10-30 20:03:26,987 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/EXTI', address: 0x40010400, size: 0x0400
+2020-10-30 20:03:27,011 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/GPIOA', address: 0x48000000, size: 0x0400
+2020-10-30 20:03:27,038 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/GPIOB', address: 0x48000400, size: 0x0400
+2020-10-30 20:03:27,055 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/GPIOC', address: 0x48000800, size: 0x0400
+2020-10-30 20:03:27,070 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/GPIOD', address: 0x48000C00, size: 0x0400
+2020-10-30 20:03:27,086 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/GPIOF', address: 0x48001400, size: 0x0400
+2020-10-30 20:03:27,117 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/USART1', address: 0x40013800, size: 0x0400
+2020-10-30 20:03:27,141 process          L0416 DEBUG| [stdout] '/machine/mcu/stm32/USART2', address: 0x40004400, size: 0x0400
+2020-10-30 20:03:27,148 process          L0416 DEBUG| [stdout] '/peripheral/led:red_0_PB0' 8*6 @(288,268) active high '/machine/mcu/stm32/GPIOB',0
+2020-10-30 20:03:27,148 process          L0416 DEBUG| [stdout] '/peripheral/led:red_1_PB1' 8*6 @(265,268) active high '/machine/mcu/stm32/GPIOB',1
+2020-10-30 20:03:27,149 process          L0416 DEBUG| [stdout] '/peripheral/led:red_2_PB2' 8*6 @(241,268) active high '/machine/mcu/stm32/GPIOB',2
+2020-10-30 20:03:27,149 process          L0416 DEBUG| [stdout] '/peripheral/led:red_3_PB3' 8*6 @(216,268) active high '/machine/mcu/stm32/GPIOB',3
+2020-10-30 20:03:27,149 process          L0416 DEBUG| [stdout] '/peripheral/led:red_4_PB4' 8*6 @(193,268) active high '/machine/mcu/stm32/GPIOB',4
+2020-10-30 20:03:27,149 process          L0416 DEBUG| [stdout] '/peripheral/led:red_5_PB5' 8*6 @(170,268) active high '/machine/mcu/stm32/GPIOB',5
+2020-10-30 20:03:27,150 process          L0416 DEBUG| [stdout] '/peripheral/led:red_6_PB6' 8*6 @(146,268) active high '/machine/mcu/stm32/GPIOB',6
+2020-10-30 20:03:27,150 process          L0416 DEBUG| [stdout] '/peripheral/led:red_7_PB7' 8*6 @(121,268) active high '/machine/mcu/stm32/GPIOB',7
+2020-10-30 20:03:27,150 process          L0416 DEBUG| [stdout] '/peripheral/led:red_PWM_PB10' 8*6 @(352,465) active high '/machine/mcu/stm32/GPIOB',10
+2020-10-30 20:03:27,150 process          L0416 DEBUG| [stdout] '/peripheral/led:green_PWM_PB11' 8*6 @(352,470) active high '/machine/mcu/stm32/GPIOB',11
+2020-10-30 20:03:27,151 process          L0416 DEBUG| [stdout] GDB Server listening on: 'tcp::1234'...
+2020-10-30 20:03:27,151 process          L0416 DEBUG| [stdout] QEMU 2.8.0-9 monitor - type 'help' for more information
+2020-10-30 20:03:27,151 process          L0416 DEBUG| [stdout] (qemu) Cortex-M0 r0p0 core reset.
+2020-10-30 20:03:27,151 process          L0416 DEBUG| [stdout] 
+2020-10-30 20:03:27,252 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.2001305 Reading symbols from /var/www/html/tsugi/mod/pythonauto/testproj/Debug/testproj.elf...
+2020-10-30 20:03:27,256 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.2001305 done.
+2020-10-30 20:03:27,265 process          L0416 DEBUG| [stdout] ... connection accepted from 127.0.0.1.
+2020-10-30 20:03:27,266 process          L0416 DEBUG| [stdout] 
+2020-10-30 20:03:27,343 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.2633243 Remote debugging using :1234
+2020-10-30 20:03:27,349 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.2633243 Reset_Handler () at ../system/src/cortexm/exception_handlers.c:53
+2020-10-30 20:03:27,351 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.2633243 53	{
+2020-10-30 20:03:27,375 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.35866 Breakpoint 1 at 0x8000b28: file ../src/main.c, line 21.
+2020-10-30 20:03:27,384 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 2 at offset 0x14 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,396 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.3836186 1: x/th 0x48000414  0x48000414:	0000000000000000
+2020-10-30 20:03:27,399 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 2 at offset 0x10 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,412 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.3981452 2: x/th 0x48000010  0x48000010:	0000000000000000
+2020-10-30 20:03:27,510 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.486772 Num     Type           Disp Enb Address    What
+2020-10-30 20:03:27,511 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.486772 1       breakpoint     keep y   0x08000b28 in main at ../src/main.c:21
+2020-10-30 20:03:27,517 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 4 at offset 0x14 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,518 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 4 at offset 0x14 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,526 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.5132015 Hardware watchpoint 2: *0x48000414
+2020-10-30 20:03:27,533 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 4 at offset 0x14 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,546 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.532639 Continuing.
+2020-10-30 20:03:27,620 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 2 at offset 0x14 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,620 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 2 at offset 0x10 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,622 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 2 at offset 0x14 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,623 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 2 at offset 0x10 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,625 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 4 at offset 0x14 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,636 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.6242166 0x48000414:	0x00000000
+2020-10-30 20:03:27,639 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 4 at offset 0x14 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,651 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.639333 0x48000414:	0x00000000
+2020-10-30 20:03:27,654 process          L0416 DEBUG| [stderr] stm32:gpio-peripheral: Peripheral read of size 4 at offset 0x14 on disabled peripheral, returns 0.
+2020-10-30 20:03:27,666 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.6537921 0x48000414:	0x00000000
+2020-10-30 20:03:27,695 output           L0696 DEBUG| [stdout] [GDB terminal] 1604081007.6684783 Ending remote debugging.
+2020-10-30 20:03:27,697 output           L0696 DEBUG| [stdout] Qemu about to stop
+2020-10-30 20:03:27,699 process          L0416 DEBUG| [stderr] qemu-system-gnuarmeclipse: terminating on signal 15 from pid 31114 (/usr/bin/python3)
+2020-10-30 20:03:27,702 process          L0686 INFO | Command '/home/automark/Work/qemu-arm-dev/linux-x64/install/qemu-arm/bin/qemu-system-gnuarmeclipse -s -S --board UCT-Development --image /var/www/html/tsugi/mod/pythonauto/testproj/Debug/testproj.elf --verbose --nographic --verbose -d unimp,guest_errors' finished with 0 after 1.0452618598937988s
+2020-10-30 20:03:27,713 test             L0206 DEBUG| DATA (filename=output.expected) => NOT FOUND (data sources: variant, test, file)
+2020-10-30 20:03:27,713 test             L0206 DEBUG| DATA (filename=stdout.expected) => NOT FOUND (data sources: variant, test, file)
+2020-10-30 20:03:27,714 test             L0206 DEBUG| DATA (filename=stderr.expected) => NOT FOUND (data sources: variant, test, file)
+2020-10-30 20:03:27,714 test             L0939 INFO | PASS 1-/var/www/html/tsugi/mod/pythonauto/tests/modify_var_elf.py:PrintVariableTest.test
+2020-10-30 20:03:27,714 test             L0922 INFO | 
+2020-10-30 20:03:27,749 job              L0609 INFO | Test results available in /home/automark/avocado/job-results/job-2020-10-30T20.03-9871fda
+2020-10-30 20:03:27,750 sysinfo          L0113 DEBUG| Not logging /sys/kernel/debug/sched_features (file does not exist)
+2020-10-30 20:03:28,193 sysinfo          L0113 DEBUG| Not logging /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor (file does not exist)
+2020-10-30 20:03:28,194 sysinfo          L0113 DEBUG| Not logging /proc/pci (file does not exist)
+2020-10-30 20:03:28,239 sysinfo          L0111 DEBUG| Not logging /proc/slabinfo (lack of permissions)
