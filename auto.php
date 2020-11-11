@@ -489,7 +489,7 @@ This autograder is based on PythonAuto and qemu-arm-xpack.
 
 print "<!--\n";
 print "Context Information:\n\n";
-#print $context->dump();
+print $context->dump();
 
 print "\nSESSION Parameters:\n\n";
 ksort($_SESSION);
