@@ -1,0 +1,619 @@
+
+Running sdl2 configure...
+`configure' configures this package to adapt to many kinds of systems.
+
+Usage: /home/automark/Work/qemu-arm-dev/sources/SDL2-2.0.9/configure [OPTION]... [VAR=VALUE]...
+
+To assign environment variables (e.g., CC, CFLAGS...), specify them as
+VAR=VALUE.  See below for descriptions of some of the useful variables.
+
+Defaults for the options are specified in brackets.
+
+Configuration:
+  -h, --help              display this help and exit
+      --help=short        display options specific to this package
+      --help=recursive    display the short help of all the included packages
+  -V, --version           display version information and exit
+  -q, --quiet, --silent   do not print `checking ...' messages
+      --cache-file=FILE   cache test results in FILE [disabled]
+  -C, --config-cache      alias for `--cache-file=config.cache'
+  -n, --no-create         do not create output files
+      --srcdir=DIR        find the sources in DIR [configure dir or `..']
+
+Installation directories:
+  --prefix=PREFIX         install architecture-independent files in PREFIX
+                          [/usr/local]
+  --exec-prefix=EPREFIX   install architecture-dependent files in EPREFIX
+                          [PREFIX]
+
+By default, `make install' will install all the files in
+`/usr/local/bin', `/usr/local/lib' etc.  You can specify
+an installation prefix other than `/usr/local' using `--prefix',
+for instance `--prefix=$HOME'.
+
+For better control, use the options below.
+
+Fine tuning of the installation directories:
+  --bindir=DIR            user executables [EPREFIX/bin]
+  --sbindir=DIR           system admin executables [EPREFIX/sbin]
+  --libexecdir=DIR        program executables [EPREFIX/libexec]
+  --sysconfdir=DIR        read-only single-machine data [PREFIX/etc]
+  --sharedstatedir=DIR    modifiable architecture-independent data [PREFIX/com]
+  --localstatedir=DIR     modifiable single-machine data [PREFIX/var]
+  --libdir=DIR            object code libraries [EPREFIX/lib]
+  --includedir=DIR        C header files [PREFIX/include]
+  --oldincludedir=DIR     C header files for non-gcc [/usr/include]
+  --datarootdir=DIR       read-only arch.-independent data root [PREFIX/share]
+  --datadir=DIR           read-only architecture-independent data [DATAROOTDIR]
+  --infodir=DIR           info documentation [DATAROOTDIR/info]
+  --localedir=DIR         locale-dependent data [DATAROOTDIR/locale]
+  --mandir=DIR            man documentation [DATAROOTDIR/man]
+  --docdir=DIR            documentation root [DATAROOTDIR/doc/PACKAGE]
+  --htmldir=DIR           html documentation [DOCDIR]
+  --dvidir=DIR            dvi documentation [DOCDIR]
+  --pdfdir=DIR            pdf documentation [DOCDIR]
+  --psdir=DIR             ps documentation [DOCDIR]
+
+X features:
+  --x-includes=DIR    X include files are in DIR
+  --x-libraries=DIR   X library files are in DIR
+
+System types:
+  --build=BUILD     configure for building on BUILD [guessed]
+  --host=HOST       cross-compile to build programs to run on HOST [BUILD]
+
+Optional Features:
+  --disable-option-checking  ignore unrecognized --enable/--with options
+  --disable-FEATURE       do not include FEATURE (same as --enable-FEATURE=no)
+  --enable-FEATURE[=ARG]  include FEATURE [ARG=yes]
+  --enable-shared[=PKGS]  build shared libraries [default=yes]
+  --enable-static[=PKGS]  build static libraries [default=yes]
+  --enable-fast-install[=PKGS]
+                          optimize for fast installation [default=yes]
+  --disable-libtool-lock  avoid locking (might break parallel builds)
+  --enable-assertions     Enable internal sanity checks
+                          (auto/disabled/release/enabled/paranoid)
+                          [[default=auto]]
+  --enable-dependency-tracking
+                          Use gcc -MMD -MT dependency tracking [[default=yes]]
+  --enable-libc           Use the system C library [[default=yes]]
+  --enable-gcc-atomics    Use gcc builtin atomics [[default=yes]]
+  --enable-atomic         Enable the atomic operations subsystem
+                          [[default=yes]]
+  --enable-audio          Enable the audio subsystem [[default=yes]]
+  --enable-video          Enable the video subsystem [[default=yes]]
+  --enable-render         Enable the render subsystem [[default=yes]]
+  --enable-events         Enable the events subsystem [[default=yes]]
+  --enable-joystick       Enable the joystick subsystem [[default=yes]]
+  --enable-haptic         Enable the haptic (force feedback) subsystem
+                          [[default=yes]]
+  --enable-sensor         Enable the sensor subsystem [[default=yes]]
+  --enable-power          Enable the power subsystem [[default=yes]]
+  --enable-filesystem     Enable the filesystem subsystem [[default=yes]]
+  --enable-threads        Enable the threading subsystem [[default=yes]]
+  --enable-timers         Enable the timer subsystem [[default=yes]]
+  --enable-file           Enable the file subsystem [[default=yes]]
+  --enable-loadso         Enable the shared object loading subsystem
+                          [[default=yes]]
+  --enable-cpuinfo        Enable the cpuinfo subsystem [[default=yes]]
+  --enable-assembly       Enable assembly routines [[default=yes]]
+  --enable-ssemath        Allow GCC to use SSE floating point math
+                          [[default=maybe]]
+  --enable-mmx            use MMX assembly routines [[default=yes]]
+  --enable-3dnow          use 3DNow! assembly routines [[default=yes]]
+  --enable-sse            use SSE assembly routines [[default=yes]]
+  --enable-sse2           use SSE2 assembly routines [[default=maybe]]
+  --enable-sse3           use SSE3 assembly routines [[default=maybe]]
+  --enable-altivec        use Altivec assembly routines [[default=yes]]
+  --enable-oss            support the OSS audio API [[default=maybe]]
+  --enable-alsa           support the ALSA audio API [[default=yes]]
+  --disable-alsatest      Do not try to compile and run a test Alsa program
+  --enable-alsa-shared    dynamically load ALSA audio support [[default=yes]]
+  --enable-jack           use JACK audio [[default=yes]]
+  --enable-jack-shared    dynamically load JACK audio support [[default=yes]]
+  --enable-esd            support the Enlightened Sound Daemon [[default=yes]]
+  --disable-esdtest       Do not try to compile and run a test ESD program
+  --enable-esd-shared     dynamically load ESD audio support [[default=yes]]
+  --enable-pulseaudio     use PulseAudio [[default=yes]]
+  --enable-pulseaudio-shared
+                          dynamically load PulseAudio support [[default=yes]]
+  --enable-arts           support the Analog Real Time Synthesizer
+                          [[default=yes]]
+  --enable-arts-shared    dynamically load aRts audio support [[default=yes]]
+  --enable-nas            support the NAS audio API [[default=yes]]
+  --enable-nas-shared     dynamically load NAS audio support [[default=yes]]
+  --enable-sndio          support the sndio audio API [[default=yes]]
+  --enable-sndio-shared   dynamically load sndio audio support [[default=yes]]
+  --enable-fusionsound    use FusionSound audio driver [[default=no]]
+  --enable-fusionsound-shared
+                          dynamically load fusionsound audio support
+                          [[default=yes]]
+  --enable-diskaudio      support the disk writer audio driver [[default=yes]]
+  --enable-dummyaudio     support the dummy audio driver [[default=yes]]
+  --enable-libsamplerate  use libsamplerate for audio rate conversion
+                          [[default=yes]]
+  --enable-libsamplerate-shared
+                          dynamically load libsamplerate [[default=yes]]
+  --enable-video-wayland  use Wayland video driver [[default=yes]]
+  --enable-video-wayland-qt-touch
+                          QtWayland server support for Wayland video driver
+                          [[default=yes]]
+  --enable-wayland-shared dynamically load Wayland support [[default=maybe]]
+  --enable-video-mir      use Mir video driver [[default=no]]
+  --enable-mir-shared     dynamically load Mir support [[default=maybe]]
+  --enable-video-rpi      use Raspberry Pi video driver [[default=yes]]
+  --enable-video-x11      use X11 video driver [[default=yes]]
+  --enable-x11-shared     dynamically load X11 support [[default=maybe]]
+  --enable-video-x11-xcursor
+                          enable X11 Xcursor support [[default=yes]]
+  --enable-video-x11-xdbe enable X11 Xdbe support [[default=yes]]
+  --enable-video-x11-xinerama
+                          enable X11 Xinerama support [[default=yes]]
+  --enable-video-x11-xinput
+                          enable X11 XInput extension for manymouse, tablets,
+                          etc [[default=yes]]
+  --enable-video-x11-xrandr
+                          enable X11 Xrandr extension for fullscreen
+                          [[default=yes]]
+  --enable-video-x11-scrnsaver
+                          enable X11 screensaver extension [[default=yes]]
+  --enable-video-x11-xshape
+                          enable X11 XShape support [[default=yes]]
+  --enable-video-x11-vm   use X11 VM extension for fullscreen [[default=yes]]
+  --enable-video-vivante  use Vivante EGL video driver [[default=yes]]
+  --enable-video-cocoa    use Cocoa video driver [[default=yes]]
+  --enable-render-metal   enable the Metal render driver [[default=yes]]
+  --enable-video-directfb use DirectFB video driver [[default=no]]
+  --enable-directfb-shared
+                          dynamically load directfb support [[default=yes]]
+  --enable-video-kmsdrm   use KMSDRM video driver [[default=no]]
+  --enable-kmsdrm-shared  dynamically load kmsdrm support [[default=yes]]
+  --enable-video-dummy    use dummy video driver [[default=yes]]
+  --enable-video-opengl   include OpenGL support [[default=yes]]
+  --enable-video-opengles include OpenGL ES support [[default=yes]]
+  --enable-video-opengles1
+                          include OpenGL ES 1.1 support [[default=yes]]
+  --enable-video-opengles2
+                          include OpenGL ES 2.0 support [[default=yes]]
+  --enable-video-vulkan   include Vulkan support [[default=yes]]
+  --enable-libudev        enable libudev support [[default=yes]]
+  --enable-dbus           enable D-Bus support [[default=yes]]
+  --enable-ime            enable IME support [[default=yes]]
+  --enable-ibus           enable IBus support [[default=yes]]
+  --enable-fcitx          enable fcitx support [[default=yes]]
+  --enable-input-tslib    use the Touchscreen library for input
+                          [[default=yes]]
+  --enable-pthreads       use POSIX threads for multi-threading
+                          [[default=yes]]
+  --enable-pthread-sem    use pthread semaphores [[default=yes]]
+  --enable-directx        use DirectX for Windows audio/video [[default=yes]]
+  --enable-wasapi         use the Windows WASAPI audio driver [[default=yes]]
+  --enable-sdl-dlopen     use dlopen for shared object loading [[default=yes]]
+  --enable-hidapi         use HIDAPI for low level joystick drivers
+                          [[default=no]]
+  --enable-clock_gettime  use clock_gettime() instead of gettimeofday() on
+                          UNIX [[default=yes]]
+  --enable-rpath          use an rpath when linking SDL [[default=yes]]
+  --enable-render-d3d     enable the Direct3D render driver [[default=yes]]
+
+Optional Packages:
+  --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
+  --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
+  --with-pic[=PKGS]       try to use only PIC/non-PIC objects [default=use
+                          both]
+  --with-gnu-ld           assume the C compiler uses GNU ld [default=no]
+  --with-sysroot=DIR Search for dependent libraries within DIR
+                        (or the compiler's sysroot if not specified).
+  --with-alsa-prefix=PFX  Prefix where Alsa library is installed(optional)
+  --with-alsa-inc-prefix=PFX  Prefix where include libraries are (optional)
+  --with-esd-prefix=PFX   Prefix where ESD is installed (optional)
+  --with-esd-exec-prefix=PFX Exec prefix where ESD is installed (optional)
+  --with-x                use the X Window System
+
+Some influential environment variables:
+  CC          C compiler command
+  CFLAGS      C compiler flags
+  LDFLAGS     linker flags, e.g. -L<lib dir> if you have libraries in a
+              nonstandard directory <lib dir>
+  LIBS        libraries to pass to the linker, e.g. -l<library>
+  CPPFLAGS    (Objective) C/C++ preprocessor flags, e.g. -I<include dir> if
+              you have headers in a nonstandard directory <include dir>
+  CPP         C preprocessor
+  CXX         C++ compiler command
+  CXXFLAGS    C++ compiler flags
+  CXXCPP      C++ preprocessor
+  XMKMF       Path to xmkmf, Makefile generator for X Window System
+
+Use these variables to override the choices made by `configure' or to help
+it to find libraries and programs with nonstandard names/locations.
+
+Report bugs to the package provider.
+
+[bash /home/automark/Work/qemu-arm-dev/sources/SDL2-2.0.9/configure --prefix=/home/automark/Work/qemu-arm-dev/linux-x64/install/libs --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --target=x86_64-pc-linux-gnu --enable-video --disable-audio --disable-joystick --disable-haptic --enable-video-opengl --enable-video-x11]
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for x86_64-pc-linux-gnu-gcc... gcc-7
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc-7 accepts -g... yes
+checking for gcc-7 option to accept ISO C89... none needed
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc-7... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm-7
+checking the name lister (gcc-nm-7) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-pc-linux-gnu-dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-pc-linux-gnu-ar... gcc-ar-7
+checking for archiver @FILE support... @
+checking for x86_64-pc-linux-gnu-strip... strip
+checking for x86_64-pc-linux-gnu-ranlib... gcc-ranlib-7
+checking for gawk... gawk
+checking command to parse gcc-nm-7 output from gcc-7 object... ok
+checking for sysroot... no
+checking for x86_64-pc-linux-gnu-mt... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... gcc-7 -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc-7 supports -fno-rtti -fno-exceptions... yes
+checking for gcc-7 option to produce PIC... -fPIC -DPIC
+checking if gcc-7 PIC flag -fPIC -DPIC works... yes
+checking if gcc-7 static flag -static works... no
+checking if gcc-7 supports -c -o file.o... yes
+checking if gcc-7 supports -c -o file.o... (cached) yes
+checking whether the gcc-7 linker (ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc-7
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc-7 accepts -g... (cached) yes
+checking for gcc-7 option to accept ISO C89... (cached) none needed
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++-7 accepts -g... yes
+checking how to run the C++ preprocessor... g++-7 -E
+checking for ld used by g++-7... ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++-7 linker (ld -m elf_x86_64) supports shared libraries... yes
+checking for g++-7 option to produce PIC... -fPIC -DPIC
+checking if g++-7 PIC flag -fPIC -DPIC works... yes
+checking if g++-7 static flag -static works... no
+checking if g++-7 supports -c -o file.o... yes
+checking if g++-7 supports -c -o file.o... (cached) yes
+checking whether the g++-7 linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether make sets $(MAKE)... yes
+checking for x86_64-pc-linux-gnu-windres... windres
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for working volatile... yes
+checking for GCC -MMD -MT option... yes
+checking for linker option --no-undefined... yes
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking for memory.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for size_t... yes
+checking for M_PI in math.h... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for working memcmp... yes
+checking for working strtod... yes
+checking for mprotect... yes
+checking for malloc... yes
+checking for calloc... yes
+checking for realloc... yes
+checking for free... yes
+checking for getenv... yes
+checking for setenv... yes
+checking for putenv... yes
+checking for unsetenv... yes
+checking for qsort... yes
+checking for abs... yes
+checking for bcopy... yes
+checking for memset... yes
+checking for memcpy... yes
+checking for memmove... yes
+checking for wcslen... yes
+checking for wcscmp... yes
+checking for strlen... yes
+checking for strlcpy... no
+checking for strlcat... no
+checking for _strrev... no
+checking for _strupr... no
+checking for _strlwr... no
+checking for strchr... yes
+checking for strrchr... yes
+checking for strstr... yes
+checking for itoa... no
+checking for _ltoa... no
+checking for _uitoa... no
+checking for _ultoa... no
+checking for strtol... yes
+checking for strtoul... yes
+checking for _i64toa... no
+checking for _ui64toa... no
+checking for strtoll... yes
+checking for strtoull... yes
+checking for atoi... yes
+checking for atof... yes
+checking for strcmp... yes
+checking for strncmp... yes
+checking for _stricmp... no
+checking for strcasecmp... yes
+checking for _strnicmp... no
+checking for strncasecmp... yes
+checking for vsscanf... yes
+checking for vsnprintf... yes
+checking for fopen64... yes
+checking for fseeko... yes
+checking for fseeko64... yes
+checking for sigaction... yes
+checking for setjmp... yes
+checking for nanosleep... yes
+checking for sysconf... yes
+checking for sysctlbyname... no
+checking for getauxval... yes
+checking for poll... yes
+checking for pow in -lm... yes
+checking for acos... yes
+checking for acosf... yes
+checking for asin... yes
+checking for asinf... yes
+checking for atan... yes
+checking for atanf... yes
+checking for atan2... yes
+checking for atan2f... yes
+checking for ceil... yes
+checking for ceilf... yes
+checking for copysign... yes
+checking for copysignf... yes
+checking for cos... yes
+checking for cosf... yes
+checking for exp... yes
+checking for expf... yes
+checking for fabs... yes
+checking for fabsf... yes
+checking for floor... yes
+checking for floorf... yes
+checking for fmod... yes
+checking for fmodf... yes
+checking for log... yes
+checking for logf... yes
+checking for log10... yes
+checking for log10f... yes
+checking for pow... yes
+checking for powf... yes
+checking for scalbn... yes
+checking for scalbnf... yes
+checking for sin... yes
+checking for sinf... yes
+checking for sqrt... yes
+checking for sqrtf... yes
+checking for tan... yes
+checking for tanf... yes
+checking for iconv_open in -liconv... yes
+checking for iconv... yes
+checking for struct sigaction.sa_sigaction... yes
+checking libunwind.h usability... no
+checking libunwind.h presence... no
+checking for libunwind.h... no
+checking for GCC builtin atomic operations... yes
+checking for GCC -mmmx option... yes
+checking for GCC -m3dnow option... yes
+checking for GCC -msse option... yes
+checking for GCC -msse2 option... yes
+checking for GCC -msse3 option... yes
+checking immintrin.h usability... yes
+checking immintrin.h presence... yes
+checking for immintrin.h... yes
+checking for Altivec with GCC altivec.h and -maltivec option... no
+checking for Altivec with GCC -maltivec option... no
+checking for Altivec with GCC altivec.h and -faltivec option... no
+checking for Altivec with GCC -faltivec option... no
+checking for GCC -Wall option... yes
+checking for necessary GCC -Wno-multichar option... no
+checking for GCC -fvisibility=hidden option... yes
+checking for GCC -Wdeclaration-after-statement option... yes
+checking for dlopen... yes
+checking for dlopen in -lc... no
+checking for dlopen in -ldl... yes
+checking samplerate.h usability... no
+checking samplerate.h presence... no
+checking for samplerate.h... no
+checking for pkg-config... /opt/xbb/bin/pkg-config-verbose
+(/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig:) | pkg-config --exists bcm_host -> 1 []
+checking for Raspberry Pi... no
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for X11/extensions/Xext.h... yes
+-- dynamic libX11 -> libX11.so.6
+-- dynamic libX11ext -> libXext.so.6
+checking for const parameter to XextAddDisplay... yes
+checking for XGenericEvent... yes
+checking for XkbKeycodeToKeysym in -lX11... yes
+checking for X11/Xcursor/Xcursor.h... yes
+-- dynamic libXcursor -> libXcursor.so.1
+checking for X11/extensions/Xdbe.h... yes
+checking for X11/extensions/Xinerama.h... yes
+-- dynamic libXinerama -> libXinerama.so.1
+checking for X11/extensions/XInput2.h... yes
+-- dynamic libXi -> libXi.so.6
+checking for xinput2 multitouch... yes
+-- dynamic libXrandr -> libXrandr.so.2
+checking for X11/extensions/scrnsaver.h... yes
+-- dynamic libXss -> libXss.so.1
+checking for X11/extensions/shape.h... yes
+checking for X11/extensions/xf86vmode.h... yes
+-- dynamic libXxf86vm -> libXxf86vm.so.1
+checking for OpenGL (GLX) support... yes
+checking for EGL support... yes
+checking for OpenGL ES v1 headers... no
+checking for OpenGL ES v2 headers... yes
+checking for pkg-config... (cached) /opt/xbb/bin/pkg-config-verbose
+checking for Wayland support... (/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig:) | pkg-config --exists wayland-client wayland-scanner wayland-protocols wayland-egl wayland-cursor egl xkbcommon -> 1 []
+no
+checking libudev.h usability... yes
+checking libudev.h presence... yes
+checking for libudev.h... yes
+-- dynamic udev -> libudev.so.1
+checking for pkg-config... (cached) /opt/xbb/bin/pkg-config-verbose
+Package dbus-1 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `dbus-1.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'dbus-1' found
+Package dbus-1 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `dbus-1.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'dbus-1' found
+(/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig:) | pkg-config --cflags dbus-1 -> 1 []
+checking dbus/dbus.h usability... no
+checking dbus/dbus.h presence... no
+checking for dbus/dbus.h... no
+checking for pkg-config... (cached) /opt/xbb/bin/pkg-config-verbose
+Package ibus-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `ibus-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'ibus-1.0' found
+Package ibus-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `ibus-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'ibus-1.0' found
+(/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig:) | pkg-config --cflags ibus-1.0 -> 1 []
+checking ibus-1.0/ibus.h usability... no
+checking ibus-1.0/ibus.h presence... no
+checking for ibus-1.0/ibus.h... no
+checking sys/inotify.h usability... yes
+checking sys/inotify.h presence... yes
+checking for sys/inotify.h... yes
+checking for pkg-config... (cached) /opt/xbb/bin/pkg-config-verbose
+Package fcitx was not found in the pkg-config search path.
+Perhaps you should add the directory containing `fcitx.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'fcitx' found
+Package fcitx was not found in the pkg-config search path.
+Perhaps you should add the directory containing `fcitx.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'fcitx' found
+(/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig:) | pkg-config --cflags fcitx -> 1 []
+checking fcitx/frontend.h usability... no
+checking fcitx/frontend.h presence... no
+checking for fcitx/frontend.h... no
+checking for Linux 2.4 unified input interface... yes
+checking for Linux kd.h... yes
+checking for Touchscreen library support... no
+checking for pthreads... yes
+checking for recursive mutexes... yes
+checking for pthread semaphores... yes
+checking for sem_timedwait... yes
+checking for pthread_np.h... no
+checking for pthread_setname_np... yes
+checking for pthread_set_name_np... no
+checking for clock_gettime in -lrt... yes
+checking linux/version.h usability... yes
+checking linux/version.h presence... yes
+checking for linux/version.h... yes
+checking for Vivante VDK API... no
+checking for Vivante FB API... no
+checking for linker option --enable-new-dtags... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating sdl2-config
+config.status: creating sdl2-config.cmake
+config.status: creating SDL2.spec
+config.status: creating sdl2.pc
+config.status: creating include/SDL_config.h
+config.status: executing libtool commands
+config.status: executing sdl2_config commands
+config.status: executing summary commands
+SDL2 Configure Summary:
+Building Shared Libraries
+Building Static Libraries
+Enabled modules : atomic video render events sensor power filesystem threads timers file loadso cpuinfo assembly
+Assembly Math   : mmx 3dnow sse sse2 sse3
+Audio drivers   :
+Video drivers   : dummy x11(dynamic) opengl opengl_es2 vulkan
+X11 libraries   : xcursor xdbe xinerama xinput2 xinput2_multitouch xrandr xscrnsaver xshape xvidmode
+Input drivers   : linuxev linuxkd
+Using libsamplerate : NO
+Using libudev       : YES
+Using dbus          : NO
+Using ime           : YES
+Using ibus          : NO
+Using fcitx         : NO

@@ -1,0 +1,1425 @@
+
+Running gettext make...
+
+[make -j 5]
+make  all-recursive
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1'
+Making all in doc
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/doc'
+Making all in intl
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl'
+sed -e '/IN_LIBGLOCALE/d' \
+    -e 's,@''HAVE_POSIX_PRINTF''@,1,g' \
+    -e 's,@''HAVE_ASPRINTF''@,1,g' \
+    -e 's,@''HAVE_NEWLOCALE''@,1,g' \
+    -e 's,@''HAVE_SNPRINTF''@,1,g' \
+    -e 's,@''HAVE_WPRINTF''@,0,g' \
+  < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/libgnuintl.in.h \
+| if test 'no' = yes; then \
+    sed -e 's/extern \([^()]*\);/extern __declspec (dllimport) \1;/'; \
+  else \
+    cat; \
+  fi \
+| sed -e 's/extern \([^"]\)/extern LIBINTL_DLL_EXPORTED \1/' \
+      -e "/#define _LIBINTL_H/r /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/export.h" \
+| sed -e 's,@''HAVE_VISIBILITY''@,1,g' \
+  > libgnuintl.h
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/bindtextdom.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dcgettext.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dgettext.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/gettext.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/finddomain.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/bindtextdom.c  -fPIC -DPIC -o .libs/bindtextdom.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/finddomain.c  -fPIC -DPIC -o .libs/finddomain.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dgettext.c  -fPIC -DPIC -o .libs/dgettext.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dcgettext.c  -fPIC -DPIC -o .libs/dcgettext.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/gettext.c  -fPIC -DPIC -o .libs/gettext.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/bindtextdom.c -o bindtextdom.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dcgettext.c -o dcgettext.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/finddomain.c -o finddomain.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dgettext.c -o dgettext.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/gettext.c -o gettext.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/hash-string.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/loadmsgcat.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/localealias.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/textdomain.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/l10nflist.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/hash-string.c  -fPIC -DPIC -o .libs/hash-string.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/hash-string.c -o hash-string.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/loadmsgcat.c  -fPIC -DPIC -o .libs/loadmsgcat.o
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/explodename.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/l10nflist.c  -fPIC -DPIC -o .libs/l10nflist.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/textdomain.c  -fPIC -DPIC -o .libs/textdomain.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/localealias.c  -fPIC -DPIC -o .libs/localealias.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/loadmsgcat.c -o loadmsgcat.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/l10nflist.c -o l10nflist.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/textdomain.c -o textdomain.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/localealias.c -o localealias.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dcigettext.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dcngettext.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dngettext.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/ngettext.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/explodename.c  -fPIC -DPIC -o .libs/explodename.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/explodename.c -o explodename.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/plural.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dngettext.c  -fPIC -DPIC -o .libs/dngettext.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dcigettext.c  -fPIC -DPIC -o .libs/dcigettext.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dcngettext.c  -fPIC -DPIC -o .libs/dcngettext.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dngettext.c -o dngettext.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/ngettext.c  -fPIC -DPIC -o .libs/ngettext.o
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/plural-exp.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dcngettext.c -o dcngettext.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/ngettext.c -o ngettext.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/dcigettext.c -o dcigettext.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/localcharset.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/threadlib.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/lock.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/plural.c  -fPIC -DPIC -o .libs/plural.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/plural.c -o plural.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/relocatable.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/plural-exp.c  -fPIC -DPIC -o .libs/plural-exp.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/threadlib.c  -fPIC -DPIC -o .libs/threadlib.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/localcharset.c  -fPIC -DPIC -o .libs/localcharset.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/threadlib.c -o threadlib.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/plural-exp.c -o plural-exp.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/langprefs.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/localename.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/localcharset.c -o localcharset.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/lock.c  -fPIC -DPIC -o .libs/lock.o
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/log.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/lock.c -o lock.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/printf.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/relocatable.c  -fPIC -DPIC -o .libs/relocatable.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/relocatable.c -o relocatable.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/localename.c  -fPIC -DPIC -o .libs/localename.o
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/setlocale.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/langprefs.c  -fPIC -DPIC -o .libs/langprefs.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/localename.c -o localename.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/langprefs.c -o langprefs.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/log.c  -fPIC -DPIC -o .libs/log.o
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/version.c
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/xsize.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/log.c -o log.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/osdep.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/printf.c  -fPIC -DPIC -o .libs/printf.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/printf.c -o printf.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC --mode=compile gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/intl-compat.c
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/setlocale.c  -fPIC -DPIC -o .libs/setlocale.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/setlocale.c -o setlocale.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/xsize.c  -fPIC -DPIC -o .libs/xsize.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/version.c  -fPIC -DPIC -o .libs/version.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/version.c -o version.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/xsize.c -o xsize.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/osdep.c  -fPIC -DPIC -o .libs/osdep.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/osdep.c -o osdep.o >/dev/null 2>&1
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/intl-compat.c  -fPIC -DPIC -o .libs/intl-compat.o
+libtool: compile:  gcc-7 -c -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLOCALE_ALIAS_PATH=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DLIBDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DBUILDING_LIBINTL -DBUILDING_DLL -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -I.. -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/intl-compat.c -o intl-compat.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC --mode=link \
+  gcc-7 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fvisibility=hidden  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v  -o libgnuintl.la \
+  bindtextdom.lo dcgettext.lo dgettext.lo gettext.lo finddomain.lo hash-string.lo loadmsgcat.lo localealias.lo textdomain.lo l10nflist.lo explodename.lo dcigettext.lo dcngettext.lo dngettext.lo ngettext.lo plural.lo plural-exp.lo localcharset.lo threadlib.lo lock.lo relocatable.lo langprefs.lo localename.lo log.lo printf.lo setlocale.lo version.lo xsize.lo osdep.lo intl-compat.lo -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -liconv    -lc \
+   \
+  -version-info 9:5:1 \
+  -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib \
+  -no-undefined
+libtool: link: gcc-7 -shared  -fPIC -DPIC  .libs/bindtextdom.o .libs/dcgettext.o .libs/dgettext.o .libs/gettext.o .libs/finddomain.o .libs/hash-string.o .libs/loadmsgcat.o .libs/localealias.o .libs/textdomain.o .libs/l10nflist.o .libs/explodename.o .libs/dcigettext.o .libs/dcngettext.o .libs/dngettext.o .libs/ngettext.o .libs/plural.o .libs/plural-exp.o .libs/localcharset.o .libs/threadlib.o .libs/lock.o .libs/relocatable.o .libs/langprefs.o .libs/localename.o .libs/log.o .libs/printf.o .libs/setlocale.o .libs/version.o .libs/xsize.o .libs/osdep.o .libs/intl-compat.o   -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lc  -m64 -g -O0 -g -O0   -Wl,-soname -Wl,libgnuintl.so.8 -o .libs/libgnuintl.so.8.1.5
+libtool: link: (cd ".libs" && rm -f "libgnuintl.so.8" && ln -s "libgnuintl.so.8.1.5" "libgnuintl.so.8")
+libtool: link: (cd ".libs" && rm -f "libgnuintl.so" && ln -s "libgnuintl.so.8.1.5" "libgnuintl.so")
+libtool: link: gcc-ar-7 cru .libs/libgnuintl.a  bindtextdom.o dcgettext.o dgettext.o gettext.o finddomain.o hash-string.o loadmsgcat.o localealias.o textdomain.o l10nflist.o explodename.o dcigettext.o dcngettext.o dngettext.o ngettext.o plural.o plural-exp.o localcharset.o threadlib.o lock.o relocatable.o langprefs.o localename.o log.o printf.o setlocale.o version.o xsize.o osdep.o intl-compat.o
+/usr/bin/ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: gcc-ranlib-7 .libs/libgnuintl.a
+libtool: link: ( cd ".libs" && rm -f "libgnuintl.la" && ln -s "../libgnuintl.la" "libgnuintl.la" )
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl'
+Making all in intl-java
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-java'
+cd /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java && test ! -d /usr/lib/jdk1.3.1 || env PATH=/usr/lib/jdk1.3.1/bin:$PATH javadoc -d javadoc2 gnu.gettext gnu/gettext/*.java
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-java'
+Making all in intl-csharp
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-csharp'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-csharp'
+Making all in gnulib-lib
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+rm -f alloca.h-t alloca.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/alloca.in.h; \
+} > alloca.h-t && \
+mv -f alloca.h-t alloca.h
+rm -f configmake.h-t && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  echo '#define PREFIX "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs"'; \
+  echo '#define EXEC_PREFIX "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs"'; \
+  echo '#define BINDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin"'; \
+  echo '#define SBINDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/sbin"'; \
+  echo '#define LIBEXECDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/libexec"'; \
+  echo '#define DATAROOTDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share"'; \
+  echo '#define DATADIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share"'; \
+  echo '#define SYSCONFDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/etc"'; \
+  echo '#define SHAREDSTATEDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/com"'; \
+  echo '#define LOCALSTATEDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/var"'; \
+  echo '#define RUNSTATEDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/var/run"'; \
+  echo '#define INCLUDEDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include"'; \
+  echo '#define OLDINCLUDEDIR "/usr/include"'; \
+  echo '#define DOCDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext"'; \
+  echo '#define INFODIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/info"'; \
+  echo '#define HTMLDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext"'; \
+  echo '#define DVIDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext"'; \
+  echo '#define PDFDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext"'; \
+  echo '#define PSDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext"'; \
+  echo '#define LIBDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib"'; \
+  echo '#define LISPDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/emacs/site-lisp"'; \
+  echo '#define LOCALEDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale"'; \
+  echo '#define MANDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man"'; \
+  echo '#define MANEXT ""'; \
+  echo '#define PKGDATADIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext-runtime"'; \
+  echo '#define PKGINCLUDEDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/gettext-runtime"'; \
+  echo '#define PKGLIBDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/gettext-runtime"'; \
+  echo '#define PKGLIBEXECDIR "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/libexec/gettext-runtime"'; \
+} | sed '/""/d' > configmake.h-t && \
+mv -f configmake.h-t configmake.h
+rm -f c++defs.h-t c++defs.h && \
+sed -n -e '/_GL_CXXDEFS/,$p' \
+  < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/../build-aux/snippet/c++defs.h \
+  > c++defs.h-t && \
+mv c++defs.h-t c++defs.h
+rm -f arg-nonnull.h-t arg-nonnull.h && \
+sed -n -e '/GL_ARG_NONNULL/,$p' \
+  < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/../build-aux/snippet/arg-nonnull.h \
+  > arg-nonnull.h-t && \
+mv arg-nonnull.h-t arg-nonnull.h
+rm -f warn-on-use.h-t warn-on-use.h && \
+sed -n -e '/^.ifndef/,$p' \
+  < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/../build-aux/snippet/warn-on-use.h \
+  > warn-on-use.h-t && \
+mv warn-on-use.h-t warn-on-use.h
+rm -f unused-parameter.h-t unused-parameter.h && \
+sed -n -e '/GL_UNUSED_PARAMETER/,$p' \
+  < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/../build-aux/snippet/unused-parameter.h \
+  > unused-parameter.h-t && \
+mv unused-parameter.h-t unused-parameter.h
+/bin/mkdir -p sys
+rm -f unistr.h-t unistr.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/unistr.in.h; \
+} > unistr.h-t && \
+mv -f unistr.h-t unistr.h
+rm -f unitypes.h-t unitypes.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/unitypes.in.h; \
+} > unitypes.h-t && \
+mv -f unitypes.h-t unitypes.h
+rm -f uniwidth.h-t uniwidth.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/uniwidth.in.h; \
+} > uniwidth.h-t && \
+mv -f uniwidth.h-t uniwidth.h
+rm -f sys/types.h-t sys/types.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/sys_types.in.h; \
+} > sys/types.h-t && \
+mv sys/types.h-t sys/types.h
+rm -f wchar.h-t wchar.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''HAVE_FEATURES_H''@|1|g' \
+      -e 's|@''NEXT_WCHAR_H''@|<wchar.h>|g' \
+      -e 's|@''HAVE_WCHAR_H''@|1|g' \
+      -e 's/@''GNULIB_BTOWC''@/0/g' \
+      -e 's/@''GNULIB_WCTOB''@/0/g' \
+      -e 's/@''GNULIB_MBSINIT''@/1/g' \
+      -e 's/@''GNULIB_MBRTOWC''@/1/g' \
+      -e 's/@''GNULIB_MBRLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSRTOWCS''@/0/g' \
+      -e 's/@''GNULIB_MBSNRTOWCS''@/0/g' \
+      -e 's/@''GNULIB_WCRTOMB''@/0/g' \
+      -e 's/@''GNULIB_WCSRTOMBS''@/0/g' \
+      -e 's/@''GNULIB_WCSNRTOMBS''@/0/g' \
+      -e 's/@''GNULIB_WCWIDTH''@/1/g' \
+      -e 's/@''GNULIB_WMEMCHR''@/0/g' \
+      -e 's/@''GNULIB_WMEMCMP''@/0/g' \
+      -e 's/@''GNULIB_WMEMCPY''@/0/g' \
+      -e 's/@''GNULIB_WMEMMOVE''@/0/g' \
+      -e 's/@''GNULIB_WMEMSET''@/0/g' \
+      -e 's/@''GNULIB_WCSLEN''@/0/g' \
+      -e 's/@''GNULIB_WCSNLEN''@/0/g' \
+      -e 's/@''GNULIB_WCSCPY''@/0/g' \
+      -e 's/@''GNULIB_WCPCPY''@/0/g' \
+      -e 's/@''GNULIB_WCSNCPY''@/0/g' \
+      -e 's/@''GNULIB_WCPNCPY''@/0/g' \
+      -e 's/@''GNULIB_WCSCAT''@/0/g' \
+      -e 's/@''GNULIB_WCSNCAT''@/0/g' \
+      -e 's/@''GNULIB_WCSCMP''@/0/g' \
+      -e 's/@''GNULIB_WCSNCMP''@/0/g' \
+      -e 's/@''GNULIB_WCSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_WCSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_WCSCOLL''@/0/g' \
+      -e 's/@''GNULIB_WCSXFRM''@/0/g' \
+      -e 's/@''GNULIB_WCSDUP''@/0/g' \
+      -e 's/@''GNULIB_WCSCHR''@/0/g' \
+      -e 's/@''GNULIB_WCSRCHR''@/0/g' \
+      -e 's/@''GNULIB_WCSCSPN''@/0/g' \
+      -e 's/@''GNULIB_WCSSPN''@/0/g' \
+      -e 's/@''GNULIB_WCSPBRK''@/0/g' \
+      -e 's/@''GNULIB_WCSSTR''@/0/g' \
+      -e 's/@''GNULIB_WCSTOK''@/0/g' \
+      -e 's/@''GNULIB_WCSWIDTH''@/0/g' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/wchar.in.h | \
+  sed -e 's|@''HAVE_WINT_T''@|1|g' \
+      -e 's|@''HAVE_BTOWC''@|1|g' \
+      -e 's|@''HAVE_MBSINIT''@|1|g' \
+      -e 's|@''HAVE_MBRTOWC''@|1|g' \
+      -e 's|@''HAVE_MBRLEN''@|1|g' \
+      -e 's|@''HAVE_MBSRTOWCS''@|1|g' \
+      -e 's|@''HAVE_MBSNRTOWCS''@|1|g' \
+      -e 's|@''HAVE_WCRTOMB''@|1|g' \
+      -e 's|@''HAVE_WCSRTOMBS''@|1|g' \
+      -e 's|@''HAVE_WCSNRTOMBS''@|1|g' \
+      -e 's|@''HAVE_WMEMCHR''@|1|g' \
+      -e 's|@''HAVE_WMEMCMP''@|1|g' \
+      -e 's|@''HAVE_WMEMCPY''@|1|g' \
+      -e 's|@''HAVE_WMEMMOVE''@|1|g' \
+      -e 's|@''HAVE_WMEMSET''@|1|g' \
+      -e 's|@''HAVE_WCSLEN''@|1|g' \
+      -e 's|@''HAVE_WCSNLEN''@|1|g' \
+      -e 's|@''HAVE_WCSCPY''@|1|g' \
+      -e 's|@''HAVE_WCPCPY''@|1|g' \
+      -e 's|@''HAVE_WCSNCPY''@|1|g' \
+      -e 's|@''HAVE_WCPNCPY''@|1|g' \
+      -e 's|@''HAVE_WCSCAT''@|1|g' \
+      -e 's|@''HAVE_WCSNCAT''@|1|g' \
+      -e 's|@''HAVE_WCSCMP''@|1|g' \
+      -e 's|@''HAVE_WCSNCMP''@|1|g' \
+      -e 's|@''HAVE_WCSCASECMP''@|1|g' \
+      -e 's|@''HAVE_WCSNCASECMP''@|1|g' \
+      -e 's|@''HAVE_WCSCOLL''@|1|g' \
+      -e 's|@''HAVE_WCSXFRM''@|1|g' \
+      -e 's|@''HAVE_WCSDUP''@|1|g' \
+      -e 's|@''HAVE_WCSCHR''@|1|g' \
+      -e 's|@''HAVE_WCSRCHR''@|1|g' \
+      -e 's|@''HAVE_WCSCSPN''@|1|g' \
+      -e 's|@''HAVE_WCSSPN''@|1|g' \
+      -e 's|@''HAVE_WCSPBRK''@|1|g' \
+      -e 's|@''HAVE_WCSSTR''@|1|g' \
+      -e 's|@''HAVE_WCSTOK''@|1|g' \
+      -e 's|@''HAVE_WCSWIDTH''@|1|g' \
+      -e 's|@''HAVE_DECL_WCTOB''@|1|g' \
+      -e 's|@''HAVE_DECL_WCWIDTH''@|1|g' \
+  | \
+  sed -e 's|@''REPLACE_MBSTATE_T''@|0|g' \
+      -e 's|@''REPLACE_BTOWC''@|0|g' \
+      -e 's|@''REPLACE_WCTOB''@|0|g' \
+      -e 's|@''REPLACE_MBSINIT''@|0|g' \
+      -e 's|@''REPLACE_MBRTOWC''@|1|g' \
+      -e 's|@''REPLACE_MBRLEN''@|0|g' \
+      -e 's|@''REPLACE_MBSRTOWCS''@|0|g' \
+      -e 's|@''REPLACE_MBSNRTOWCS''@|0|g' \
+      -e 's|@''REPLACE_WCRTOMB''@|0|g' \
+      -e 's|@''REPLACE_WCSRTOMBS''@|0|g' \
+      -e 's|@''REPLACE_WCSNRTOMBS''@|0|g' \
+      -e 's|@''REPLACE_WCWIDTH''@|0|g' \
+      -e 's|@''REPLACE_WCSWIDTH''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > wchar.h-t && \
+mv wchar.h-t wchar.h
+rm -f wctype.h-t wctype.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_WCTYPE_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_WCTYPE_H''@|<wctype.h>|g' \
+      -e 's/@''GNULIB_ISWBLANK''@/1/g' \
+      -e 's/@''GNULIB_WCTYPE''@/0/g' \
+      -e 's/@''GNULIB_ISWCTYPE''@/0/g' \
+      -e 's/@''GNULIB_WCTRANS''@/0/g' \
+      -e 's/@''GNULIB_TOWCTRANS''@/0/g' \
+      -e 's/@''HAVE_ISWBLANK''@/1/g' \
+      -e 's/@''HAVE_ISWCNTRL''@/1/g' \
+      -e 's/@''HAVE_WCTYPE_T''@/1/g' \
+      -e 's/@''HAVE_WCTRANS_T''@/1/g' \
+      -e 's/@''HAVE_WINT_T''@/1/g' \
+      -e 's/@''REPLACE_ISWBLANK''@/0/g' \
+      -e 's/@''REPLACE_ISWCNTRL''@/0/g' \
+      -e 's/@''REPLACE_TOWLOWER''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/wctype.in.h; \
+} > wctype.h-t && \
+mv wctype.h-t wctype.h
+rm -f iconv.h-t iconv.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_ICONV_H''@|<iconv.h>|g' \
+      -e 's/@''GNULIB_ICONV''@/1/g' \
+      -e 's|@''ICONV_CONST''@||g' \
+      -e 's|@''REPLACE_ICONV''@|0|g' \
+      -e 's|@''REPLACE_ICONV_OPEN''@|0|g' \
+      -e 's|@''REPLACE_ICONV_UTF''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/iconv.in.h; \
+} > iconv.h-t && \
+mv iconv.h-t iconv.h
+rm -f langinfo.h-t langinfo.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_LANGINFO_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LANGINFO_H''@|<langinfo.h>|g' \
+      -e 's/@''GNULIB_NL_LANGINFO''@/0/g' \
+      -e 's|@''HAVE_LANGINFO_CODESET''@|1|g' \
+      -e 's|@''HAVE_LANGINFO_T_FMT_AMPM''@|1|g' \
+      -e 's|@''HAVE_LANGINFO_ERA''@|1|g' \
+      -e 's|@''HAVE_LANGINFO_YESEXPR''@|1|g' \
+      -e 's|@''HAVE_NL_LANGINFO''@|1|g' \
+      -e 's|@''REPLACE_NL_LANGINFO''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/langinfo.in.h; \
+} > langinfo.h-t && \
+mv langinfo.h-t langinfo.h
+rm -f locale.h-t locale.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LOCALE_H''@|<locale.h>|g' \
+      -e 's/@''GNULIB_LOCALECONV''@/0/g' \
+      -e 's/@''GNULIB_SETLOCALE''@/1/g' \
+      -e 's/@''GNULIB_DUPLOCALE''@/0/g' \
+      -e 's|@''HAVE_DUPLOCALE''@|1|g' \
+      -e 's|@''HAVE_XLOCALE_H''@|0|g' \
+      -e 's|@''REPLACE_LOCALECONV''@|0|g' \
+      -e 's|@''REPLACE_SETLOCALE''@|0|g' \
+      -e 's|@''REPLACE_DUPLOCALE''@|0|g' \
+      -e 's|@''REPLACE_STRUCT_LCONV''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/locale.in.h; \
+} > locale.h-t && \
+mv locale.h-t locale.h
+rm -f signal.h-t signal.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SIGNAL_H''@|<signal.h>|g' \
+      -e 's|@''GNULIB_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''GNULIB_RAISE''@|1|g' \
+      -e 's/@''GNULIB_SIGNAL_H_SIGPIPE''@/1/g' \
+      -e 's/@''GNULIB_SIGPROCMASK''@/1/g' \
+      -e 's/@''GNULIB_SIGACTION''@/0/g' \
+      -e 's|@''HAVE_POSIX_SIGNALBLOCKING''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SIGMASK''@|1|g' \
+      -e 's|@''HAVE_RAISE''@|1|g' \
+      -e 's|@''HAVE_SIGSET_T''@|1|g' \
+      -e 's|@''HAVE_SIGINFO_T''@|1|g' \
+      -e 's|@''HAVE_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_STRUCT_SIGACTION_SA_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_TYPE_VOLATILE_SIG_ATOMIC_T''@|1|g' \
+      -e 's|@''HAVE_SIGHANDLER_T''@|1|g' \
+      -e 's|@''REPLACE_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''REPLACE_RAISE''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/signal.in.h; \
+} > signal.h-t && \
+mv signal.h-t signal.h
+rm -f stdio.h-t stdio.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDIO_H''@|<stdio.h>|g' \
+      -e 's/@''GNULIB_DPRINTF''@/0/g' \
+      -e 's/@''GNULIB_FCLOSE''@/0/g' \
+      -e 's/@''GNULIB_FDOPEN''@/0/g' \
+      -e 's/@''GNULIB_FFLUSH''@/0/g' \
+      -e 's/@''GNULIB_FGETC''@/1/g' \
+      -e 's/@''GNULIB_FGETS''@/1/g' \
+      -e 's/@''GNULIB_FOPEN''@/0/g' \
+      -e 's/@''GNULIB_FPRINTF''@/1/g' \
+      -e 's/@''GNULIB_FPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_FPURGE''@/0/g' \
+      -e 's/@''GNULIB_FPUTC''@/1/g' \
+      -e 's/@''GNULIB_FPUTS''@/1/g' \
+      -e 's/@''GNULIB_FREAD''@/1/g' \
+      -e 's/@''GNULIB_FREOPEN''@/0/g' \
+      -e 's/@''GNULIB_FSCANF''@/1/g' \
+      -e 's/@''GNULIB_FSEEK''@/0/g' \
+      -e 's/@''GNULIB_FSEEKO''@/0/g' \
+      -e 's/@''GNULIB_FTELL''@/0/g' \
+      -e 's/@''GNULIB_FTELLO''@/0/g' \
+      -e 's/@''GNULIB_FWRITE''@/1/g' \
+      -e 's/@''GNULIB_GETC''@/1/g' \
+      -e 's/@''GNULIB_GETCHAR''@/1/g' \
+      -e 's/@''GNULIB_GETDELIM''@/0/g' \
+      -e 's/@''GNULIB_GETLINE''@/0/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF''@/0/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PCLOSE''@/0/g' \
+      -e 's/@''GNULIB_PERROR''@/0/g' \
+      -e 's/@''GNULIB_POPEN''@/0/g' \
+      -e 's/@''GNULIB_PRINTF''@/1/g' \
+      -e 's/@''GNULIB_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PUTC''@/1/g' \
+      -e 's/@''GNULIB_PUTCHAR''@/1/g' \
+      -e 's/@''GNULIB_PUTS''@/1/g' \
+      -e 's/@''GNULIB_REMOVE''@/0/g' \
+      -e 's/@''GNULIB_RENAME''@/0/g' \
+      -e 's/@''GNULIB_RENAMEAT''@/0/g' \
+      -e 's/@''GNULIB_SCANF''@/1/g' \
+      -e 's/@''GNULIB_SNPRINTF''@/0/g' \
+      -e 's/@''GNULIB_SPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_SIGPIPE''@/1/g' \
+      -e 's/@''GNULIB_TMPFILE''@/0/g' \
+      -e 's/@''GNULIB_VASPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VDPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VFPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VFPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VFSCANF''@/0/g' \
+      -e 's/@''GNULIB_VSCANF''@/0/g' \
+      -e 's/@''GNULIB_VPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VSNPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VSPRINTF_POSIX''@/0/g' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/stdio.in.h | \
+  sed -e 's|@''HAVE_DECL_FPURGE''@|1|g' \
+      -e 's|@''HAVE_DECL_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_DECL_FTELLO''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDELIM''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLINE''@|1|g' \
+      -e 's|@''HAVE_DECL_OBSTACK_PRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_SNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_VSNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DPRINTF''@|1|g' \
+      -e 's|@''HAVE_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_FTELLO''@|1|g' \
+      -e 's|@''HAVE_PCLOSE''@|1|g' \
+      -e 's|@''HAVE_POPEN''@|1|g' \
+      -e 's|@''HAVE_RENAMEAT''@|1|g' \
+      -e 's|@''HAVE_VASPRINTF''@|1|g' \
+      -e 's|@''HAVE_VDPRINTF''@|1|g' \
+      -e 's|@''REPLACE_DPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FCLOSE''@|0|g' \
+      -e 's|@''REPLACE_FDOPEN''@|0|g' \
+      -e 's|@''REPLACE_FFLUSH''@|0|g' \
+      -e 's|@''REPLACE_FOPEN''@|0|g' \
+      -e 's|@''REPLACE_FPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FPURGE''@|0|g' \
+      -e 's|@''REPLACE_FREOPEN''@|0|g' \
+      -e 's|@''REPLACE_FSEEK''@|0|g' \
+      -e 's|@''REPLACE_FSEEKO''@|0|g' \
+      -e 's|@''REPLACE_FTELL''@|0|g' \
+      -e 's|@''REPLACE_FTELLO''@|0|g' \
+      -e 's|@''REPLACE_GETDELIM''@|0|g' \
+      -e 's|@''REPLACE_GETLINE''@|0|g' \
+      -e 's|@''REPLACE_OBSTACK_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_PERROR''@|0|g' \
+      -e 's|@''REPLACE_POPEN''@|0|g' \
+      -e 's|@''REPLACE_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_REMOVE''@|0|g' \
+      -e 's|@''REPLACE_RENAME''@|0|g' \
+      -e 's|@''REPLACE_RENAMEAT''@|0|g' \
+      -e 's|@''REPLACE_SNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_SPRINTF''@|0|g' \
+      -e 's|@''REPLACE_STDIO_READ_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_STDIO_WRITE_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_TMPFILE''@|0|g' \
+      -e 's|@''REPLACE_VASPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VDPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VFPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSPRINTF''@|0|g' \
+      -e 's|@''ASM_SYMBOL_PREFIX''@|""|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > stdio.h-t && \
+mv stdio.h-t stdio.h
+rm -f stdlib.h-t stdlib.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+      -e 's/@''GNULIB__EXIT''@/0/g' \
+      -e 's/@''GNULIB_ATOLL''@/0/g' \
+      -e 's/@''GNULIB_CALLOC_POSIX''@/0/g' \
+      -e 's/@''GNULIB_CANONICALIZE_FILE_NAME''@/1/g' \
+      -e 's/@''GNULIB_GETLOADAVG''@/0/g' \
+      -e 's/@''GNULIB_GETSUBOPT''@/0/g' \
+      -e 's/@''GNULIB_GRANTPT''@/0/g' \
+      -e 's/@''GNULIB_MALLOC_POSIX''@/0/g' \
+      -e 's/@''GNULIB_MBTOWC''@/0/g' \
+      -e 's/@''GNULIB_MKDTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_POSIX_OPENPT''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME_R''@/0/g' \
+      -e 's/@''GNULIB_PUTENV''@/0/g' \
+      -e 's/@''GNULIB_QSORT_R''@/0/g' \
+      -e 's/@''GNULIB_RANDOM''@/0/g' \
+      -e 's/@''GNULIB_RANDOM_R''@/0/g' \
+      -e 's/@''GNULIB_REALLOC_POSIX''@/0/g' \
+      -e 's/@''GNULIB_REALPATH''@/1/g' \
+      -e 's/@''GNULIB_RPMATCH''@/0/g' \
+      -e 's/@''GNULIB_SECURE_GETENV''@/0/g' \
+      -e 's/@''GNULIB_SETENV''@/0/g' \
+      -e 's/@''GNULIB_STRTOD''@/0/g' \
+      -e 's/@''GNULIB_STRTOLL''@/0/g' \
+      -e 's/@''GNULIB_STRTOULL''@/0/g' \
+      -e 's/@''GNULIB_SYSTEM_POSIX''@/0/g' \
+      -e 's/@''GNULIB_UNLOCKPT''@/0/g' \
+      -e 's/@''GNULIB_UNSETENV''@/0/g' \
+      -e 's/@''GNULIB_WCTOMB''@/0/g' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/stdlib.in.h | \
+  sed -e 's|@''HAVE__EXIT''@|1|g' \
+      -e 's|@''HAVE_ATOLL''@|1|g' \
+      -e 's|@''HAVE_CANONICALIZE_FILE_NAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+      -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+      -e 's|@''HAVE_GRANTPT''@|1|g' \
+      -e 's|@''HAVE_MKDTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMPS''@|1|g' \
+      -e 's|@''HAVE_MKSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKSTEMPS''@|1|g' \
+      -e 's|@''HAVE_POSIX_OPENPT''@|1|g' \
+      -e 's|@''HAVE_PTSNAME''@|1|g' \
+      -e 's|@''HAVE_PTSNAME_R''@|1|g' \
+      -e 's|@''HAVE_RANDOM''@|1|g' \
+      -e 's|@''HAVE_RANDOM_H''@|1|g' \
+      -e 's|@''HAVE_RANDOM_R''@|1|g' \
+      -e 's|@''HAVE_REALPATH''@|1|g' \
+      -e 's|@''HAVE_RPMATCH''@|1|g' \
+      -e 's|@''HAVE_SECURE_GETENV''@|1|g' \
+      -e 's|@''HAVE_DECL_SETENV''@|1|g' \
+      -e 's|@''HAVE_STRTOD''@|1|g' \
+      -e 's|@''HAVE_STRTOLL''@|1|g' \
+      -e 's|@''HAVE_STRTOULL''@|1|g' \
+      -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \
+      -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+      -e 's|@''HAVE_UNLOCKPT''@|1|g' \
+      -e 's|@''HAVE_DECL_UNSETENV''@|1|g' \
+      -e 's|@''REPLACE_CALLOC''@|0|g' \
+      -e 's|@''REPLACE_CANONICALIZE_FILE_NAME''@|1|g' \
+      -e 's|@''REPLACE_MALLOC''@|0|g' \
+      -e 's|@''REPLACE_MBTOWC''@|0|g' \
+      -e 's|@''REPLACE_MKSTEMP''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME_R''@|0|g' \
+      -e 's|@''REPLACE_PUTENV''@|0|g' \
+      -e 's|@''REPLACE_QSORT_R''@|0|g' \
+      -e 's|@''REPLACE_RANDOM_R''@|0|g' \
+      -e 's|@''REPLACE_REALLOC''@|0|g' \
+      -e 's|@''REPLACE_REALPATH''@|1|g' \
+      -e 's|@''REPLACE_SETENV''@|0|g' \
+      -e 's|@''REPLACE_STRTOD''@|0|g' \
+      -e 's|@''REPLACE_UNSETENV''@|0|g' \
+      -e 's|@''REPLACE_WCTOMB''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _Noreturn/r /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/../build-aux/snippet/_Noreturn.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > stdlib.h-t && \
+mv stdlib.h-t stdlib.h
+rm -f string.h-t string.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+      -e 's/@''GNULIB_FFSL''@/0/g' \
+      -e 's/@''GNULIB_FFSLL''@/0/g' \
+      -e 's/@''GNULIB_MBSLEN''@/1/g' \
+      -e 's/@''GNULIB_MBSNLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSRCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSSTR''@/1/g' \
+      -e 's/@''GNULIB_MBSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSPCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSCASESTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSPBRK''@/0/g' \
+      -e 's/@''GNULIB_MBSSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSSEP''@/0/g' \
+      -e 's/@''GNULIB_MBSTOK_R''@/0/g' \
+      -e 's/@''GNULIB_MEMCHR''@/1/g' \
+      -e 's/@''GNULIB_MEMMEM''@/0/g' \
+      -e 's/@''GNULIB_MEMPCPY''@/0/g' \
+      -e 's/@''GNULIB_MEMRCHR''@/0/g' \
+      -e 's/@''GNULIB_RAWMEMCHR''@/0/g' \
+      -e 's/@''GNULIB_STPCPY''@/0/g' \
+      -e 's/@''GNULIB_STPNCPY''@/0/g' \
+      -e 's/@''GNULIB_STRCHRNUL''@/0/g' \
+      -e 's/@''GNULIB_STRDUP''@/0/g' \
+      -e 's/@''GNULIB_STRNCAT''@/0/g' \
+      -e 's/@''GNULIB_STRNDUP''@/0/g' \
+      -e 's/@''GNULIB_STRNLEN''@/1/g' \
+      -e 's/@''GNULIB_STRPBRK''@/0/g' \
+      -e 's/@''GNULIB_STRSEP''@/0/g' \
+      -e 's/@''GNULIB_STRSTR''@/0/g' \
+      -e 's/@''GNULIB_STRCASESTR''@/0/g' \
+      -e 's/@''GNULIB_STRTOK_R''@/0/g' \
+      -e 's/@''GNULIB_STRERROR''@/1/g' \
+      -e 's/@''GNULIB_STRERROR_R''@/0/g' \
+      -e 's/@''GNULIB_STRSIGNAL''@/0/g' \
+      -e 's/@''GNULIB_STRVERSCMP''@/0/g' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/string.in.h | \
+  sed -e 's|@''HAVE_FFSL''@|1|g' \
+      -e 's|@''HAVE_FFSLL''@|1|g' \
+      -e 's|@''HAVE_MBSLEN''@|0|g' \
+      -e 's|@''HAVE_MEMCHR''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+      -e 's|@''HAVE_MEMPCPY''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+      -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+      -e 's|@''HAVE_STPCPY''@|1|g' \
+      -e 's|@''HAVE_STPNCPY''@|1|g' \
+      -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+      -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+      -e 's|@''HAVE_STRPBRK''@|1|g' \
+      -e 's|@''HAVE_STRSEP''@|1|g' \
+      -e 's|@''HAVE_STRCASESTR''@|1|g' \
+      -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+      -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+      -e 's|@''REPLACE_STPNCPY''@|0|g' \
+      -e 's|@''REPLACE_MEMCHR''@|0|g' \
+      -e 's|@''REPLACE_MEMMEM''@|0|g' \
+      -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+      -e 's|@''REPLACE_STRCHRNUL''@|0|g' \
+      -e 's|@''REPLACE_STRDUP''@|0|g' \
+      -e 's|@''REPLACE_STRSTR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR_R''@|0|g' \
+      -e 's|@''REPLACE_STRNCAT''@|0|g' \
+      -e 's|@''REPLACE_STRNDUP''@|0|g' \
+      -e 's|@''REPLACE_STRNLEN''@|0|g' \
+      -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+      -e 's|@''REPLACE_STRTOK_R''@|0|g' \
+      -e 's|@''UNDEFINE_STRTOK_R''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/string.in.h; \
+} > string.h-t && \
+mv string.h-t string.h
+/bin/mkdir -p sys
+/bin/mkdir -p sys
+rm -f sys/stat.h-t sys/stat.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_STAT_H''@|<sys/stat.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_ST_SIZE''@|0|g' \
+      -e 's/@''GNULIB_FCHMODAT''@/0/g' \
+      -e 's/@''GNULIB_FSTAT''@/0/g' \
+      -e 's/@''GNULIB_FSTATAT''@/0/g' \
+      -e 's/@''GNULIB_FUTIMENS''@/0/g' \
+      -e 's/@''GNULIB_LCHMOD''@/0/g' \
+      -e 's/@''GNULIB_LSTAT''@/1/g' \
+      -e 's/@''GNULIB_MKDIRAT''@/0/g' \
+      -e 's/@''GNULIB_MKFIFO''@/0/g' \
+      -e 's/@''GNULIB_MKFIFOAT''@/0/g' \
+      -e 's/@''GNULIB_MKNOD''@/0/g' \
+      -e 's/@''GNULIB_MKNODAT''@/0/g' \
+      -e 's/@''GNULIB_STAT''@/1/g' \
+      -e 's/@''GNULIB_UTIMENSAT''@/0/g' \
+      -e 's|@''HAVE_FCHMODAT''@|1|g' \
+      -e 's|@''HAVE_FSTATAT''@|1|g' \
+      -e 's|@''HAVE_FUTIMENS''@|1|g' \
+      -e 's|@''HAVE_LCHMOD''@|1|g' \
+      -e 's|@''HAVE_LSTAT''@|1|g' \
+      -e 's|@''HAVE_MKDIRAT''@|1|g' \
+      -e 's|@''HAVE_MKFIFO''@|1|g' \
+      -e 's|@''HAVE_MKFIFOAT''@|1|g' \
+      -e 's|@''HAVE_MKNOD''@|1|g' \
+      -e 's|@''HAVE_MKNODAT''@|1|g' \
+      -e 's|@''HAVE_UTIMENSAT''@|1|g' \
+      -e 's|@''REPLACE_FSTAT''@|0|g' \
+      -e 's|@''REPLACE_FSTATAT''@|0|g' \
+      -e 's|@''REPLACE_FUTIMENS''@|0|g' \
+      -e 's|@''REPLACE_LSTAT''@|0|g' \
+      -e 's|@''REPLACE_MKDIR''@|0|g' \
+      -e 's|@''REPLACE_MKFIFO''@|0|g' \
+      -e 's|@''REPLACE_MKNOD''@|0|g' \
+      -e 's|@''REPLACE_STAT''@|0|g' \
+      -e 's|@''REPLACE_UTIMENSAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/sys_stat.in.h; \
+} > sys/stat.h-t && \
+mv sys/stat.h-t sys/stat.h
+rm -f sys/time.h-t sys/time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_SYS_TIME_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TIME_H''@|<sys/time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/1/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's/@''HAVE_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''HAVE_STRUCT_TIMEVAL''@/1/g' \
+      -e 's/@''REPLACE_GETTIMEOFDAY''@/0/g' \
+      -e 's/@''REPLACE_STRUCT_TIMEVAL''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/sys_time.in.h; \
+} > sys/time.h-t && \
+mv sys/time.h-t sys/time.h
+rm -f time.h-t time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_TIME_H''@|<time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''GNULIB_MKTIME''@/0/g' \
+      -e 's/@''GNULIB_NANOSLEEP''@/0/g' \
+      -e 's/@''GNULIB_STRPTIME''@/0/g' \
+      -e 's/@''GNULIB_TIMEGM''@/0/g' \
+      -e 's/@''GNULIB_TIME_R''@/0/g' \
+      -e 's/@''GNULIB_TIME_RZ''@/0/g' \
+      -e 's|@''HAVE_DECL_LOCALTIME_R''@|1|g' \
+      -e 's|@''HAVE_NANOSLEEP''@|1|g' \
+      -e 's|@''HAVE_STRPTIME''@|1|g' \
+      -e 's|@''HAVE_TIMEGM''@|1|g' \
+      -e 's|@''HAVE_TIMEZONE_T''@|0|g' \
+      -e 's|@''REPLACE_GMTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME_R''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_MKTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_NANOSLEEP''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_TIMEGM''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''PTHREAD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''SYS_TIME_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''TIME_H_DEFINES_STRUCT_TIMESPEC''@|1|g' \
+      -e 's|@''UNISTD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/time.in.h; \
+} > time.h-t && \
+mv time.h-t time.h
+rm -f unistd.h-t unistd.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_UNISTD_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's/@''GNULIB_CHDIR''@/0/g' \
+      -e 's/@''GNULIB_CHOWN''@/0/g' \
+      -e 's/@''GNULIB_CLOSE''@/0/g' \
+      -e 's/@''GNULIB_DUP''@/0/g' \
+      -e 's/@''GNULIB_DUP2''@/0/g' \
+      -e 's/@''GNULIB_DUP3''@/0/g' \
+      -e 's/@''GNULIB_ENVIRON''@/1/g' \
+      -e 's/@''GNULIB_EUIDACCESS''@/0/g' \
+      -e 's/@''GNULIB_FACCESSAT''@/0/g' \
+      -e 's/@''GNULIB_FCHDIR''@/0/g' \
+      -e 's/@''GNULIB_FCHOWNAT''@/0/g' \
+      -e 's/@''GNULIB_FDATASYNC''@/0/g' \
+      -e 's/@''GNULIB_FSYNC''@/0/g' \
+      -e 's/@''GNULIB_FTRUNCATE''@/0/g' \
+      -e 's/@''GNULIB_GETCWD''@/0/g' \
+      -e 's/@''GNULIB_GETDOMAINNAME''@/0/g' \
+      -e 's/@''GNULIB_GETDTABLESIZE''@/0/g' \
+      -e 's/@''GNULIB_GETGROUPS''@/0/g' \
+      -e 's/@''GNULIB_GETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN_R''@/0/g' \
+      -e 's/@''GNULIB_GETPAGESIZE''@/0/g' \
+      -e 's/@''GNULIB_GETUSERSHELL''@/0/g' \
+      -e 's/@''GNULIB_GROUP_MEMBER''@/0/g' \
+      -e 's/@''GNULIB_ISATTY''@/0/g' \
+      -e 's/@''GNULIB_LCHOWN''@/0/g' \
+      -e 's/@''GNULIB_LINK''@/0/g' \
+      -e 's/@''GNULIB_LINKAT''@/0/g' \
+      -e 's/@''GNULIB_LSEEK''@/0/g' \
+      -e 's/@''GNULIB_PIPE''@/0/g' \
+      -e 's/@''GNULIB_PIPE2''@/0/g' \
+      -e 's/@''GNULIB_PREAD''@/0/g' \
+      -e 's/@''GNULIB_PWRITE''@/0/g' \
+      -e 's/@''GNULIB_READ''@/0/g' \
+      -e 's/@''GNULIB_READLINK''@/1/g' \
+      -e 's/@''GNULIB_READLINKAT''@/0/g' \
+      -e 's/@''GNULIB_RMDIR''@/0/g' \
+      -e 's/@''GNULIB_SETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_SLEEP''@/0/g' \
+      -e 's/@''GNULIB_SYMLINK''@/0/g' \
+      -e 's/@''GNULIB_SYMLINKAT''@/0/g' \
+      -e 's/@''GNULIB_TTYNAME_R''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_GETOPT''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/1/g' \
+      -e 's/@''GNULIB_UNLINK''@/0/g' \
+      -e 's/@''GNULIB_UNLINKAT''@/0/g' \
+      -e 's/@''GNULIB_USLEEP''@/0/g' \
+      -e 's/@''GNULIB_WRITE''@/0/g' \
+      < /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/unistd.in.h | \
+  sed -e 's|@''HAVE_CHOWN''@|1|g' \
+      -e 's|@''HAVE_DUP2''@|1|g' \
+      -e 's|@''HAVE_DUP3''@|1|g' \
+      -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+      -e 's|@''HAVE_FACCESSAT''@|1|g' \
+      -e 's|@''HAVE_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_FCHOWNAT''@|1|g' \
+      -e 's|@''HAVE_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_FSYNC''@|1|g' \
+      -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+      -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+      -e 's|@''HAVE_GETGROUPS''@|1|g' \
+      -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_GETLOGIN''@|1|g' \
+      -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_GROUP_MEMBER''@|1|g' \
+      -e 's|@''HAVE_LCHOWN''@|1|g' \
+      -e 's|@''HAVE_LINK''@|1|g' \
+      -e 's|@''HAVE_LINKAT''@|1|g' \
+      -e 's|@''HAVE_PIPE''@|1|g' \
+      -e 's|@''HAVE_PIPE2''@|1|g' \
+      -e 's|@''HAVE_PREAD''@|1|g' \
+      -e 's|@''HAVE_PWRITE''@|1|g' \
+      -e 's|@''HAVE_READLINK''@|1|g' \
+      -e 's|@''HAVE_READLINKAT''@|1|g' \
+      -e 's|@''HAVE_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_SLEEP''@|1|g' \
+      -e 's|@''HAVE_SYMLINK''@|1|g' \
+      -e 's|@''HAVE_SYMLINKAT''@|1|g' \
+      -e 's|@''HAVE_UNLINKAT''@|1|g' \
+      -e 's|@''HAVE_USLEEP''@|1|g' \
+      -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+      -e 's|@''HAVE_DECL_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_DECL_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+      -e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \
+      -e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \
+      -e 's|@''HAVE_OS_H''@|0|g' \
+      -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+  | \
+  sed -e 's|@''REPLACE_CHOWN''@|0|g' \
+      -e 's|@''REPLACE_CLOSE''@|0|g' \
+      -e 's|@''REPLACE_DUP''@|0|g' \
+      -e 's|@''REPLACE_DUP2''@|0|g' \
+      -e 's|@''REPLACE_FCHOWNAT''@|0|g' \
+      -e 's|@''REPLACE_FTRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_GETCWD''@|0|g' \
+      -e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \
+      -e 's|@''REPLACE_GETDTABLESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETLOGIN_R''@|0|g' \
+      -e 's|@''REPLACE_GETGROUPS''@|0|g' \
+      -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+      -e 's|@''REPLACE_ISATTY''@|0|g' \
+      -e 's|@''REPLACE_LCHOWN''@|0|g' \
+      -e 's|@''REPLACE_LINK''@|0|g' \
+      -e 's|@''REPLACE_LINKAT''@|0|g' \
+      -e 's|@''REPLACE_LSEEK''@|0|g' \
+      -e 's|@''REPLACE_PREAD''@|0|g' \
+      -e 's|@''REPLACE_PWRITE''@|0|g' \
+      -e 's|@''REPLACE_READ''@|0|g' \
+      -e 's|@''REPLACE_READLINK''@|0|g' \
+      -e 's|@''REPLACE_READLINKAT''@|0|g' \
+      -e 's|@''REPLACE_RMDIR''@|0|g' \
+      -e 's|@''REPLACE_SLEEP''@|0|g' \
+      -e 's|@''REPLACE_SYMLINK''@|0|g' \
+      -e 's|@''REPLACE_SYMLINKAT''@|0|g' \
+      -e 's|@''REPLACE_TTYNAME_R''@|0|g' \
+      -e 's|@''REPLACE_UNLINK''@|0|g' \
+      -e 's|@''REPLACE_UNLINKAT''@|0|g' \
+      -e 's|@''REPLACE_USLEEP''@|0|g' \
+      -e 's|@''REPLACE_WRITE''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > unistd.h-t && \
+mv unistd.h-t unistd.h
+make  all-recursive
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o allocator.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/allocator.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o areadlink.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/areadlink.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o basename.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/basename.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o c-ctype.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/c-ctype.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o c-strcasecmp.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/c-strcasecmp.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o c-strncasecmp.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/c-strncasecmp.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o careadlinkat.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/careadlinkat.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o closeout.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/closeout.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o fwriteerror.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/fwriteerror.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o hard-locale.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/hard-locale.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o localcharset.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/localcharset.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o localename.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/localename.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o malloca.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/malloca.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o mbchar.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/mbchar.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o mbiter.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/mbiter.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o mbslen.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/mbslen.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o mbsstr.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/mbsstr.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o mbuiter.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/mbuiter.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o progname.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/progname.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o propername.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/propername.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o striconv.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/striconv.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o strnlen1.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/strnlen1.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o glthread/threadlib.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/glthread/threadlib.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o trim.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/trim.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o unistd.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/unistd.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o wctype-h.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/wctype-h.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o xmalloc.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/xmalloc.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o xstrdup.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/xstrdup.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o xreadlink.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/xreadlink.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o xstriconv.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/xstriconv.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o canonicalize-lgpl.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/canonicalize-lgpl.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o mbrtowc.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/mbrtowc.c
+rm -f t-charset.alias charset.alias && \
+/bin/bash /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/config.charset 'x86_64-pc-linux-gnu' > t-charset.alias && \
+mv t-charset.alias charset.alias
+rm -f t-ref-add.sed ref-add.sed && \
+sed -e '/^#/d' -e 's/@''PACKAGE''@/gettext-runtime/g' /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/ref-add.sin > t-ref-add.sed && \
+mv t-ref-add.sed ref-add.sed
+rm -f t-ref-del.sed ref-del.sed && \
+sed -e '/^#/d' -e 's/@''PACKAGE''@/gettext-runtime/g' /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/ref-del.sin > t-ref-del.sed && \
+mv t-ref-del.sed ref-del.sed
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o glthread/lock.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/glthread/lock.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o unistr/u8-mbtoucr.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/unistr/u8-mbtoucr.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o unistr/u8-uctomb.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/unistr/u8-uctomb.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o unistr/u8-uctomb-aux.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/unistr/u8-uctomb-aux.c
+gcc-7 -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib -I..  -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include   -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o uniwidth/width.o /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/gnulib-lib/uniwidth/width.c
+rm -f libgrt.a
+gcc-ar-7 cr libgrt.a allocator.o areadlink.o basename.o c-ctype.o c-strcasecmp.o c-strncasecmp.o careadlinkat.o closeout.o fwriteerror.o hard-locale.o localcharset.o localename.o glthread/lock.o malloca.o mbchar.o mbiter.o mbslen.o mbsstr.o mbuiter.o progname.o propername.o striconv.o strnlen1.o glthread/threadlib.o trim.o unistd.o unistr/u8-mbtoucr.o unistr/u8-uctomb.o unistr/u8-uctomb-aux.o uniwidth/width.o wctype-h.o xmalloc.o xstrdup.o xreadlink.o xstriconv.o canonicalize-lgpl.o mbrtowc.o
+gcc-ranlib-7 libgrt.a
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+Making all in src
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/src'
+gcc-7 -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src -I..  -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src -I.. -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src/../intl -I../gnulib-lib -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src/../gnulib-lib -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o gettext-gettext.o `test -f 'gettext.c' || echo '/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src/'`gettext.c
+gcc-7 -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src -I..  -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src -I.. -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src/../intl -I../gnulib-lib -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src/../gnulib-lib -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o ngettext-ngettext.o `test -f 'ngettext.c' || echo '/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src/'`ngettext.c
+gcc-7 -DLOCALEDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale\" -DHAVE_CONFIG_H -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src -I..  -I. -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src -I.. -I../intl -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src/../intl -I../gnulib-lib -I/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src/../gnulib-lib -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include  -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -c -o envsubst-envsubst.o `test -f 'envsubst.c' || echo '/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/src/'`envsubst.c
+/bin/bash ../libtool  --tag=CC   --mode=link gcc-7 -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o gettext gettext-gettext.o ../gnulib-lib/libgrt.a  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -liconv  
+/bin/bash ../libtool  --tag=CC   --mode=link gcc-7 -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o ngettext ngettext-ngettext.o ../gnulib-lib/libgrt.a  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -liconv  
+/bin/bash ../libtool  --tag=CC   --mode=link gcc-7 -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib  -g -O0 -v -o envsubst envsubst-envsubst.o ../gnulib-lib/libgrt.a  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -liconv  
+libtool: link: gcc-7 -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o gettext gettext-gettext.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ../gnulib-lib/libgrt.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+libtool: link: gcc-7 -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o ngettext ngettext-ngettext.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ../gnulib-lib/libgrt.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-D' 'INSTALLDIR="/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin"' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' 'gettext' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHuCJ0D.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o gettext /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gettext-gettext.o ../gnulib-lib/libgrt.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-D' 'INSTALLDIR="/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin"' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' 'ngettext' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvIgwKD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o ngettext /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. ngettext-ngettext.o ../gnulib-lib/libgrt.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+libtool: link: gcc-7 -DINSTALLDIR=\"/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin\" -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -g -O0 -v -o envsubst envsubst-envsubst.o  -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ../gnulib-lib/libgrt.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -Wl,-rpath -Wl,/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-D' 'INSTALLDIR="/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin"' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' 'envsubst' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrqIVgH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o envsubst /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. envsubst-envsubst.o ../gnulib-lib/libgrt.a /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-D' 'INSTALLDIR="/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin"' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' 'gettext' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-D' 'INSTALLDIR="/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin"' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' 'ngettext' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-D' 'INSTALLDIR="/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin"' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-g' '-O0' '-v' '-o' 'envsubst' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/src'
+Making all in po
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/po'
+Making all in man
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/man'
+srcdir=''; \
+test -f ./gettext.1.in || srcdir=/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/; \
+if test -f ${srcdir}gettext.1.in; then \
+  sed -e 's|@''localedir''@|/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale|g' ${srcdir}gettext.1.in > t-gettext.1 && \
+  mv t-gettext.1 gettext.1; \
+        fi
+srcdir=''; \
+test -f ./ngettext.1.in || srcdir=/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/; \
+if test -f ${srcdir}ngettext.1.in; then \
+  sed -e 's|@''localedir''@|/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale|g' ${srcdir}ngettext.1.in > t-ngettext.1 && \
+  mv t-ngettext.1 ngettext.1; \
+        fi
+srcdir=''; \
+test -f ./gettext.1.html.in || srcdir=/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/; \
+if test -f ${srcdir}gettext.1.html.in; then \
+  sed -e 's|@''localedir''@|/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale|g' ${srcdir}gettext.1.html.in > t-gettext.1.html && \
+  mv t-gettext.1.html gettext.1.html; \
+        fi
+srcdir=''; \
+test -f ./ngettext.1.html.in || srcdir=/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/; \
+if test -f ${srcdir}ngettext.1.html.in; then \
+  sed -e 's|@''localedir''@|/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale|g' ${srcdir}ngettext.1.html.in > t-ngettext.1.html && \
+  mv t-ngettext.1.html ngettext.1.html; \
+        fi
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/man'
+Making all in m4
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/m4'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/m4'
+Making all in tests
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/tests'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1'
+
+[make install]
+Making install in doc
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/doc'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/doc'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/doc'
+Making install in intl
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl'
+if { test "gettext-runtime" = "gettext-runtime" || test "gettext-runtime" = "gettext-tools"; } \
+   && test 'no' = yes; then \
+  /bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include; \
+  /usr/bin/install -c -m 644 libintl.h /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/libintl.h; \
+  /bin/bash ../libtool --mode=install \
+    /usr/bin/install -c -m 644 libintl.la /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libintl.la; \
+  if test "no" = yes; then \
+    dependencies=`sed -n -e 's,^dependency_libs=\(.*\),\1,p' < /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libintl.la | sed -e "s,^',," -e "s,'\$,,"`; \
+    if test -n "$dependencies"; then \
+      rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libintl.la; \
+    fi; \
+  fi; \
+else \
+  : ; \
+fi
+if test "gettext-runtime" = "gettext-tools" \
+   && test 'no' = no \
+   && test yes != no; then \
+  /bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib; \
+  /bin/bash ../libtool --mode=install \
+    /usr/bin/install -c -m 644 libgnuintl.la /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgnuintl.la; \
+  rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/preloadable_libintl.so; \
+  /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgnuintl.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/preloadable_libintl.so; \
+  /bin/bash ../libtool --mode=uninstall \
+    rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgnuintl.la; \
+else \
+  : ; \
+fi
+if test 'no' = yes; then \
+  if test yes = no; then \
+    case 'linux-gnu' in \
+      darwin[56]*) \
+        need_charset_alias=true ;; \
+      darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+        need_charset_alias=false ;; \
+      *) \
+        need_charset_alias=true ;; \
+    esac; \
+  else \
+    need_charset_alias=false; \
+  fi; \
+  if $need_charset_alias; then \
+    /bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib; \
+  fi; \
+  temp=/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/t-charset.alias; \
+  dest=/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias; \
+  if test -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias; then \
+    orig=/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias; \
+    sed -f ref-add.sed $orig > $temp; \
+    /usr/bin/install -c -m 644 $temp $dest; \
+    rm -f $temp; \
+  else \
+    if $need_charset_alias; then \
+      orig=charset.alias; \
+      sed -f ref-add.sed $orig > $temp; \
+      /usr/bin/install -c -m 644 $temp $dest; \
+      rm -f $temp; \
+    fi; \
+  fi; \
+  /bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale; \
+  test -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/locale.alias \
+    && orig=/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/locale.alias \
+    || orig=/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/locale.alias; \
+  temp=/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/t-locale.alias; \
+  dest=/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/locale.alias; \
+  sed -f ref-add.sed $orig > $temp; \
+  /usr/bin/install -c -m 644 $temp $dest; \
+  rm -f $temp; \
+else \
+  : ; \
+fi
+if test "gettext-runtime" = "gettext-tools"; then \
+  /bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/intl; \
+  /usr/bin/install -c -m 644 VERSION /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/intl/VERSION; \
+  dists="COPYING.LIB Makefile.in config.charset locale.alias ref-add.sin ref-del.sin export.h libintl.rc gmo.h gettextP.h hash-string.h loadinfo.h plural-exp.h eval-plural.h localcharset.h lock.h relocatable.h tsearch.h tsearch.c verify.h xsize.h printf-args.h printf-args.c printf-parse.h wprintf-parse.h printf-parse.c vasnprintf.h vasnwprintf.h vasnprintf.c os2compat.h libgnuintl.in.h bindtextdom.c dcgettext.c dgettext.c gettext.c finddomain.c hash-string.c loadmsgcat.c localealias.c textdomain.c l10nflist.c explodename.c dcigettext.c dcngettext.c dngettext.c ngettext.c plural.y plural-exp.c localcharset.c threadlib.c lock.c relocatable.c langprefs.c localename.c log.c printf.c setlocale.c version.c xsize.c osdep.c os2compat.c intl-exports.c intl-compat.c"; \
+  for file in $dists; do \
+    /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl/$file \
+		    /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/intl/$file; \
+  done; \
+  chmod a+x /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/intl/config.charset; \
+  dists="plural.c"; \
+  for file in $dists; do \
+    if test -f $file; then dir=.; else dir=/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl; fi; \
+    /usr/bin/install -c -m 644 $dir/$file \
+		    /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/intl/$file; \
+  done; \
+  dists="xopen-msg.sed linux-msg.sed po2tbl.sed.in cat-compat.c COPYING.LIB-2 COPYING.LIB-2.0 COPYING.LIB-2.1 gettext.h libgettext.h plural-eval.c libgnuintl.h libgnuintl.h_vms Makefile.vms libgnuintl.h.msvc-static libgnuintl.h.msvc-shared Makefile.msvc"; \
+  for file in $dists; do \
+    rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/intl/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl'
+Making install in intl-java
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-java'
+cd /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java && test ! -d /usr/lib/jdk1.3.1 || env PATH=/usr/lib/jdk1.3.1/bin:$PATH javadoc -d javadoc2 gnu.gettext gnu/gettext/*.java
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-java'
+make[2]: Nothing to be done for 'install-exec-am'.
+/bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext
+cd /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java && test ! -d /usr/lib/jdk1.3.1 || env PATH=/usr/lib/jdk1.3.1/bin:$PATH javadoc -d javadoc2 gnu.gettext gnu/gettext/*.java
+/bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2
+/bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/gnu/gettext
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/index.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/index.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/allclasses-frame.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/allclasses-frame.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/overview-tree.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/overview-tree.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/deprecated-list.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/deprecated-list.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/serialized-form.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/serialized-form.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/index-all.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/index-all.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/help-doc.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/help-doc.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/packages.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/packages.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/package-list /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/package-list
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/stylesheet.css /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/stylesheet.css
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/gnu/gettext/package-summary.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/gnu/gettext/package-summary.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/gnu/gettext/package-tree.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/gnu/gettext/package-tree.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/gnu/gettext/package-frame.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/gnu/gettext/package-frame.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-java/javadoc2/gnu/gettext/GettextResource.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/javadoc2/gnu/gettext/GettextResource.html
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-java'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-java'
+Making install in intl-csharp
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-csharp'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-csharp'
+make[2]: Nothing to be done for 'install-exec-am'.
+/bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+/bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/csharpdoc
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-csharp/doc/index.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/csharpdoc/index.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-csharp/doc/namespaces.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/csharpdoc/namespaces.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-csharp/doc/begin.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/csharpdoc/begin.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-csharp/doc/GNU_Gettext.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/csharpdoc/GNU_Gettext.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-csharp/doc/GNU_Gettext_GettextResourceManager.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/csharpdoc/GNU_Gettext_GettextResourceManager.html
+/usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/intl-csharp/doc/GNU_Gettext_GettextResourceSet.html /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/csharpdoc/GNU_Gettext_GettextResourceSet.html
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-csharp'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/intl-csharp'
+Making install in gnulib-lib
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+make  install-recursive
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+if test yes = no; then \
+  case 'linux-gnu' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+if $need_charset_alias; then \
+  /bin/bash /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/../build-aux/mkinstalldirs /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib ; \
+fi ; \
+if test -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias; then \
+  sed -f ref-add.sed /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias > /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp ; \
+  /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias ; \
+  rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp ; \
+else \
+  if $need_charset_alias; then \
+    sed -f ref-add.sed charset.alias > /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp ; \
+    /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias ; \
+    rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp ; \
+  fi ; \
+fi
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/gnulib-lib'
+Making install in src
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/src'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/src'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c gettext ngettext envsubst '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+libtool: install: /usr/bin/install -c gettext /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/gettext
+libtool: install: /usr/bin/install -c ngettext /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/ngettext
+libtool: install: /usr/bin/install -c envsubst /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/envsubst
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+ /usr/bin/install -c gettext.sh '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/src'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/src'
+Making install in po
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/po'
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/be.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/be/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/bg.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/bg/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/ca.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ca/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/cs.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/cs/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/da.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/da/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/de.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/de/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/el.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/el/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/en@quot.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/en@quot/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/en@boldquot.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/en@boldquot/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/eo.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/eo/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/es.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/es/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/et.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/et/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/fi.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/fi/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/fr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/fr/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/ga.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ga/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/gl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/gl/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/hr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/hr/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/hu.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/hu/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/id.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/id/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/it.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/it/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/ja.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ja/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/ko.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ko/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/nb.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/nb/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/nl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/nl/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/nn.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/nn/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/pl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/pl/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/pt.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/pt/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/pt_BR.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/pt_BR/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/ro.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ro/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/ru.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ru/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/sk.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sk/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/sl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sl/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/sr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sr/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/sv.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sv/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/tr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/tr/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/uk.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/uk/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/vi.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/vi/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/zh_CN.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/zh_CN/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/zh_HK.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/zh_HK/LC_MESSAGES/gettext-runtime.mo
+installing /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/zh_TW.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/zh_TW/LC_MESSAGES/gettext-runtime.mo
+if test "gettext-runtime" = "gettext-tools"; then \
+  /bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/po/$file \
+		    /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/po'
+Making install in man
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/man'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+/bin/mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext
+for file in gettext.1.html ngettext.1.html envsubst.1.html gettext.3.html ngettext.3.html textdomain.3.html bindtextdomain.3.html bind_textdomain_codeset.3.html; do \
+  if test -f $file; then dir=.; else dir=/home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man; fi; \
+  /usr/bin/install -c -m 644 $dir/$file /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/doc/gettext/$file; \
+done
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man1'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man1'
+ /usr/bin/install -c -m 644 gettext.1 ngettext.1 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/envsubst.1 '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man1'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/gettext.3 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/ngettext.3 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/textdomain.3 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/bindtextdomain.3 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/bind_textdomain_codeset.3 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/dgettext.3 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/dcgettext.3 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/dngettext.3 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/man/dcngettext.3 '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/man/man3'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/man'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/man'
+Making install in m4
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/m4'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/m4'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/m4'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/m4'
+Making install in tests
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/tests'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/tests'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1/tests'
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1'
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/gettext-0.19.8.1/gettext-runtime/ABOUT-NLS '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/gettext-0.19.8.1'

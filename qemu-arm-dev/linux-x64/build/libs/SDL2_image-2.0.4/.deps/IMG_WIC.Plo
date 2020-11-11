@@ -1,0 +1,5 @@
+IMG_WIC.lo: \
+ /home/automark/Work/qemu-arm-dev/sources/SDL2_image-2.0.4/IMG_WIC.c \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

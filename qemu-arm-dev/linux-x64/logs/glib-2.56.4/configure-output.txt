@@ -1,0 +1,712 @@
+
+Running glib configure...
+`configure' configures glib 2.56.4 to adapt to many kinds of systems.
+
+Usage: /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/configure [OPTION]... [VAR=VALUE]...
+
+To assign environment variables (e.g., CC, CFLAGS...), specify them as
+VAR=VALUE.  See below for descriptions of some of the useful variables.
+
+Defaults for the options are specified in brackets.
+
+Configuration:
+  -h, --help              display this help and exit
+      --help=short        display options specific to this package
+      --help=recursive    display the short help of all the included packages
+  -V, --version           display version information and exit
+  -q, --quiet, --silent   do not print `checking ...' messages
+      --cache-file=FILE   cache test results in FILE [disabled]
+  -C, --config-cache      alias for `--cache-file=config.cache'
+  -n, --no-create         do not create output files
+      --srcdir=DIR        find the sources in DIR [configure dir or `..']
+
+Installation directories:
+  --prefix=PREFIX         install architecture-independent files in PREFIX
+                          [/usr/local]
+  --exec-prefix=EPREFIX   install architecture-dependent files in EPREFIX
+                          [PREFIX]
+
+By default, `make install' will install all the files in
+`/usr/local/bin', `/usr/local/lib' etc.  You can specify
+an installation prefix other than `/usr/local' using `--prefix',
+for instance `--prefix=$HOME'.
+
+For better control, use the options below.
+
+Fine tuning of the installation directories:
+  --bindir=DIR            user executables [EPREFIX/bin]
+  --sbindir=DIR           system admin executables [EPREFIX/sbin]
+  --libexecdir=DIR        program executables [EPREFIX/libexec]
+  --sysconfdir=DIR        read-only single-machine data [PREFIX/etc]
+  --sharedstatedir=DIR    modifiable architecture-independent data [PREFIX/com]
+  --localstatedir=DIR     modifiable single-machine data [PREFIX/var]
+  --libdir=DIR            object code libraries [EPREFIX/lib]
+  --includedir=DIR        C header files [PREFIX/include]
+  --oldincludedir=DIR     C header files for non-gcc [/usr/include]
+  --datarootdir=DIR       read-only arch.-independent data root [PREFIX/share]
+  --datadir=DIR           read-only architecture-independent data [DATAROOTDIR]
+  --infodir=DIR           info documentation [DATAROOTDIR/info]
+  --localedir=DIR         locale-dependent data [DATAROOTDIR/locale]
+  --mandir=DIR            man documentation [DATAROOTDIR/man]
+  --docdir=DIR            documentation root [DATAROOTDIR/doc/glib]
+  --htmldir=DIR           html documentation [DOCDIR]
+  --dvidir=DIR            dvi documentation [DOCDIR]
+  --pdfdir=DIR            pdf documentation [DOCDIR]
+  --psdir=DIR             ps documentation [DOCDIR]
+
+Program names:
+  --program-prefix=PREFIX            prepend PREFIX to installed program names
+  --program-suffix=SUFFIX            append SUFFIX to installed program names
+  --program-transform-name=PROGRAM   run sed PROGRAM on installed program names
+
+System types:
+  --build=BUILD     configure for building on BUILD [guessed]
+  --host=HOST       cross-compile to build programs to run on HOST [BUILD]
+
+Optional Features:
+  --disable-option-checking  ignore unrecognized --enable/--with options
+  --disable-FEATURE       do not include FEATURE (same as --enable-FEATURE=no)
+  --enable-FEATURE[=ARG]  include FEATURE [ARG=yes]
+  --enable-silent-rules   less verbose build output (undo: "make V=1")
+  --disable-silent-rules  verbose build output (undo: "make V=0")
+  --disable-maintainer-mode
+                          disable make rules and dependencies not useful (and
+                          sometimes confusing) to the casual installer
+  --enable-dependency-tracking
+                          do not reject slow dependency extractors
+  --disable-dependency-tracking
+                          speeds up one-time build
+  --enable-debug=[no/minimum/yes]
+                          turn on debugging [default=minimum]
+  --enable-gc-friendly    turn on garbage collector friendliness [default=no]
+  --disable-mem-pools     disable all glib memory pools
+  --enable-installed-tests
+                          Enable installation of some test cases
+  --enable-always-build-tests
+                          Enable always building tests during 'make all'
+  --disable-largefile     omit support for large files
+  --enable-static[=PKGS]  build static libraries [default=no]
+  --enable-shared[=PKGS]  build shared libraries [default=yes]
+  --enable-fast-install[=PKGS]
+                          optimize for fast installation [default=yes]
+  --disable-libtool-lock  avoid locking (might break parallel builds)
+  --enable-included-printf
+                          use included printf [default=auto]
+  --disable-selinux       build without selinux support
+  --disable-fam           don't use fam for file system monitoring
+  --disable-xattr         build without xattr support
+  --disable-libelf        build without libelf support
+  --enable-libmount       build with libmount support [default for Linux]
+  --enable-gtk-doc        use gtk-doc to build documentation [[default=no]]
+  --enable-gtk-doc-html   build documentation in html format [[default=yes]]
+  --enable-gtk-doc-pdf    build documentation in pdf format [[default=no]]
+  --enable-man            generate man pages [default=auto]
+  --enable-dtrace         include tracing support for dtrace
+  --enable-systemtap      include tracing support for systemtap
+  --enable-coverage       enable coverage testing with gcov
+  --disable-Bsymbolic     avoid linking with -Bsymbolic
+  --disable-znodelete     avoid linking with -z,nodelete
+  --disable-compile-warnings
+                          Don't use builtin compiler warnings
+
+Optional Packages:
+  --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
+  --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
+  --with-runtime-libdir=RELPATH
+                          install runtime libraries relative to libdir
+  --with-python=PATH      Path to Python interpreter; searches $PATH if only a
+                          program name is given; if not given, searches for a
+                          few standard names such as "python3" or "python2"
+  --with-libiconv=[no/gnu/native]
+                          use the libiconv library
+  --with-pic[=PKGS]       try to use only PIC/non-PIC objects [default=use
+                          both]
+  --with-aix-soname=aix|svr4|both
+                          shared library versioning (aka "SONAME") variant to
+                          provide on AIX, [default=aix].
+  --with-gnu-ld           assume the C compiler uses GNU ld [default=no]
+  --with-sysroot[=DIR]    Search for dependent libraries within DIR (or the
+                          compiler's sysroot if not specified).
+  --with-charsetalias-dir=DIR
+                          directory for charset.alias file [LIBDIR]
+  --with-gio-module-dir=DIR
+                          load gio modules from this directory
+                          [LIBDIR/gio/modules]
+  --with-threads=[posix/win32]
+                          specify a thread implementation to use
+  --with-pcre=[internal/system]
+                          whether to use system PCRE [default=system]
+  --with-html-dir=PATH    path to installed docs
+  --with-xml-catalog=CATALOG
+                          path to xml catalog to use
+  --with-tapset-install-dir=DIR
+                          path where systemtap tapsets are installed
+                          [DATADIR/systemtap/tapset/HOST_CPU]
+
+Some influential environment variables:
+  CC          C compiler command
+  CFLAGS      C compiler flags
+  LDFLAGS     linker flags, e.g. -L<lib dir> if you have libraries in a
+              nonstandard directory <lib dir>
+  LIBS        libraries to pass to the linker, e.g. -l<library>
+  CPPFLAGS    (Objective) C/C++ preprocessor flags, e.g. -I<include dir> if
+              you have headers in a nonstandard directory <include dir>
+  CPP         C preprocessor
+  CXX         C++ compiler command
+  CXXFLAGS    C++ compiler flags
+  PKG_CONFIG  path to pkg-config utility
+  PKG_CONFIG_PATH
+              directories to add to pkg-config's search path
+  PKG_CONFIG_LIBDIR
+              path overriding pkg-config's built-in search path
+  PYTHON      the Python interpreter
+  ZLIB_CFLAGS C compiler flags for ZLIB, overriding pkg-config
+  ZLIB_LIBS   linker flags for ZLIB, overriding pkg-config
+  LIBFFI_CFLAGS
+              C compiler flags for LIBFFI, overriding pkg-config
+  LIBFFI_LIBS linker flags for LIBFFI, overriding pkg-config
+  LT_SYS_LIBRARY_PATH
+              User-defined run-time library search path.
+  CXXCPP      C++ preprocessor
+  LIBELF_CFLAGS
+              C compiler flags for LIBELF, overriding pkg-config
+  LIBELF_LIBS linker flags for LIBELF, overriding pkg-config
+  LIBMOUNT_CFLAGS
+              C compiler flags for LIBMOUNT, overriding pkg-config
+  LIBMOUNT_LIBS
+              linker flags for LIBMOUNT, overriding pkg-config
+  PCRE_CFLAGS C compiler flags for PCRE, overriding pkg-config
+  PCRE_LIBS   linker flags for PCRE, overriding pkg-config
+  GTKDOC_DEPS_CFLAGS
+              C compiler flags for GTKDOC_DEPS, overriding pkg-config
+  GTKDOC_DEPS_LIBS
+              linker flags for GTKDOC_DEPS, overriding pkg-config
+  DBUS1_CFLAGS
+              C compiler flags for DBUS1, overriding pkg-config
+  DBUS1_LIBS  linker flags for DBUS1, overriding pkg-config
+
+Use these variables to override the choices made by `configure' or to help
+it to find libraries and programs with nonstandard names/locations.
+
+Report bugs to <http://bugzilla.gnome.org/enter_bug.cgi?product=glib>.
+
+[bash /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/configure --prefix=/home/automark/Work/qemu-arm-dev/linux-x64/install/libs --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --target=x86_64-pc-linux-gnu --with-libiconv=gnu --without-pcre --disable-selinux --disable-fam --disable-xattr --disable-libelf --disable-libmount --disable-dtrace --disable-systemtap --disable-coverage --disable-Bsymbolic --disable-znodelete --disable-compile-warnings --disable-installed-tests --disable-always-build-tests]
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc... gcc-7
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc-7 accepts -g... yes
+checking for gcc-7 option to accept ISO C89... none needed
+checking whether gcc-7 understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc-7... gcc3
+checking how to run the C preprocessor... gcc-7 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for Win32... no
+checking for the Android... no
+checking for Mac OS X Carbon support... no
+checking for Mac OS X Cocoa support... no
+checking whether to enable garbage collector friendliness... no
+checking whether to disable memory pools... no
+checking for x86_64-pc-linux-gnu-c++... g++-7
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++-7 accepts -g... yes
+checking dependency style of g++-7... gcc3
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking pkg-config is at least version 0.16... (/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig:) | pkg-config --atleast-pkgconfig-version 0.16 -> 0 []
+yes
+checking for gawk... (cached) gawk
+checking for perl5... no
+checking for perl... perl
+checking for a Python interpreter with version >= 2.7... python
+checking for python... /usr/bin/python
+checking for python version... 2.7
+checking for python platform... linux2
+checking for python script directory... ${prefix}/lib/python2.7/site-packages
+checking for python extension module directory... ${exec_prefix}/lib/python2.7/site-packages
+checking for libiconv_open in -liconv... yes
+checking for ZLIB... yes
+checking for LIBFFI... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for LC_MESSAGES... yes
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for ngettext in libc... yes
+checking for dgettext in libc... yes
+checking for bind_textdomain_codeset... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for dcgettext... yes
+checking if msgfmt accepts -c... yes
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for catalogs to be installed...  af am an ar as ast az be be@latin bg bn bn_IN bs ca ca@valencia cs cy da de dz el en_CA en_GB en@shaw eo es et eu fa fi fr fur ga gd gl gu he hi hr hu hy id is it ja ka kk kn ko ku lt lv mai mg mk ml mn mr ms nb nds ne nl nn oc or pa pl ps pt pt_BR ro ru rw si sk sl sq sr sr@latin sr@ije sv ta te tg th tl tr ug tt uk vi wa xh yi zh_CN zh_HK zh_TW
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc-7... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm-7
+checking the name lister (gcc-nm-7) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-pc-linux-gnu-dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-pc-linux-gnu-ar... gcc-ar-7
+checking for archiver @FILE support... @
+checking for x86_64-pc-linux-gnu-strip... strip
+checking for x86_64-pc-linux-gnu-ranlib... gcc-ranlib-7
+checking command to parse gcc-nm-7 output from gcc-7 object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-pc-linux-gnu-mt... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc-7 supports -fno-rtti -fno-exceptions... yes
+checking for gcc-7 option to produce PIC... -fPIC -DPIC
+checking if gcc-7 PIC flag -fPIC -DPIC works... yes
+checking if gcc-7 static flag -static works... no
+checking if gcc-7 supports -c -o file.o... yes
+checking if gcc-7 supports -c -o file.o... (cached) yes
+checking whether the gcc-7 linker (ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++-7 -E
+checking for ld used by g++-7... ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++-7 linker (ld -m elf_x86_64) supports shared libraries... yes
+checking for g++-7 option to produce PIC... -fPIC -DPIC
+checking if g++-7 PIC flag -fPIC -DPIC works... yes
+checking if g++-7 static flag -static works... no
+checking if g++-7 supports -c -o file.o... yes
+checking if g++-7 supports -c -o file.o... (cached) yes
+checking whether the g++-7 linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+configure: creating ./config.lt
+config.lt: creating libtool
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for mmap... yes
+checking for posix_memalign... yes
+checking for memalign... yes
+checking for valloc... yes
+checking for fsync... yes
+checking for pipe2... yes
+checking for issetugid... no
+checking for timegm... yes
+checking for gmtime_r... yes
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... yes
+checking for __libc_enable_secure... yes
+checking size of char... 1
+checking size of short... 2
+checking size of long... 8
+checking size of int... 4
+checking size of void *... 8
+checking size of long long... 8
+checking size of __int64... 0
+checking for sig_atomic_t... yes
+checking for format to printf and scanf a guint64... %llu
+checking for an ANSI C-conforming const... yes
+checking for growing stack pointer... no
+checking for ISO C99 varargs macros in C... yes
+checking for ISO C99 varargs macros in C++... yes
+checking for GNUC varargs macros... yes
+checking for GNUC visibility attribute... yes
+checking whether using Sun Studio C compiler... no
+checking whether byte ordering is bigendian... no
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking mach/mach_time.h usability... no
+checking mach/mach_time.h presence... no
+checking for mach/mach_time.h... no
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking sys/vfs.h usability... yes
+checking sys/vfs.h presence... yes
+checking for sys/vfs.h... yes
+checking sys/vmount.h usability... no
+checking sys/vmount.h presence... no
+checking for sys/vmount.h... no
+checking sys/statfs.h usability... yes
+checking sys/statfs.h presence... yes
+checking for sys/statfs.h... yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking sys/filio.h usability... no
+checking sys/filio.h presence... no
+checking for sys/filio.h... no
+checking mntent.h usability... yes
+checking mntent.h presence... yes
+checking for mntent.h... yes
+checking sys/mnttab.h usability... no
+checking sys/mnttab.h presence... no
+checking for sys/mnttab.h... no
+checking sys/vfstab.h usability... no
+checking sys/vfstab.h presence... no
+checking for sys/vfstab.h... no
+checking sys/mntctl.h usability... no
+checking sys/mntctl.h presence... no
+checking for sys/mntctl.h... no
+checking fstab.h usability... yes
+checking fstab.h presence... yes
+checking for fstab.h... yes
+checking linux/magic.h usability... yes
+checking linux/magic.h presence... yes
+checking for linux/magic.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking values.h usability... yes
+checking values.h presence... yes
+checking for values.h... yes
+checking for sys/mount.h... yes
+checking for sys/sysctl.h... yes
+checking for sysctlbyname... no
+checking whether sys/types.h defines makedev... yes
+checking xlocale.h usability... no
+checking xlocale.h presence... no
+checking for xlocale.h... no
+checking for struct stat.st_mtimensec... no
+checking for struct stat.st_mtim.tv_nsec... yes
+checking for struct stat.st_atimensec... no
+checking for struct stat.st_atim.tv_nsec... yes
+checking for struct stat.st_ctimensec... no
+checking for struct stat.st_ctim.tv_nsec... yes
+checking for struct stat.st_birthtime... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for struct stat.st_blksize... yes
+checking for struct stat.st_blocks... yes
+checking for struct statfs.f_fstypename... no
+checking for struct statfs.f_bavail... yes
+checking for struct statvfs.f_basetype... no
+checking for struct statvfs.f_fstypename... no
+checking for struct tm.tm_gmtoff... yes
+checking for struct tm.__tm_gmtoff... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for struct dirent.d_type... yes
+checking for nl_langinfo and CODESET... yes
+checking whether we are using the GNU C Library 2.1 or newer... yes
+checking size of size_t... 8
+checking for the appropriate definition for size_t... unsigned long
+checking size of ssize_t... 8
+checking for the appropriate definition for ssize_t... long
+checking for lstat... yes
+checking for strsignal... yes
+checking for vsnprintf... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking for poll... yes
+checking for vasprintf... yes
+checking for setenv... yes
+checking for unsetenv... yes
+checking for getc_unlocked... yes
+checking for readlink... yes
+checking for symlink... yes
+checking for fdwalk... no
+checking for mkostemp... yes
+checking for link... yes
+checking for lchmod... no
+checking for lchown... yes
+checking for fchmod... yes
+checking for fchown... yes
+checking for utimes... yes
+checking for getresuid... yes
+checking for getmntent_r... yes
+checking for setmntent... yes
+checking for endmntent... yes
+checking for hasmntopt... yes
+checking for getfsstat... no
+checking for getvfsstat... no
+checking for fallocate... yes
+checking for splice... yes
+checking for prlimit... yes
+checking for statvfs... yes
+checking for statfs... yes
+checking whether to use statfs or statvfs... statfs
+checking crt_externs.h usability... no
+checking crt_externs.h presence... no
+checking for crt_externs.h... no
+checking for _NSGetEnviron... no
+checking for newlocale... yes
+checking for uselocale... yes
+checking for strtod_l... yes
+checking for strtoll_l... yes
+checking for strtoull_l... yes
+checking value of AF_INET... 2
+checking value of AF_INET6... 10
+checking value of AF_UNIX... 1
+checking value of MSG_PEEK... 2
+checking value of MSG_OOB... 1
+checking value of MSG_DONTROUTE... 4
+checking for endservent... yes
+checking for if_nametoindex... yes
+checking for if_indextoname... yes
+checking for sendmmsg... yes
+checking for recvmmsg... yes
+checking for SIOCGIFADDR... yes
+checking if arpa/nameser_compat.h is needed... no
+checking for res_query... in -lresolv
+checking for socket... yes
+checking for res_init... yes
+checking for res_nclose... yes
+checking for res_ndestroy... no
+checking for res_ninit... yes
+checking for res_nquery... yes
+checking for linux/netlink.h... yes
+checking for struct ip_mreqn... yes
+checking number of arguments to statfs()... 2
+checking open() option O_DIRECTORY... yes
+checking for C99 vsnprintf... yes
+checking whether printf supports positional parameters... yes
+checking for signed... yes
+checking for long long... yes
+checking for long double... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for size_t... (cached) yes
+checking for ptrdiff_t... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for snprintf... yes
+checking for strnlen... yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for mbrtowc... yes
+checking for wcrtomb... yes
+checking for C99 snprintf... yes
+checking for fd_set... yes, found in sys/types.h
+checking for nl_langinfo (CODESET)... yes
+checking for nl_langinfo (PM_STR)... yes
+checking for nl_langinfo (_NL_CTYPE_OUTDIGITn_MB)... yes
+checking for nl_langinfo (ALTMON_n)... yes
+checking for nl_langinfo (_NL_ABALTMON_n)... yes
+checking for a compliant posix_memalign() implementation... yes
+checking for OpenBSD strlcpy/strlcat... no
+checking for an implementation of va_copy()... yes
+checking for an implementation of __va_copy()... yes
+checking whether va_lists can be copied by value... no
+checking for dlopen... no
+checking for NSLinkModule... no
+checking for dlopen in -ldl... yes
+checking for dlsym in -ldl... yes
+checking for RTLD_GLOBAL brokenness... no
+checking for preceeding underscore in symbols... no
+checking whether RTLD_LAZY is declared... yes
+checking whether RTLD_NOW is declared... yes
+checking whether RTLD_GLOBAL is declared... yes
+checking for dlerror... yes
+checking for the suffix of module shared libraries... .so
+checking for gspawn implementation... gspawn.lo
+checking for GIOChannel implementation... giounix.lo
+checking sys/inotify.h usability... yes
+checking sys/inotify.h presence... yes
+checking for sys/inotify.h... yes
+checking for inotify_init1... yes
+checking sys/event.h usability... no
+checking sys/event.h presence... no
+checking for sys/event.h... no
+checking for platform-dependent source... 
+checking whether to compile timeloop... yes
+checking if building for some Win32 platform... no
+checking for thread implementation... posix
+checking thread related cflags... -pthread
+checking thread related libraries... -pthread
+checking for localtime_r... yes
+checking for gmtime_r... (cached) yes
+checking for getpwuid_r... yes
+checking for getgrgid_r... yes
+checking for pthread_attr_setstacksize... yes
+checking for pthread_condattr_setclock... yes
+checking for pthread_cond_timedwait_relative_np... no
+checking for pthread_setname_np(const char*)... no
+checking for pthread_setname_np(pthread_t, const char*)... yes
+checking for pthread_getname_np(pthread_t, name, len)... yes
+checking for clock_gettime... yes
+checking for lock-free atomic intrinsics... yes
+checking for futex(2) system call... yes
+checking for eventfd(2) system call... yes
+checking value of POLLIN... 1
+checking value of POLLOUT... 4
+checking value of POLLPRI... 2
+checking value of POLLERR... 8
+checking value of POLLHUP... 16
+checking value of POLLNVAL... 32
+checking for broken poll... no
+checking whether compiler understands -Wno-pointer-sign... yes
+checking for EILSEQ... yes
+checking for gtk-doc... no
+configure: WARNING:
+  You will not be able to create source packages with 'make dist'
+  because gtk-doc >= 1.20 is not found.
+checking for gtkdoc-check... no
+checking for gtkdoc-check... no
+checking for gtkdoc-rebase... no
+checking for gtkdoc-mkpdf... no
+checking whether to build gtk-doc documentation... no
+checking for xsltproc... no
+checking for XML catalog (/etc/xml/catalog)... not found
+checking for xmlcatalog... /usr/bin/xmlcatalog
+checking whether to generate man pages... no
+checking whether to include dtrace tracing support... no
+checking whether to include systemtap tracing support... no
+checking for guint32... yes
+checking alignment of guint32... 4
+checking for guint64... yes
+checking alignment of guint64... 8
+checking for unsigned long... yes
+checking alignment of unsigned long... 8
+checking for DBUS1... no
+(/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig:) | pkg-config --atleast-pkgconfig-version 0.20 -> 0 []
+checking for dbus-daemon... dbus-daemon
+checking for -fvisibility=hidden compiler flag... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating glib-2.0.pc
+config.status: creating gmodule-2.0.pc
+config.status: creating gmodule-export-2.0.pc
+config.status: creating gmodule-no-export-2.0.pc
+config.status: creating gthread-2.0.pc
+config.status: creating gobject-2.0.pc
+config.status: creating gio-2.0.pc
+config.status: creating gio-unix-2.0.pc
+config.status: creating gio-windows-2.0.pc
+config.status: creating glib-zip
+config.status: creating glib-gettextize
+config.status: creating Makefile
+config.status: creating build/Makefile
+config.status: creating build/win32/Makefile
+config.status: creating build/win32/dirent/Makefile
+config.status: creating win32/Makefile
+config.status: creating win32/vs9/Makefile
+config.status: creating win32/vs9/glib-version-paths.vsprops
+config.status: creating win32/vs10/Makefile
+config.status: creating win32/vs10/glib-version-paths.props
+config.status: creating win32/vs11/Makefile
+config.status: creating win32/vs12/Makefile
+config.status: creating win32/vs14/Makefile
+config.status: creating win32/vs15/Makefile
+config.status: creating glib/Makefile
+config.status: creating glib/libcharset/Makefile
+config.status: creating glib/gnulib/Makefile
+config.status: creating glib/pcre/Makefile
+config.status: creating glib/update-pcre/Makefile
+config.status: creating glib/tests/Makefile
+config.status: creating gmodule/Makefile
+config.status: creating gmodule/gmoduleconf.h
+config.status: creating gobject/Makefile
+config.status: creating gobject/glib-genmarshal
+config.status: creating gobject/glib-mkenums
+config.status: creating gobject/tests/Makefile
+config.status: creating gthread/Makefile
+config.status: creating gio/Makefile
+config.status: creating gio/gdbus-2.0/codegen/Makefile
+config.status: creating gio/gdbus-2.0/codegen/config.py
+config.status: creating gio/gnetworking.h
+config.status: creating gio/xdgmime/Makefile
+config.status: creating gio/inotify/Makefile
+config.status: creating gio/kqueue/Makefile
+config.status: creating gio/fam/Makefile
+config.status: creating gio/win32/Makefile
+config.status: creating gio/tests/Makefile
+config.status: creating gio/tests/gdbus-object-manager-example/Makefile
+config.status: creating gio/tests/services/Makefile
+config.status: creating gio/tests/services/org.gtk.GDBus.Examples.ObjectManager.service
+config.status: creating gio/tests/modules/Makefile
+config.status: creating po/Makefile.in
+config.status: creating docs/Makefile
+config.status: creating docs/reference/Makefile
+config.status: creating docs/reference/glib/Makefile
+config.status: creating docs/reference/glib/version.xml
+config.status: creating docs/reference/gobject/Makefile
+config.status: creating docs/reference/gobject/version.xml
+config.status: creating docs/reference/gio/Makefile
+config.status: creating docs/reference/gio/version.xml
+config.status: creating tests/Makefile
+config.status: creating tests/gobject/Makefile
+config.status: creating tests/refcount/Makefile
+config.status: creating m4macros/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing default-1 commands
+config.status: executing libtool commands
+config.status: executing glib/glibconfig.h commands
+config.status: executing chmod-scripts commands
+
+[sed -i -e /#define HAVE_SPLICE 1/d config.h]

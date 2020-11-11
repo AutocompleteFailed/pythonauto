@@ -1,0 +1,1409 @@
+
+Running glib make...
+
+[make -j 5]
+make  all-recursive
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4'
+Making all in .
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4'
+Making all in m4macros
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/m4macros'
+make  all-am
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/m4macros'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/m4macros'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/m4macros'
+Making all in glib
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+  GEN      glibconfig-stamp
+config.status: executing glib/glibconfig.h commands
+config.status: glib/glibconfig.h is unchanged
+  GEN      glibconfig-stamp
+config.status: creating glib/glibconfig.h.win32
+make  all-recursive
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+Making all in libcharset
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/libcharset'
+make  all-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/libcharset'
+  CC       libcharset_la-localcharset.lo
+  GEN      charset.alias
+  GEN      ref-del.sed
+  GEN      ref-add.sed
+  CCLD     libcharset.la
+/usr/bin/ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/libcharset'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/libcharset'
+Making all in pcre
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/pcre'
+make  all-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/pcre'
+  CC       libpcre_la-pcre_byte_order.lo
+  CC       libpcre_la-pcre_chartables.lo
+  CC       libpcre_la-pcre_compile.lo
+  CC       libpcre_la-pcre_config.lo
+  CC       libpcre_la-pcre_dfa_exec.lo
+  CC       libpcre_la-pcre_exec.lo
+  CC       libpcre_la-pcre_fullinfo.lo
+  CC       libpcre_la-pcre_get.lo
+  CC       libpcre_la-pcre_globals.lo
+  CC       libpcre_la-pcre_jit_compile.lo
+  CC       libpcre_la-pcre_newline.lo
+  CC       libpcre_la-pcre_ord2utf8.lo
+  CC       libpcre_la-pcre_string_utils.lo
+  CC       libpcre_la-pcre_study.lo
+  CC       libpcre_la-pcre_tables.lo
+  CC       libpcre_la-pcre_valid_utf8.lo
+  CC       libpcre_la-pcre_version.lo
+  CC       libpcre_la-pcre_xclass.lo
+  CCLD     libpcre.la
+/usr/bin/ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/pcre'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/pcre'
+Making all in update-pcre
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/update-pcre'
+make  all-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/update-pcre'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/update-pcre'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/update-pcre'
+Making all in .
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+  CC       gtester.o
+  CC       libglib_2_0_la-gasyncqueue.lo
+  CC       libglib_2_0_la-garray.lo
+  CC       libglib_2_0_la-gatomic.lo
+  CC       libglib_2_0_la-gbacktrace.lo
+  CC       libglib_2_0_la-gbase64.lo
+  CC       libglib_2_0_la-gbitlock.lo
+  CC       libglib_2_0_la-gbookmarkfile.lo
+  CC       libglib_2_0_la-gbytes.lo
+  CC       libglib_2_0_la-gcharset.lo
+  CC       libglib_2_0_la-gchecksum.lo
+  CC       libglib_2_0_la-gconvert.lo
+  CC       libglib_2_0_la-gdataset.lo
+  CC       libglib_2_0_la-gdate.lo
+  CC       libglib_2_0_la-gdatetime.lo
+  CC       libglib_2_0_la-gdir.lo
+  CC       libglib_2_0_la-genviron.lo
+  CC       libglib_2_0_la-gerror.lo
+  CC       libglib_2_0_la-gfileutils.lo
+  CC       libglib_2_0_la-ggettext.lo
+  CC       libglib_2_0_la-ghash.lo
+  CC       libglib_2_0_la-ghmac.lo
+  CC       libglib_2_0_la-ghook.lo
+  CC       libglib_2_0_la-ghostutils.lo
+  CC       libglib_2_0_la-giochannel.lo
+  CC       libglib_2_0_la-gkeyfile.lo
+  CC       libglib_2_0_la-glib-private.lo
+  CC       libglib_2_0_la-glib-init.lo
+  CC       libglib_2_0_la-glist.lo
+  CC       libglib_2_0_la-gmain.lo
+  CC       libglib_2_0_la-gmappedfile.lo
+  CC       libglib_2_0_la-gmarkup.lo
+  CC       libglib_2_0_la-gmem.lo
+  CC       libglib_2_0_la-gmessages.lo
+  CC       libglib_2_0_la-gnode.lo
+  CC       libglib_2_0_la-goption.lo
+  CC       libglib_2_0_la-gpattern.lo
+  CC       libglib_2_0_la-gpoll.lo
+  CC       libglib_2_0_la-gprimes.lo
+  CC       libglib_2_0_la-gqsort.lo
+  CC       libglib_2_0_la-gquark.lo
+  CC       libglib_2_0_la-gqueue.lo
+  CC       libglib_2_0_la-grand.lo
+  CC       libglib_2_0_la-gregex.lo
+  CC       libglib_2_0_la-gscanner.lo
+  CC       libglib_2_0_la-gsequence.lo
+  CC       libglib_2_0_la-gshell.lo
+  CC       libglib_2_0_la-gslice.lo
+  CC       libglib_2_0_la-gslist.lo
+  CC       libglib_2_0_la-gstdio.lo
+  CC       libglib_2_0_la-gstrfuncs.lo
+  CC       libglib_2_0_la-gstring.lo
+  CC       libglib_2_0_la-gstringchunk.lo
+  CC       libglib_2_0_la-gtestutils.lo
+  CC       libglib_2_0_la-gthread.lo
+  CC       libglib_2_0_la-gthreadpool.lo
+  CC       libglib_2_0_la-gtimer.lo
+  CC       libglib_2_0_la-gtimezone.lo
+  CC       libglib_2_0_la-gtranslit.lo
+  CC       libglib_2_0_la-gtrashstack.lo
+  CC       libglib_2_0_la-gtree.lo
+  CC       libglib_2_0_la-guniprop.lo
+  CC       libglib_2_0_la-gutf8.lo
+  CC       libglib_2_0_la-gunibreak.lo
+  CC       libglib_2_0_la-gunicollate.lo
+  CC       libglib_2_0_la-gunidecomp.lo
+  CC       libglib_2_0_la-gurifuncs.lo
+  CC       libglib_2_0_la-gutils.lo
+  CC       libglib_2_0_la-guuid.lo
+  CC       libglib_2_0_la-gvariant.lo
+  CC       libglib_2_0_la-gvariant-core.lo
+  CC       libglib_2_0_la-gvariant-parser.lo
+  CC       libglib_2_0_la-gvariant-serialiser.lo
+  CC       libglib_2_0_la-gvarianttypeinfo.lo
+  CC       libglib_2_0_la-gvarianttype.lo
+  CC       libglib_2_0_la-gversion.lo
+  CC       libglib_2_0_la-gwakeup.lo
+  CC       libglib_2_0_la-gprintf.lo
+  CC       libglib_2_0_la-glib-unix.lo
+  CC       libglib_2_0_la-gthread-posix.lo
+  CC       giounix.lo
+  CC       gspawn.lo
+  GEN      glib-public-headers.txt
+  GEN      libglib-gdb.py
+  CC       deprecated/libglib_2_0_la-gallocator.lo
+  CC       deprecated/libglib_2_0_la-gcache.lo
+  CC       deprecated/libglib_2_0_la-gcompletion.lo
+  CC       deprecated/libglib_2_0_la-grel.lo
+  CC       deprecated/libglib_2_0_la-gthread-deprecated.lo
+  CCLD     libglib-2.0.la
+  CCLD     gtester
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gtester' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQj9B6E.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/gtester /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gtester.o ./.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gtester' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+Making all in tests
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/tests'
+make  all-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/tests'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/tests'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/tests'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+Making all in gmodule
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+make  all-am
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+  CC       libgmodule_2_0_la-gmodule.lo
+  CCLD     libgmodule-2.0.la
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+Making all in gthread
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+make  all-am
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+  CC       libgthread_2_0_la-gthread-impl.lo
+  CCLD     libgthread-2.0.la
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+Making all in gobject
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+make  all-recursive
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+Making all in .
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+  CC       gobject-query.o
+  CC       libgobject_2_0_la-gatomicarray.lo
+  CC       libgobject_2_0_la-gboxed.lo
+  CC       libgobject_2_0_la-gbinding.lo
+  CC       libgobject_2_0_la-gclosure.lo
+  CC       libgobject_2_0_la-genums.lo
+  CC       libgobject_2_0_la-gmarshal.lo
+  CC       libgobject_2_0_la-gobject.lo
+  CC       libgobject_2_0_la-gparam.lo
+  CC       libgobject_2_0_la-gparamspecs.lo
+  CC       libgobject_2_0_la-gsignal.lo
+  CC       libgobject_2_0_la-gsourceclosure.lo
+  CC       libgobject_2_0_la-gtype.lo
+  CC       libgobject_2_0_la-gtypemodule.lo
+  CC       libgobject_2_0_la-gtypeplugin.lo
+  CC       libgobject_2_0_la-gvalue.lo
+  CC       libgobject_2_0_la-gvaluearray.lo
+  CC       libgobject_2_0_la-gvaluetransform.lo
+  CC       libgobject_2_0_la-gvaluetypes.lo
+  GEN      gobject-public-headers.txt
+  GEN      libgobject-gdb.py
+  CCLD     libgobject-2.0.la
+  CCLD     gobject-query
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gobject-query' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPkNx4u.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/gobject-query /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gobject-query.o ./.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib/libffi.so ../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gobject-query' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+Making all in tests
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/tests'
+make  all-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/tests'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/tests'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/tests'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+Making all in gio
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+  GEN      gdbus-daemon-generated.c
+  GEN      gdbus-daemon-generated.h
+make  all-recursive
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+Making all in gdbus-2.0/codegen
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/gdbus-2.0/codegen'
+make  all-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/gdbus-2.0/codegen'
+  GEN      gdbus-codegen
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/gdbus-2.0/codegen'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/gdbus-2.0/codegen'
+Making all in xdgmime
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/xdgmime'
+make  all-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/xdgmime'
+  CC       libxdgmime_la-xdgmime.lo
+  CC       libxdgmime_la-xdgmimealias.lo
+  CC       libxdgmime_la-xdgmimecache.lo
+  CC       libxdgmime_la-xdgmimeicon.lo
+  CC       libxdgmime_la-xdgmimeglob.lo
+  CC       libxdgmime_la-xdgmimeint.lo
+  CC       libxdgmime_la-xdgmimemagic.lo
+  CC       libxdgmime_la-xdgmimeparent.lo
+  CCLD     libxdgmime.la
+/usr/bin/ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/xdgmime'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/xdgmime'
+Making all in inotify
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/inotify'
+make  all-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/inotify'
+  CC       libinotify_la-inotify-sub.lo
+  CC       libinotify_la-inotify-kernel.lo
+  CC       libinotify_la-inotify-path.lo
+  CC       libinotify_la-inotify-helper.lo
+  CC       libinotify_la-inotify-missing.lo
+  CC       libinotify_la-ginotifyfilemonitor.lo
+  CCLD     libinotify.la
+/usr/bin/ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/inotify'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/inotify'
+Making all in .
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+  CC       gio-querymodules.o
+  CC       giomodule-priv.o
+  CC       libgio_2_0_la-gasyncinitable.lo
+  CC       libgio_2_0_la-gasynchelper.lo
+  CC       libgio_2_0_la-gappinfo.lo
+  CC       libgio_2_0_la-gasyncresult.lo
+  CC       libgio_2_0_la-gbufferedinputstream.lo
+  CC       libgio_2_0_la-gbufferedoutputstream.lo
+  CC       libgio_2_0_la-gbytesicon.lo
+  CC       libgio_2_0_la-gcancellable.lo
+  CC       libgio_2_0_la-gcharsetconverter.lo
+  CC       libgio_2_0_la-gcontextspecificgroup.lo
+  CC       libgio_2_0_la-gconverter.lo
+  CC       libgio_2_0_la-gconverterinputstream.lo
+  CC       libgio_2_0_la-gconverteroutputstream.lo
+  CC       libgio_2_0_la-gcredentials.lo
+  CC       libgio_2_0_la-gdatagrambased.lo
+  CC       libgio_2_0_la-gdatainputstream.lo
+  CC       libgio_2_0_la-gdataoutputstream.lo
+  CC       libgio_2_0_la-gdrive.lo
+  CC       libgio_2_0_la-gdummyfile.lo
+  CC       libgio_2_0_la-gdummyproxyresolver.lo
+  CC       libgio_2_0_la-gdummytlsbackend.lo
+  CC       libgio_2_0_la-gemblem.lo
+  CC       libgio_2_0_la-gemblemedicon.lo
+  CC       libgio_2_0_la-gfile.lo
+  CC       libgio_2_0_la-gfileattribute.lo
+  CC       libgio_2_0_la-gfileenumerator.lo
+  CC       libgio_2_0_la-gfileicon.lo
+  CC       libgio_2_0_la-gfileinfo.lo
+  CC       libgio_2_0_la-gfileinputstream.lo
+  CC       libgio_2_0_la-gfilemonitor.lo
+  CC       libgio_2_0_la-gfilenamecompleter.lo
+  CC       libgio_2_0_la-gfileoutputstream.lo
+  CC       libgio_2_0_la-gfileiostream.lo
+  CC       libgio_2_0_la-gfilterinputstream.lo
+  CC       libgio_2_0_la-gfilteroutputstream.lo
+  CC       libgio_2_0_la-gicon.lo
+  CC       libgio_2_0_la-ginetaddress.lo
+  CC       libgio_2_0_la-ginetaddressmask.lo
+  CC       libgio_2_0_la-ginetsocketaddress.lo
+  CC       libgio_2_0_la-ginitable.lo
+  CC       libgio_2_0_la-ginputstream.lo
+  CC       libgio_2_0_la-gioerror.lo
+  CC       libgio_2_0_la-giomodule.lo
+  CC       libgio_2_0_la-giomodule-priv.lo
+  CC       libgio_2_0_la-gioscheduler.lo
+  CC       libgio_2_0_la-giostream.lo
+  CC       libgio_2_0_la-gloadableicon.lo
+  CC       libgio_2_0_la-gmount.lo
+  CC       libgio_2_0_la-gmemoryinputstream.lo
+  CC       libgio_2_0_la-gmemoryoutputstream.lo
+  CC       libgio_2_0_la-gmountoperation.lo
+  CC       libgio_2_0_la-gnativevolumemonitor.lo
+  CC       libgio_2_0_la-gnativesocketaddress.lo
+  CC       libgio_2_0_la-gnetworkaddress.lo
+  CC       libgio_2_0_la-gnetworking.lo
+  CC       libgio_2_0_la-gnetworkmonitor.lo
+  CC       libgio_2_0_la-gnetworkmonitorbase.lo
+  CC       libgio_2_0_la-gnetworkservice.lo
+  CC       libgio_2_0_la-goutputstream.lo
+  CC       libgio_2_0_la-gpermission.lo
+  CC       libgio_2_0_la-gpollableinputstream.lo
+  CC       libgio_2_0_la-gpollableoutputstream.lo
+  CC       libgio_2_0_la-gpollableutils.lo
+  CC       libgio_2_0_la-gpollfilemonitor.lo
+  CC       libgio_2_0_la-gproxy.lo
+  CC       libgio_2_0_la-gproxyaddress.lo
+  CC       libgio_2_0_la-gproxyaddressenumerator.lo
+  CC       libgio_2_0_la-gproxyresolver.lo
+  CC       libgio_2_0_la-gresolver.lo
+  CC       libgio_2_0_la-gresource.lo
+  CC       libgio_2_0_la-gresourcefile.lo
+  CC       libgio_2_0_la-gseekable.lo
+  CC       libgio_2_0_la-gsimpleasyncresult.lo
+  CC       libgio_2_0_la-gsimpleiostream.lo
+  CC       libgio_2_0_la-gsimplepermission.lo
+  CC       libgio_2_0_la-gsocket.lo
+  CC       libgio_2_0_la-gsocketaddress.lo
+  CC       libgio_2_0_la-gsocketaddressenumerator.lo
+  CC       libgio_2_0_la-gsocketclient.lo
+  CC       libgio_2_0_la-gsocketconnectable.lo
+  CC       libgio_2_0_la-gsocketconnection.lo
+  CC       libgio_2_0_la-gsocketcontrolmessage.lo
+  CC       libgio_2_0_la-gsocketinputstream.lo
+  CC       libgio_2_0_la-gsocketlistener.lo
+  CC       libgio_2_0_la-gsocketoutputstream.lo
+  CC       libgio_2_0_la-gsubprocesslauncher.lo
+  CC       libgio_2_0_la-gsubprocess.lo
+  CC       libgio_2_0_la-gsocketservice.lo
+  CC       libgio_2_0_la-gsrvtarget.lo
+  CC       libgio_2_0_la-gsimpleproxyresolver.lo
+  CC       libgio_2_0_la-gtask.lo
+  CC       libgio_2_0_la-gtcpconnection.lo
+  CC       libgio_2_0_la-gtcpwrapperconnection.lo
+  CC       libgio_2_0_la-gthreadedsocketservice.lo
+  CC       libgio_2_0_la-gthemedicon.lo
+  CC       libgio_2_0_la-gthreadedresolver.lo
+  CC       libgio_2_0_la-gtlsbackend.lo
+  CC       libgio_2_0_la-gtlscertificate.lo
+  CC       libgio_2_0_la-gtlsclientconnection.lo
+  CC       libgio_2_0_la-gtlsconnection.lo
+  CC       libgio_2_0_la-gtlsdatabase.lo
+  CC       libgio_2_0_la-gtlsfiledatabase.lo
+  CC       libgio_2_0_la-gtlsinteraction.lo
+  CC       libgio_2_0_la-gtlspassword.lo
+  CC       libgio_2_0_la-gtlsserverconnection.lo
+  CC       libgio_2_0_la-gdtlsconnection.lo
+  CC       libgio_2_0_la-gdtlsclientconnection.lo
+  CC       libgio_2_0_la-gdtlsserverconnection.lo
+  CC       libgio_2_0_la-gunionvolumemonitor.lo
+  CC       libgio_2_0_la-gvfs.lo
+  CC       libgio_2_0_la-gvolume.lo
+  CC       libgio_2_0_la-gvolumemonitor.lo
+  CC       libgio_2_0_la-gzlibcompressor.lo
+  CC       libgio_2_0_la-gzlibdecompressor.lo
+  CC       libgio_2_0_la-gioenumtypes.lo
+  CC       libgio_2_0_la-glistmodel.lo
+  CC       libgio_2_0_la-gliststore.lo
+  CC       libgio_2_0_la-gapplication.lo
+  CC       libgio_2_0_la-gapplicationcommandline.lo
+  CC       libgio_2_0_la-gapplicationimpl-dbus.lo
+  CC       libgio_2_0_la-gactiongroup.lo
+  CC       libgio_2_0_la-gactionmap.lo
+  CC       libgio_2_0_la-gsimpleactiongroup.lo
+  CC       libgio_2_0_la-gremoteactiongroup.lo
+  CC       libgio_2_0_la-gactiongroupexporter.lo
+  CC       libgio_2_0_la-gdbusactiongroup.lo
+  CC       libgio_2_0_la-gaction.lo
+  CC       libgio_2_0_la-gpropertyaction.lo
+  CC       libgio_2_0_la-gsimpleaction.lo
+  CC       libgio_2_0_la-gmenumodel.lo
+  CC       libgio_2_0_la-gmenu.lo
+  CC       libgio_2_0_la-gmenuexporter.lo
+  CC       libgio_2_0_la-gdbusmenumodel.lo
+  CC       libgio_2_0_la-gnotification.lo
+  CC       libgio_2_0_la-gnotificationbackend.lo
+  CC       libgio_2_0_la-gdbusutils.lo
+  CC       libgio_2_0_la-gdbusaddress.lo
+  CC       libgio_2_0_la-gdbusauthobserver.lo
+  CC       libgio_2_0_la-gdbusauth.lo
+  CC       libgio_2_0_la-gdbusauthmechanism.lo
+  CC       libgio_2_0_la-gdbusauthmechanismanon.lo
+  CC       libgio_2_0_la-gdbusauthmechanismexternal.lo
+  CC       libgio_2_0_la-gdbusauthmechanismsha1.lo
+  CC       libgio_2_0_la-gdbuserror.lo
+  CC       libgio_2_0_la-gdbusconnection.lo
+  CC       libgio_2_0_la-gdbusmessage.lo
+  CC       libgio_2_0_la-gdbusnameowning.lo
+  CC       libgio_2_0_la-gdbusnamewatching.lo
+  CC       libgio_2_0_la-gdbusproxy.lo
+  CC       libgio_2_0_la-gdbusprivate.lo
+  CC       libgio_2_0_la-gdbusintrospection.lo
+  CC       libgio_2_0_la-gdbusmethodinvocation.lo
+  CC       libgio_2_0_la-gdbusserver.lo
+  CC       libgio_2_0_la-gdbusinterface.lo
+  CC       libgio_2_0_la-gdbusinterfaceskeleton.lo
+  CC       libgio_2_0_la-gdbusobject.lo
+  CC       libgio_2_0_la-gdbusobjectskeleton.lo
+  CC       libgio_2_0_la-gdbusobjectproxy.lo
+  CC       libgio_2_0_la-gdbusobjectmanager.lo
+  CC       libgio_2_0_la-gdbusobjectmanagerclient.lo
+  CC       libgio_2_0_la-gdbusobjectmanagerserver.lo
+  CC       libgio_2_0_la-gtestdbus.lo
+  CC       libgio_2_0_la-ghttpproxy.lo
+  CC       libgio_2_0_la-glocalfile.lo
+  CC       libgio_2_0_la-glocalfileenumerator.lo
+  CC       libgio_2_0_la-glocalfileinfo.lo
+  CC       libgio_2_0_la-glocalfileinputstream.lo
+  CC       libgio_2_0_la-glocalfilemonitor.lo
+  CC       libgio_2_0_la-glocalfileoutputstream.lo
+  CC       libgio_2_0_la-glocalfileiostream.lo
+  CC       libgio_2_0_la-glocalvfs.lo
+  CC       libgio_2_0_la-gsocks4proxy.lo
+  CC       libgio_2_0_la-gsocks4aproxy.lo
+  CC       libgio_2_0_la-gsocks5proxy.lo
+  CC       libgio_2_0_la-thumbnail-verify.lo
+  CC       libgio_2_0_la-gdesktopappinfo.lo
+  CC       libgio_2_0_la-gcontenttype.lo
+  CC       libgio_2_0_la-gfiledescriptorbased.lo
+  CC       libgio_2_0_la-gunixconnection.lo
+  CC       libgio_2_0_la-gunixcredentialsmessage.lo
+  CC       libgio_2_0_la-gunixfdlist.lo
+  CC       libgio_2_0_la-gunixfdmessage.lo
+  CC       libgio_2_0_la-gunixmount.lo
+  CC       libgio_2_0_la-gunixmounts.lo
+  CC       libgio_2_0_la-gunixsocketaddress.lo
+  CC       libgio_2_0_la-gunixvolume.lo
+  CC       libgio_2_0_la-gunixvolumemonitor.lo
+  CC       libgio_2_0_la-gunixinputstream.lo
+  CC       libgio_2_0_la-gunixoutputstream.lo
+  CC       libgio_2_0_la-gfdonotificationbackend.lo
+  CC       libgio_2_0_la-ggtknotificationbackend.lo
+  CC       libgio_2_0_la-gportalnotificationbackend.lo
+  CC       libgio_2_0_la-gdocumentportal.lo
+  CC       libgio_2_0_la-gopenuriportal.lo
+  CC       libgio_2_0_la-gportalsupport.lo
+  CC       libgio_2_0_la-gnetworkmonitorportal.lo
+  CC       libgio_2_0_la-gproxyresolverportal.lo
+  CC       libgio_2_0_la-xdp-dbus.lo
+  CC       libgio_2_0_la-gnetworkmonitornetlink.lo
+  CC       libgio_2_0_la-gnetworkmonitornm.lo
+  CC       libgio_2_0_la-gkeyfilesettingsbackend.lo
+  CC       libgio_2_0_la-gdelayedsettingsbackend.lo
+  CC       libgio_2_0_la-gmemorysettingsbackend.lo
+  CC       libgio_2_0_la-gnullsettingsbackend.lo
+  CC       libgio_2_0_la-gsettingsbackend.lo
+  CC       libgio_2_0_la-gsettingsschema.lo
+  CC       libgio_2_0_la-gsettings-mapping.lo
+  CC       libgio_2_0_la-gsettings.lo
+  CC       gvdb/gvdb-builder.o
+  CC       glib-compile-schemas.o
+  CC       glib-compile-resources.o
+  CC       gsettings-tool.o
+  CC       gdbus-tool.o
+  CC       gapplication-tool.o
+  CC       gresource-gresource-tool.o
+  CC       gio-tool.o
+  CC       gio-tool-cat.o
+  CC       gio-tool-copy.o
+  CC       gio-tool-info.o
+  CC       gio-tool-list.o
+  CC       gio-tool-mime.o
+  CC       gio-tool-mkdir.o
+  CC       gio-tool-monitor.o
+  CC       gio-tool-mount.o
+  CC       gio-tool-move.o
+  CC       gio-tool-open.o
+  CC       gio-tool-rename.o
+  CC       gio-tool-remove.o
+  CC       gio-tool-save.o
+  CC       gio-tool-set.o
+  CC       gio-tool-trash.o
+  CC       gio-tool-tree.o
+  GEN      gio-public-headers.txt
+  CC       gvdb/libgio_2_0_la-gvdb-reader.lo
+  CCLD     glib-compile-schemas
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/glib-compile-schemas' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmkusNg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/glib-compile-schemas /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gvdb/gvdb-builder.o glib-compile-schemas.o ../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/glib-compile-schemas' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-mtune=generic' '-march=x86-64'
+  CCLD     libgio-2.0.la
+libtool: warning: '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libffi.la' seems to be moved
+  CCLD     gsettings
+  CCLD     gio-querymodules
+  CCLD     glib-compile-resources
+  CCLD     gapplication
+  CCLD     gdbus
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/glib-compile-resources' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM5DsZU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/glib-compile-resources /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gvdb/gvdb-builder.o glib-compile-resources.o ./.libs/libgio-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule/.libs/libgmodule-2.0.so -lz -lresolv ../gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib/libffi.so ../gmodule/.libs/libgmodule-2.0.so -ldl /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/.libs/libglib-2.0.so ../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gio-querymodules' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdOB5u2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/gio-querymodules /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gio-querymodules.o giomodule-priv.o ./.libs/libgio-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule/.libs/libgmodule-2.0.so -lz -lresolv ../gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib/libffi.so ../gmodule/.libs/libgmodule-2.0.so -ldl /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/.libs/libglib-2.0.so ../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gdbus' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJToXG6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/gdbus /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gdbus-tool.o ./.libs/libgio-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule/.libs/libgmodule-2.0.so -lz -lresolv ../gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib/libffi.so ../gmodule/.libs/libgmodule-2.0.so -ldl /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/.libs/libglib-2.0.so ../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gapplication' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgVeWF8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/gapplication /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gapplication-tool.o ./.libs/libgio-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule/.libs/libgmodule-2.0.so -lz -lresolv ../gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib/libffi.so ../gmodule/.libs/libgmodule-2.0.so -ldl /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/.libs/libglib-2.0.so ../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/glib-compile-resources' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gsettings' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0tMVo7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/gsettings /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gsettings-tool.o ./.libs/libgio-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule/.libs/libgmodule-2.0.so -lz -lresolv ../gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib/libffi.so ../gmodule/.libs/libgmodule-2.0.so -ldl /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/.libs/libglib-2.0.so ../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gdbus' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+  CCLD     gresource
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gapplication' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+  CCLD     gio
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gio-querymodules' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gsettings' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gresource' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2WgUHJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/gresource /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gresource-gresource-tool.o ./.libs/libgio-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule/.libs/libgmodule-2.0.so -lz -lresolv ../gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib/libffi.so ../gmodule/.libs/libgmodule-2.0.so -ldl /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/.libs/libglib-2.0.so ../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gresource' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gio' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHj55lR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/gio /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. gio-tool.o gio-tool-cat.o gio-tool-copy.o gio-tool-info.o gio-tool-list.o gio-tool-mime.o gio-tool-mkdir.o gio-tool-monitor.o gio-tool-mount.o gio-tool-move.o gio-tool-open.o gio-tool-rename.o gio-tool-remove.o gio-tool-save.o gio-tool-set.o gio-tool-trash.o gio-tool-tree.o ./.libs/libgio-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule/.libs/libgmodule-2.0.so -ldl -lz -lresolv ../gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib/libffi.so ../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/gio' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+Making all in tests
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+  GEN      gdbus-test-codegen-generated.h
+  GEN      giotypefuncs.inc
+make  all-recursive
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+Making all in gdbus-object-manager-example
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-object-manager-example'
+make  all-am
+make[7]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-object-manager-example'
+make[7]: Nothing to be done for 'all-am'.
+make[7]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-object-manager-example'
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-object-manager-example'
+Making all in services
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/services'
+make[6]: Nothing to be done for 'all'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/services'
+Making all in modules
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/modules'
+make[6]: Nothing to be done for 'all'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/modules'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+Making all in po
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/po'
+Making all in docs
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs'
+Making all in reference
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference'
+Making all in glib
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/glib'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/glib'
+Making all in gobject
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gobject'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gobject'
+Making all in gio
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gio'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gio'
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference'
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs'
+Making all in tests
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make  all-recursive
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+Making all in gobject
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/gobject'
+  GEN      stamp-testmarshal.h
+INFO: Reading /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/tests/gobject/testmarshal.list...
+  GEN      testmarshal.c
+INFO: Reading /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/tests/gobject/testmarshal.list...
+make  all-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/gobject'
+  CC       performance.o
+  CC       performance-threaded.o
+  CCLD     performance-threaded
+  CCLD     performance
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-g' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/performance-threaded' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFMcgOC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/performance-threaded /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. performance-threaded.o ../../gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib/libffi.so ../../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+Using built-in specs.
+COLLECT_GCC=gcc-7
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-g' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/performance' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccB5WB0H.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o .libs/performance /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. performance.o ../../gobject/.libs/libgobject-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib/libffi.so ../../glib/.libs/libglib-2.0.so /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libiconv.so -lpthread -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-g' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/performance-threaded' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-g' '-ffunction-sections' '-fdata-sections' '-pipe' '-m64' '-g' '-O0' '-w' '-fno-strict-aliasing' '-g' '-O0' '-v' '-o' '.libs/performance' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib' '-L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib' '-mtune=generic' '-march=x86-64'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/gobject'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/gobject'
+Making all in refcount
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/refcount'
+make  all-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/refcount'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/refcount'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/refcount'
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4'
+
+[make install]
+make  install-recursive
+make[1]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4'
+Making install in .
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4'
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+ /usr/bin/install -c glib-gettextize '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/valgrind'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib.supp '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/valgrind'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig'
+ /usr/bin/install -c -m 644 glib-2.0.pc gobject-2.0.pc gmodule-2.0.pc gmodule-export-2.0.pc gmodule-no-export-2.0.pc gthread-2.0.pc gio-2.0.pc gio-unix-2.0.pc '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/pkgconfig'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4'
+Making install in m4macros
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/m4macros'
+make  install-am
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/m4macros'
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/m4macros'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/aclocal'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/m4macros/glib-2.0.m4 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/m4macros/glib-gettext.m4 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/m4macros/gsettings.m4 '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/aclocal'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/m4macros'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/m4macros'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/m4macros'
+Making install in glib
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+make  install-recursive
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+Making install in libcharset
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/libcharset'
+make  install-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/libcharset'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/libcharset'
+/bin/bash /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/install-sh -d /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+if test -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias; then \
+  sed -f ref-add.sed /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias > /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp ; \
+  /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias ; \
+  rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp ; \
+else \
+  if test yes = no; then \
+    sed -f ref-add.sed charset.alias > /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp ; \
+    /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.alias ; \
+    rm -f /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/charset.tmp ; \
+  fi ; \
+fi
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/libcharset'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/libcharset'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/libcharset'
+Making install in pcre
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/pcre'
+make  install-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/pcre'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/pcre'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/pcre'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/pcre'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/pcre'
+Making install in update-pcre
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/update-pcre'
+make  install-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/update-pcre'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/update-pcre'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/update-pcre'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/update-pcre'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/update-pcre'
+Making install in .
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libglib-2.0.la '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+libtool: install: /usr/bin/install -c .libs/libglib-2.0.so.0.5600.4 /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libglib-2.0.so.0.5600.4
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libglib-2.0.so.0.5600.4 libglib-2.0.so.0 || { rm -f libglib-2.0.so.0 && ln -s libglib-2.0.so.0.5600.4 libglib-2.0.so.0; }; })
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libglib-2.0.so.0.5600.4 libglib-2.0.so || { rm -f libglib-2.0.so && ln -s libglib-2.0.so.0.5600.4 libglib-2.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libglib-2.0.lai /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libglib-2.0.la
+libtool: finish: PATH="/opt/xbb/bin:/home/automark/.nvm/versions/node/v12.18.4/bin:/home/automark/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/automark/.local/bin:/sbin" ldconfig -n /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c gtester '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+libtool: install: /usr/bin/install -c .libs/gtester /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/gtester
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+ /usr/bin/install -c /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gtester-report '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/glib-2.0/include'
+ /usr/bin/install -c -m 644 glibconfig.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/glib-2.0/include'
+make  install-exec-hook
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+for sf in gtester-report ; do \
+  mv -f "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/$sf" "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/$sf".tmp \
+  && sed < "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/$sf".tmp > "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/$sf" \
+    -e '1,24s|^ *#@PKGINSTALL_CONFIGVARS_IN24LINES@|  "bindir"    	: "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin", "glib-version"  : "2.56.4"|' \
+    -e '1,1s|#! /usr/bin/env python.*|#!/usr/bin/python|' \
+  || exit $? ; \
+  chmod a+x /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/$sf ; \
+  rm -f "/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/$sf".tmp ; \
+done
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/glib/deprecated'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/deprecated/gallocator.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/deprecated/gcache.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/deprecated/gcompletion.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/deprecated/gmain.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/deprecated/grel.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/deprecated/gthread.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/glib/deprecated'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/gdb'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/glib_gdb.py '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/gdb'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/glib-unix.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/glib-object.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/glib.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/glib'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/glib-autocleanups.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/galloca.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/garray.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gasyncqueue.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gatomic.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gbacktrace.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gbase64.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gbitlock.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gbookmarkfile.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gbytes.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gcharset.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gchecksum.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gconvert.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gdataset.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gdate.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gdatetime.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gdir.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/genviron.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gerror.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gfileutils.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/ggettext.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/ghash.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/ghmac.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/ghook.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/ghostutils.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gi18n.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gi18n-lib.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/giochannel.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gkeyfile.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/glist.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gmacros.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gmain.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gmappedfile.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gmarkup.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gmem.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gmessages.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gnode.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/goption.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gpattern.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gpoll.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/glib'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gprimes.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gqsort.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gquark.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gqueue.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/grand.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gregex.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gscanner.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gsequence.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gshell.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gslice.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gslist.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gspawn.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gstdio.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gstrfuncs.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gtestutils.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gstring.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gstringchunk.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gthread.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gthreadpool.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gtimer.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gtimezone.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gtrashstack.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gtree.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gtypes.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gunicode.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gurifuncs.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gutils.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/guuid.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gvarianttype.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gvariant.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gversion.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gversionmacros.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gwin32.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/glib/gprintf.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/glib'
+make  install-data-hook
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gdb/auto-load/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+/usr/bin/install -c ./libglib-gdb.py /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gdb/auto-load/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libglib-2.0.so.0.5600.4-gdb.py
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+Making install in tests
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/tests'
+make  install-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/tests'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/tests'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/tests'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/tests'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib/tests'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/glib'
+Making install in gmodule
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+make  install-am
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libgmodule-2.0.la '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+libtool: warning: relinking 'libgmodule-2.0.la'
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule; /bin/bash "/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/libtool"  --silent --tag CC --mode=relink gcc-7 -fvisibility=hidden -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fno-strict-aliasing -Wl,--export-dynamic -version-info 5600:4:5600 -export-dynamic -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -g -O0 -v -o libgmodule-2.0.la -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib libgmodule_2_0_la-gmodule.lo -ldl ../glib/libglib-2.0.la )
+libtool: install: /usr/bin/install -c .libs/libgmodule-2.0.so.0.5600.4T /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgmodule-2.0.so.0.5600.4
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libgmodule-2.0.so.0.5600.4 libgmodule-2.0.so.0 || { rm -f libgmodule-2.0.so.0 && ln -s libgmodule-2.0.so.0.5600.4 libgmodule-2.0.so.0; }; })
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libgmodule-2.0.so.0.5600.4 libgmodule-2.0.so || { rm -f libgmodule-2.0.so && ln -s libgmodule-2.0.so.0.5600.4 libgmodule-2.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgmodule-2.0.lai /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgmodule-2.0.la
+libtool: finish: PATH="/opt/xbb/bin:/home/automark/.nvm/versions/node/v12.18.4/bin:/home/automark/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/automark/.local/bin:/sbin" ldconfig -n /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gmodule/gmodule.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0'
+make  install-data-hook
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+make[5]: Nothing to be done for 'install-data-hook'.
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gmodule'
+Making install in gthread
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+make  install-am
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libgthread-2.0.la '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+libtool: warning: relinking 'libgthread-2.0.la'
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread; /bin/bash "/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/libtool"  --silent --tag CC --mode=relink gcc-7 -fvisibility=hidden -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fno-strict-aliasing -version-info 5600:4:5600 -export-dynamic -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -g -O0 -v -o libgthread-2.0.la -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib libgthread_2_0_la-gthread-impl.lo -lpthread ../glib/libglib-2.0.la )
+libtool: install: /usr/bin/install -c .libs/libgthread-2.0.so.0.5600.4T /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgthread-2.0.so.0.5600.4
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libgthread-2.0.so.0.5600.4 libgthread-2.0.so.0 || { rm -f libgthread-2.0.so.0 && ln -s libgthread-2.0.so.0.5600.4 libgthread-2.0.so.0; }; })
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libgthread-2.0.so.0.5600.4 libgthread-2.0.so || { rm -f libgthread-2.0.so && ln -s libgthread-2.0.so.0.5600.4 libgthread-2.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgthread-2.0.lai /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgthread-2.0.la
+libtool: finish: PATH="/opt/xbb/bin:/home/automark/.nvm/versions/node/v12.18.4/bin:/home/automark/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/automark/.local/bin:/sbin" ldconfig -n /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make  install-data-hook
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+make[5]: Nothing to be done for 'install-data-hook'.
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gthread'
+Making install in gobject
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+make  install-recursive
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+Making install in .
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libgobject-2.0.la '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+libtool: warning: relinking 'libgobject-2.0.la'
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject; /bin/bash "/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/libtool"  --silent --tag CC --mode=relink gcc-7 -I/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libffi-3.2.1/include -fvisibility=hidden -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fno-strict-aliasing -version-info 5600:4:5600 -export-dynamic -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -g -O0 -v -o libgobject-2.0.la -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib libgobject_2_0_la-gatomicarray.lo libgobject_2_0_la-gbinding.lo libgobject_2_0_la-gboxed.lo libgobject_2_0_la-gclosure.lo libgobject_2_0_la-genums.lo libgobject_2_0_la-gmarshal.lo libgobject_2_0_la-gobject.lo libgobject_2_0_la-gparam.lo libgobject_2_0_la-gparamspecs.lo libgobject_2_0_la-gsignal.lo libgobject_2_0_la-gsourceclosure.lo libgobject_2_0_la-gtype.lo libgobject_2_0_la-gtypemodule.lo libgobject_2_0_la-gtypeplugin.lo libgobject_2_0_la-gvalue.lo libgobject_2_0_la-gvaluearray.lo libgobject_2_0_la-gvaluetransform.lo libgobject_2_0_la-gvaluetypes.lo ../glib/libglib-2.0.la -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/../lib -lffi )
+libtool: install: /usr/bin/install -c .libs/libgobject-2.0.so.0.5600.4T /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgobject-2.0.so.0.5600.4
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libgobject-2.0.so.0.5600.4 libgobject-2.0.so.0 || { rm -f libgobject-2.0.so.0 && ln -s libgobject-2.0.so.0.5600.4 libgobject-2.0.so.0; }; })
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libgobject-2.0.so.0.5600.4 libgobject-2.0.so || { rm -f libgobject-2.0.so && ln -s libgobject-2.0.so.0.5600.4 libgobject-2.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgobject-2.0.lai /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgobject-2.0.la
+libtool: finish: PATH="/opt/xbb/bin:/home/automark/.nvm/versions/node/v12.18.4/bin:/home/automark/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/automark/.local/bin:/sbin" ldconfig -n /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c gobject-query '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+libtool: install: /usr/bin/install -c .libs/gobject-query /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/gobject-query
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+ /usr/bin/install -c glib-mkenums glib-genmarshal '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/gdb'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gobject_gdb.py '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/gdb'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/gobject'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gobject-autocleanups.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/glib-types.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gbinding.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gboxed.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gclosure.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/genums.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gmarshal.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gobject.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gparam.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gparamspecs.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gsignal.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gsourceclosure.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gtype.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gtypemodule.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gtypeplugin.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gvalue.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gvaluearray.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gvaluecollector.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gvaluetypes.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gobject/gobjectnotifyqueue.c '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/gobject'
+make  install-data-hook
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gdb/auto-load//home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+/usr/bin/install -c ./libgobject-gdb.py /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gdb/auto-load//home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgobject-2.0.so.0.5600.4-gdb.py
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+Making install in tests
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/tests'
+make  install-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/tests'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/tests'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/tests'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/tests'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject/tests'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gobject'
+Making install in gio
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+make  install-recursive
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+Making install in gdbus-2.0/codegen
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/gdbus-2.0/codegen'
+make  install-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/gdbus-2.0/codegen'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/gdbus-2.0/codegen'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+ /usr/bin/install -c gdbus-codegen '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/codegen'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbus-2.0/codegen/__init__.py /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbus-2.0/codegen/codegen.py /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbus-2.0/codegen/codegen_main.py /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbus-2.0/codegen/codegen_docbook.py config.py /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbus-2.0/codegen/dbustypes.py /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbus-2.0/codegen/parser.py /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbus-2.0/codegen/utils.py '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/codegen'
+Byte-compiling python modules...
+__init__.pycodegen.pycodegen_main.pycodegen_docbook.pyconfig.pydbustypes.pyparser.pyutils.py
+Byte-compiling python modules (optimized versions) ...
+__init__.pycodegen.pycodegen_main.pycodegen_docbook.pyconfig.pydbustypes.pyparser.pyutils.py
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/gdbus-2.0/codegen'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/gdbus-2.0/codegen'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/gdbus-2.0/codegen'
+Making install in xdgmime
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/xdgmime'
+make  install-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/xdgmime'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/xdgmime'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/xdgmime'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/xdgmime'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/xdgmime'
+Making install in inotify
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/inotify'
+make  install-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/inotify'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/inotify'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/inotify'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/inotify'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/inotify'
+Making install in .
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libgio-2.0.la '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib'
+libtool: warning: relinking 'libgio-2.0.la'
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio; /bin/bash "/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/libtool"  --silent --tag CC --mode=relink gcc-7 -fvisibility=hidden -ffunction-sections -fdata-sections -pipe -m64 -g -O0 -w -fno-strict-aliasing -version-info 5600:4:5600 -export-dynamic -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -g -O0 -v -o libgio-2.0.la -rpath /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib libgio_2_0_la-gappinfo.lo libgio_2_0_la-gasynchelper.lo libgio_2_0_la-gasyncinitable.lo libgio_2_0_la-gasyncresult.lo libgio_2_0_la-gbufferedinputstream.lo libgio_2_0_la-gbufferedoutputstream.lo libgio_2_0_la-gbytesicon.lo libgio_2_0_la-gcancellable.lo libgio_2_0_la-gcharsetconverter.lo libgio_2_0_la-gcontextspecificgroup.lo libgio_2_0_la-gconverter.lo libgio_2_0_la-gconverterinputstream.lo libgio_2_0_la-gconverteroutputstream.lo libgio_2_0_la-gcredentials.lo libgio_2_0_la-gdatagrambased.lo libgio_2_0_la-gdatainputstream.lo libgio_2_0_la-gdataoutputstream.lo libgio_2_0_la-gdrive.lo libgio_2_0_la-gdummyfile.lo libgio_2_0_la-gdummyproxyresolver.lo libgio_2_0_la-gdummytlsbackend.lo libgio_2_0_la-gemblem.lo libgio_2_0_la-gemblemedicon.lo libgio_2_0_la-gfile.lo libgio_2_0_la-gfileattribute.lo libgio_2_0_la-gfileenumerator.lo libgio_2_0_la-gfileicon.lo libgio_2_0_la-gfileinfo.lo libgio_2_0_la-gfileinputstream.lo libgio_2_0_la-gfilemonitor.lo libgio_2_0_la-gfilenamecompleter.lo libgio_2_0_la-gfileoutputstream.lo libgio_2_0_la-gfileiostream.lo libgio_2_0_la-gfilterinputstream.lo libgio_2_0_la-gfilteroutputstream.lo libgio_2_0_la-gicon.lo libgio_2_0_la-ginetaddress.lo libgio_2_0_la-ginetaddressmask.lo libgio_2_0_la-ginetsocketaddress.lo libgio_2_0_la-ginitable.lo libgio_2_0_la-ginputstream.lo libgio_2_0_la-gioerror.lo libgio_2_0_la-giomodule.lo libgio_2_0_la-giomodule-priv.lo libgio_2_0_la-gioscheduler.lo libgio_2_0_la-giostream.lo libgio_2_0_la-gloadableicon.lo libgio_2_0_la-gmount.lo libgio_2_0_la-gmemoryinputstream.lo libgio_2_0_la-gmemoryoutputstream.lo libgio_2_0_la-gmountoperation.lo libgio_2_0_la-gnativevolumemonitor.lo libgio_2_0_la-gnativesocketaddress.lo libgio_2_0_la-gnetworkaddress.lo libgio_2_0_la-gnetworking.lo libgio_2_0_la-gnetworkmonitor.lo libgio_2_0_la-gnetworkmonitorbase.lo libgio_2_0_la-gnetworkservice.lo libgio_2_0_la-goutputstream.lo libgio_2_0_la-gpermission.lo libgio_2_0_la-gpollableinputstream.lo libgio_2_0_la-gpollableoutputstream.lo libgio_2_0_la-gpollableutils.lo libgio_2_0_la-gpollfilemonitor.lo libgio_2_0_la-gproxy.lo libgio_2_0_la-gproxyaddress.lo libgio_2_0_la-gproxyaddressenumerator.lo libgio_2_0_la-gproxyresolver.lo libgio_2_0_la-gresolver.lo libgio_2_0_la-gresource.lo libgio_2_0_la-gresourcefile.lo libgio_2_0_la-gseekable.lo libgio_2_0_la-gsimpleasyncresult.lo libgio_2_0_la-gsimpleiostream.lo libgio_2_0_la-gsimplepermission.lo libgio_2_0_la-gsocket.lo libgio_2_0_la-gsocketaddress.lo libgio_2_0_la-gsocketaddressenumerator.lo libgio_2_0_la-gsocketclient.lo libgio_2_0_la-gsocketconnectable.lo libgio_2_0_la-gsocketconnection.lo libgio_2_0_la-gsocketcontrolmessage.lo libgio_2_0_la-gsocketinputstream.lo libgio_2_0_la-gsocketlistener.lo libgio_2_0_la-gsocketoutputstream.lo libgio_2_0_la-gsubprocesslauncher.lo libgio_2_0_la-gsubprocess.lo libgio_2_0_la-gsocketservice.lo libgio_2_0_la-gsrvtarget.lo libgio_2_0_la-gsimpleproxyresolver.lo libgio_2_0_la-gtask.lo libgio_2_0_la-gtcpconnection.lo libgio_2_0_la-gtcpwrapperconnection.lo libgio_2_0_la-gthreadedsocketservice.lo libgio_2_0_la-gthemedicon.lo libgio_2_0_la-gthreadedresolver.lo libgio_2_0_la-gtlsbackend.lo libgio_2_0_la-gtlscertificate.lo libgio_2_0_la-gtlsclientconnection.lo libgio_2_0_la-gtlsconnection.lo libgio_2_0_la-gtlsdatabase.lo libgio_2_0_la-gtlsfiledatabase.lo libgio_2_0_la-gtlsinteraction.lo libgio_2_0_la-gtlspassword.lo libgio_2_0_la-gtlsserverconnection.lo libgio_2_0_la-gdtlsconnection.lo libgio_2_0_la-gdtlsclientconnection.lo libgio_2_0_la-gdtlsserverconnection.lo libgio_2_0_la-gunionvolumemonitor.lo libgio_2_0_la-gvfs.lo libgio_2_0_la-gvolume.lo libgio_2_0_la-gvolumemonitor.lo libgio_2_0_la-gzlibcompressor.lo libgio_2_0_la-gzlibdecompressor.lo libgio_2_0_la-gioenumtypes.lo libgio_2_0_la-glistmodel.lo libgio_2_0_la-gliststore.lo libgio_2_0_la-gapplication.lo libgio_2_0_la-gapplicationcommandline.lo libgio_2_0_la-gapplicationimpl-dbus.lo libgio_2_0_la-gactiongroup.lo libgio_2_0_la-gactionmap.lo libgio_2_0_la-gsimpleactiongroup.lo libgio_2_0_la-gremoteactiongroup.lo libgio_2_0_la-gactiongroupexporter.lo libgio_2_0_la-gdbusactiongroup.lo libgio_2_0_la-gaction.lo libgio_2_0_la-gpropertyaction.lo libgio_2_0_la-gsimpleaction.lo libgio_2_0_la-gmenumodel.lo libgio_2_0_la-gmenu.lo libgio_2_0_la-gmenuexporter.lo libgio_2_0_la-gdbusmenumodel.lo libgio_2_0_la-gnotification.lo libgio_2_0_la-gnotificationbackend.lo libgio_2_0_la-gdbusutils.lo libgio_2_0_la-gdbusaddress.lo libgio_2_0_la-gdbusauthobserver.lo libgio_2_0_la-gdbusauth.lo libgio_2_0_la-gdbusauthmechanism.lo libgio_2_0_la-gdbusauthmechanismanon.lo libgio_2_0_la-gdbusauthmechanismexternal.lo libgio_2_0_la-gdbusauthmechanismsha1.lo libgio_2_0_la-gdbuserror.lo libgio_2_0_la-gdbusconnection.lo libgio_2_0_la-gdbusmessage.lo libgio_2_0_la-gdbusnameowning.lo libgio_2_0_la-gdbusnamewatching.lo libgio_2_0_la-gdbusproxy.lo libgio_2_0_la-gdbusprivate.lo libgio_2_0_la-gdbusintrospection.lo libgio_2_0_la-gdbusmethodinvocation.lo libgio_2_0_la-gdbusserver.lo libgio_2_0_la-gdbusinterface.lo libgio_2_0_la-gdbusinterfaceskeleton.lo libgio_2_0_la-gdbusobject.lo libgio_2_0_la-gdbusobjectskeleton.lo libgio_2_0_la-gdbusobjectproxy.lo libgio_2_0_la-gdbusobjectmanager.lo libgio_2_0_la-gdbusobjectmanagerclient.lo libgio_2_0_la-gdbusobjectmanagerserver.lo libgio_2_0_la-gtestdbus.lo libgio_2_0_la-ghttpproxy.lo libgio_2_0_la-glocalfile.lo libgio_2_0_la-glocalfileenumerator.lo libgio_2_0_la-glocalfileinfo.lo libgio_2_0_la-glocalfileinputstream.lo libgio_2_0_la-glocalfilemonitor.lo libgio_2_0_la-glocalfileoutputstream.lo libgio_2_0_la-glocalfileiostream.lo libgio_2_0_la-glocalvfs.lo libgio_2_0_la-gsocks4proxy.lo libgio_2_0_la-gsocks4aproxy.lo libgio_2_0_la-gsocks5proxy.lo libgio_2_0_la-thumbnail-verify.lo libgio_2_0_la-gdesktopappinfo.lo libgio_2_0_la-gcontenttype.lo libgio_2_0_la-gfiledescriptorbased.lo libgio_2_0_la-gunixconnection.lo libgio_2_0_la-gunixcredentialsmessage.lo libgio_2_0_la-gunixfdlist.lo libgio_2_0_la-gunixfdmessage.lo libgio_2_0_la-gunixmount.lo libgio_2_0_la-gunixmounts.lo libgio_2_0_la-gunixsocketaddress.lo libgio_2_0_la-gunixvolume.lo libgio_2_0_la-gunixvolumemonitor.lo libgio_2_0_la-gunixinputstream.lo libgio_2_0_la-gunixoutputstream.lo libgio_2_0_la-gfdonotificationbackend.lo libgio_2_0_la-ggtknotificationbackend.lo libgio_2_0_la-gportalnotificationbackend.lo libgio_2_0_la-gdocumentportal.lo libgio_2_0_la-gopenuriportal.lo libgio_2_0_la-gportalsupport.lo libgio_2_0_la-gnetworkmonitorportal.lo libgio_2_0_la-gproxyresolverportal.lo libgio_2_0_la-xdp-dbus.lo libgio_2_0_la-gnetworkmonitornetlink.lo libgio_2_0_la-gnetworkmonitornm.lo gvdb/libgio_2_0_la-gvdb-reader.lo libgio_2_0_la-gdelayedsettingsbackend.lo libgio_2_0_la-gkeyfilesettingsbackend.lo libgio_2_0_la-gmemorysettingsbackend.lo libgio_2_0_la-gnullsettingsbackend.lo libgio_2_0_la-gsettingsbackend.lo libgio_2_0_la-gsettingsschema.lo libgio_2_0_la-gsettings-mapping.lo libgio_2_0_la-gsettings.lo ../gobject/libgobject-2.0.la ../gmodule/libgmodule-2.0.la ../glib/libglib-2.0.la inotify/libinotify.la xdgmime/libxdgmime.la -L/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib -lz -lresolv )
+libtool: warning: '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libffi.la' seems to be moved
+libtool: install: /usr/bin/install -c .libs/libgio-2.0.so.0.5600.4T /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgio-2.0.so.0.5600.4
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libgio-2.0.so.0.5600.4 libgio-2.0.so.0 || { rm -f libgio-2.0.so.0 && ln -s libgio-2.0.so.0.5600.4 libgio-2.0.so.0; }; })
+libtool: install: (cd /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib && { ln -s -f libgio-2.0.so.0.5600.4 libgio-2.0.so || { rm -f libgio-2.0.so && ln -s libgio-2.0.so.0.5600.4 libgio-2.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgio-2.0.lai /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/libgio-2.0.la
+libtool: finish: PATH="/opt/xbb/bin:/home/automark/.nvm/versions/node/v12.18.4/bin:/home/automark/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/automark/.local/bin:/sbin" ldconfig -n /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c gio-querymodules glib-compile-schemas glib-compile-resources gsettings gdbus gapplication gresource gio '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin'
+libtool: install: /usr/bin/install -c .libs/gio-querymodules /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/gio-querymodules
+libtool: install: /usr/bin/install -c .libs/glib-compile-schemas /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/glib-compile-schemas
+libtool: install: /usr/bin/install -c .libs/glib-compile-resources /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/glib-compile-resources
+libtool: install: /usr/bin/install -c .libs/gsettings /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/gsettings
+libtool: install: /usr/bin/install -c .libs/gdbus /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/gdbus
+libtool: install: /usr/bin/install -c .libs/gapplication /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/gapplication
+libtool: install: /usr/bin/install -c .libs/gresource /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/gresource
+libtool: install: /usr/bin/install -c .libs/gio /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/bin/gio
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/bash-completion/completions'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/completion/gapplication /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/completion/gdbus /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/completion/gsettings /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/completion/gresource '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/bash-completion/completions'
+/bin/bash /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/install-sh -d /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/gio/modules
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/its'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gschema.loc /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gschema.its '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/gettext/its'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/schemas'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gschema.dtd '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/schemas'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/gio/'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gappinfo.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gasyncinitable.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gasyncresult.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gbufferedinputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gbufferedoutputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gbytesicon.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gcancellable.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gcontenttype.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gcharsetconverter.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gconverter.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gconverterinputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gconverteroutputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdatagrambased.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdatainputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdataoutputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdrive.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gemblem.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gemblemedicon.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfile.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfileattribute.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfileenumerator.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfileicon.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfileinfo.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfileinputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfilemonitor.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfilenamecompleter.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfileoutputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfileiostream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfilterinputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfilteroutputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gicon.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/ginetaddress.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/ginetaddressmask.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/ginetsocketaddress.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/ginputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/ginitable.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gio.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gio-autocleanups.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/giotypes.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gioenums.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/gio/'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gioerror.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/giomodule.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gioscheduler.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/giostream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gloadableicon.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gmount.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gmemoryinputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gmemoryoutputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gmountoperation.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gnativevolumemonitor.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gnetworkaddress.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gnetworkmonitor.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gnetworkservice.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/goutputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gpermission.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gpollableinputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gpollableoutputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gpollableutils.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gproxyaddress.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gproxy.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gproxyaddressenumerator.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gproxyresolver.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gresolver.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gresource.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gseekable.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsimpleasyncresult.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsimpleiostream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsimplepermission.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsocket.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsocketaddress.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsocketaddressenumerator.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsocketclient.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsocketconnectable.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsocketconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsocketcontrolmessage.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsocketlistener.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsocketservice.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsrvtarget.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsimpleproxyresolver.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtask.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/gio/'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsubprocess.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsubprocesslauncher.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtcpconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtcpwrapperconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gthreadedsocketservice.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gthemedicon.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtlsbackend.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtlscertificate.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtlsclientconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtlsconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtlsdatabase.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtlsfiledatabase.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtlsinteraction.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtlspassword.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtlsserverconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdtlsconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdtlsclientconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdtlsserverconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gvfs.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gvolume.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gvolumemonitor.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gzlibcompressor.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gzlibdecompressor.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/glistmodel.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gliststore.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gapplication.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gapplicationcommandline.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gactiongroup.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gactionmap.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsimpleactiongroup.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gremoteactiongroup.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gactiongroupexporter.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusactiongroup.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gaction.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gpropertyaction.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsimpleaction.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gmenumodel.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gmenu.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gmenuexporter.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusmenumodel.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/gio/'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gnotification.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsettingsbackend.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsettingsschema.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gsettings.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusauthobserver.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gcredentials.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusutils.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbuserror.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusaddress.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusmessage.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusnameowning.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusnamewatching.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusproxy.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusintrospection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusmethodinvocation.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusserver.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusinterface.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusinterfaceskeleton.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusobject.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusobjectskeleton.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusobjectproxy.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusobjectmanager.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusobjectmanagerclient.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdbusobjectmanagerserver.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gtestdbus.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gioenumtypes.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/gio/'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/gio-unix-2.0/gio'
+ /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gfiledescriptorbased.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gunixconnection.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gunixcredentialsmessage.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gunixmounts.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gunixfdlist.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gunixfdmessage.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gunixinputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gunixoutputstream.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gunixsocketaddress.h /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/gio/gdesktopappinfo.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/gio-unix-2.0/gio'
+ /bin/mkdir -p '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/gio/'
+ /usr/bin/install -c -m 644 gnetworking.h '/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/include/glib-2.0/gio/'
+make  install-data-hook
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+make[6]: Nothing to be done for 'install-data-hook'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+Making install in tests
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make  install-recursive
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+Making install in gdbus-object-manager-example
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-object-manager-example'
+make  install-am
+make[7]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-object-manager-example'
+make[8]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-object-manager-example'
+make[8]: Nothing to be done for 'install-exec-am'.
+make[8]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-object-manager-example'
+make[7]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-object-manager-example'
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/gdbus-object-manager-example'
+Making install in services
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/services'
+make[7]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/services'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Nothing to be done for 'install-data-am'.
+make[7]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/services'
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/services'
+Making install in modules
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/modules'
+make[7]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/modules'
+make[7]: Nothing to be done for 'install-exec-am'.
+make[7]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/modules'
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests/modules'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[7]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[7]: Nothing to be done for 'install-exec-am'.
+make  install-data-hook
+make[8]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[8]: Nothing to be done for 'install-data-hook'.
+make[8]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[7]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio/tests'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/gio'
+Making install in po
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/po'
+mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share; \
+catalogs='af.gmo am.gmo an.gmo ar.gmo as.gmo ast.gmo az.gmo be.gmo be@latin.gmo bg.gmo bn.gmo bn_IN.gmo bs.gmo ca.gmo ca@valencia.gmo cs.gmo cy.gmo da.gmo de.gmo dz.gmo el.gmo en_CA.gmo en_GB.gmo en@shaw.gmo eo.gmo es.gmo et.gmo eu.gmo fa.gmo fi.gmo fr.gmo fur.gmo ga.gmo gd.gmo gl.gmo gu.gmo he.gmo hi.gmo hr.gmo hu.gmo hy.gmo id.gmo is.gmo it.gmo ja.gmo ka.gmo kk.gmo kn.gmo ko.gmo ku.gmo lt.gmo lv.gmo mai.gmo mg.gmo mk.gmo ml.gmo mn.gmo mr.gmo ms.gmo nb.gmo nds.gmo ne.gmo nl.gmo nn.gmo oc.gmo or.gmo pa.gmo pl.gmo ps.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo rw.gmo si.gmo sk.gmo sl.gmo sq.gmo sr.gmo sr@latin.gmo sr@ije.gmo sv.gmo ta.gmo te.gmo tg.gmo th.gmo tl.gmo tr.gmo ug.gmo tt.gmo uk.gmo vi.gmo wa.gmo xh.gmo yi.gmo zh_CN.gmo zh_HK.gmo zh_TW.gmo'; \
+for cat in $catalogs; do \
+  cat=`basename $cat`; \
+  case "$cat" in \
+    *.gmo) destdir=/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale;; \
+    *)     destdir=/home/automark/Work/qemu-arm-dev/linux-x64/install/libs/lib/locale;; \
+  esac; \
+  lang=`echo $cat | sed 's/\.gmo$//'`; \
+  dir=$destdir/$lang/LC_MESSAGES; \
+  mkdir -p $dir; \
+  if test -r $cat; then \
+    /usr/bin/install -c -m 644 $cat $dir/glib20.mo; \
+    echo "installing $cat as $dir/glib20.mo"; \
+  else \
+    /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/$cat $dir/glib20.mo; \
+    echo "installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/$cat as" \
+	 "$dir/glib20.mo"; \
+  fi; \
+  if test -r $cat.m; then \
+    /usr/bin/install -c -m 644 $cat.m $dir/glib20.mo.m; \
+    echo "installing $cat.m as $dir/glib20.mo.m"; \
+  else \
+    if test -r /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/$cat.m ; then \
+      /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/$cat.m \
+	$dir/glib20.mo.m; \
+      echo "installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/$cat as" \
+	   "$dir/glib20.mo.m"; \
+    else \
+      true; \
+    fi; \
+  fi; \
+done
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/af.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/af/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/am.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/am/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/an.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/an/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ar.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ar/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/as.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/as/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ast.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ast/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/az.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/az/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/be.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/be/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/be@latin.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/be@latin/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/bg.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/bg/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/bn.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/bn/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/bn_IN.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/bn_IN/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/bs.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/bs/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ca.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ca/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ca@valencia.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ca@valencia/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/cs.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/cs/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/cy.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/cy/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/da.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/da/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/de.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/de/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/dz.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/dz/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/el.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/el/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/en_CA.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/en_CA/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/en_GB.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/en_GB/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/en@shaw.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/en@shaw/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/eo.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/eo/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/es.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/es/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/et.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/et/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/eu.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/eu/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/fa.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/fa/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/fi.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/fi/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/fr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/fr/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/fur.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/fur/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ga.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ga/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/gd.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/gd/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/gl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/gl/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/gu.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/gu/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/he.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/he/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/hi.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/hi/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/hr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/hr/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/hu.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/hu/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/hy.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/hy/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/id.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/id/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/is.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/is/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/it.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/it/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ja.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ja/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ka.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ka/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/kk.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/kk/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/kn.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/kn/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ko.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ko/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ku.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ku/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/lt.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/lt/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/lv.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/lv/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/mai.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/mai/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/mg.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/mg/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/mk.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/mk/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ml.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ml/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/mn.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/mn/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/mr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/mr/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ms.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ms/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/nb.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/nb/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/nds.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/nds/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ne.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ne/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/nl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/nl/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/nn.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/nn/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/oc.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/oc/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/or.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/or/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/pa.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/pa/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/pl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/pl/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ps.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ps/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/pt.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/pt/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/pt_BR.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/pt_BR/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ro.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ro/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ru.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ru/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/rw.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/rw/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/si.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/si/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/sk.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sk/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/sl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sl/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/sq.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sq/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/sr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sr/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/sr@latin.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sr@latin/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/sr@ije.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sr@ije/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/sv.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/sv/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ta.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ta/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/te.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/te/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/tg.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/tg/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/th.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/th/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/tl.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/tl/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/tr.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/tr/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/ug.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/ug/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/tt.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/tt/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/uk.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/uk/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/vi.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/vi/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/wa.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/wa/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/xh.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/xh/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/yi.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/yi/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/zh_CN.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/zh_CN/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/zh_HK.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/zh_HK/LC_MESSAGES/glib20.mo
+installing /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/zh_TW.gmo as /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/locale/zh_TW/LC_MESSAGES/glib20.mo
+if test "glib" = "glib"; then \
+  mkdir -p /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/gettext/po; \
+  /usr/bin/install -c -m 644 /home/automark/Work/qemu-arm-dev/sources/glib-2.56.4/po/Makefile.in.in \
+		  /home/automark/Work/qemu-arm-dev/linux-x64/install/libs/share/glib-2.0/gettext/po/Makefile.in.in; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/po'
+Making install in docs
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs'
+Making install in reference
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference'
+Making install in glib
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/glib'
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/glib'
+make[5]: Nothing to be done for 'install-exec-am'.
+Nothing to install
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/glib'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/glib'
+Making install in gobject
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gobject'
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gobject'
+make[5]: Nothing to be done for 'install-exec-am'.
+Nothing to install
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gobject'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gobject'
+Making install in gio
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gio'
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gio'
+make[5]: Nothing to be done for 'install-exec-am'.
+Nothing to install
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gio'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference/gio'
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference'
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs/reference'
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs'
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/docs'
+Making install in tests
+make[2]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make  install-recursive
+make[3]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+Making install in gobject
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/gobject'
+make  install-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/gobject'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/gobject'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/gobject'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/gobject'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/gobject'
+Making install in refcount
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/refcount'
+make  install-am
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/refcount'
+make[6]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/refcount'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/refcount'
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/refcount'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests/refcount'
+make[4]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make[5]: Entering directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make[4]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make[3]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make[2]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4/tests'
+make[1]: Leaving directory '/home/automark/Work/qemu-arm-dev/linux-x64/build/libs/glib-2.56.4'
